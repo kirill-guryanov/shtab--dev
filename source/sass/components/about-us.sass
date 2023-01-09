@@ -1,0 +1,213 @@
+.about-us
+  background-color: #1B1B1B
+
+  min-height: 1150px
+
+  overflow: hidden
+
+  position: relative
+
+  @media (max-width: 1170px)
+    min-height: 1720px
+
+//  decoration
+.about-us__decoration-image--left
+  position: absolute
+
+  left: 55px
+
+.about-us__decoration-image--right
+  position: absolute
+  right: 0
+
+//  container
+.about-us__container
+  display: flex
+  align-items: center
+
+  padding-top: 80px
+
+  z-index: 1
+  position: relative
+
+  @media (max-width: 1170px)
+    flex-direction: column
+
+// left side
+.about-us__left-side
+  padding-right: 45px
+
+  border-right: 1px solid #3c3c3c
+
+  @media (max-width: 1170px)
+    padding-right: unset
+    border: none
+
+.about-us__left-side-image
+  width: 100%
+  height: auto
+  
+// right side
+.about-us__right-side
+  padding-left: 60px
+
+  width: auto
+
+  @media (max-width: 1170px)
+    margin: 50px 0 50px 72px
+    padding-left: unset
+
+  @media (max-width: 730px)
+    margin: 50px 0 230px 0
+
+.about-us__right-side-content
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+
+.about-us__right-side-overtitle
+  display: flex
+  align-items: center
+  gap: 15px
+
+  margin-bottom: 10px
+
+  font-weight: 400
+  font-size: 20px
+  line-height: 112.9%
+  color: #FFFFFF
+
+.about-us__right-side-overtitle-line
+  width: 65px
+  height: 1px
+
+  background-color: #fff
+
+.about-us__right-side-title
+  margin-bottom: 20px
+
+  max-width: 550px
+
+  font-weight: 800
+  font-size: 40px
+  line-height: 112.9%
+  color: #FFFFFF
+
+
+.about-us__right-side-suptitle
+  margin-bottom: 70px
+
+  max-width: 630px
+
+  font-weight: 400
+  font-size: 22px
+  line-height: 112.9%
+  color: #FFFFFF
+
+.about-us__right-side-benefits
+  margin-bottom: 110px
+
+  @media (max-width: 1170px)
+    margin-bottom: 60px
+
+.about-us__right-side-benefits-list
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  gap: 25px
+
+.about-us__right-side-benefits-list-item
+  padding-left: 15px
+
+  max-width: 120px
+
+  width: 100%
+
+  font-weight: 400
+  font-size: 18px
+  line-height: 112.9%
+  color: #FFFFFF
+
+  border-left: 1px solid #C6FF00
+
+  & span
+    display: inline-block
+    margin: 0 3px
+
+    font-weight: 800
+    text-transform: uppercase
+
+  &:nth-child(2)
+    max-width: 138px
+
+.about-us__right-side-read-more
+  display: flex
+  align-items: center
+
+  font-weight: 700
+  font-size: 18px
+  line-height: 1
+  color: #FFFFFF
+
+.about-us__right-side-read-more-content
+  display: flex
+  align-items: center
+
+  margin-left: - 51px
+
+.about-us__right-side-read-more-circle
+  width: 102px
+  height: 102px
+
+  border: 1px solid #D0FF48
+  border-radius: 50%
+
+// lines
+.about-us__running-line
+  display: flex
+  align-items: center
+
+  width: 110%
+  height: 64px
+
+  position: absolute
+  bottom: 130px
+  left: 0
+  right: 0
+
+  @media (max-width: 1170px)
+    bottom: 85px
+
+.about-us__running-line-salad
+  background-color: #D0FF48
+  transform: rotate(-4deg)
+
+.about-us__running-line-list-salad
+    margin-left: -3150px
+
+    @media (max-width: 770px)
+      margin-left: -4336px
+
+.about-us__running-line-white
+  background-color: #fff
+  transform: rotate(4deg)
+
+.about-us__running-line-list
+  display: flex
+  align-items: center
+  gap: 100px
+
+  @media (max-width: 770px)
+    gap: 55px
+
+.about-us__running-line-list-item
+  flex-shrink: 0
+
+  font-weight: 800
+  font-size: 18px
+  line-height: 1
+  color: #000000
+
+  @media (max-width: 770px)
+    font-size: 14px

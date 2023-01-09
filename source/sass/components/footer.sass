@@ -1,0 +1,264 @@
+.footer
+  display: flex
+
+  width: 92%
+
+  background-color: #121212
+
+  @media (max-width: 1130px)
+    width: 100%
+
+  @media (max-width: 750px)
+    flex-direction: column-reverse
+
+.footer__container
+  display: flex
+  flex-direction: column
+  align-items: center
+
+// left side
+.footer__left-side
+  width: 100%
+  height: 100%
+
+// rights
+.footer__left-side-rights
+  padding: 18px 0 30px
+
+  border-top: 1px solid #313131
+
+.footer__left-side-rights-text
+  font-weight: 350
+  font-size: 18px
+  line-height: 1
+  color: #FFFFFF
+  opacity: .5
+
+// block
+.footer__blocks
+  display: flex
+  justify-content: space-evenly
+
+  padding-top: 70px
+  padding-bottom: 110px
+
+  width: 100%
+
+  @media (max-width: 1380px)
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    justify-items: center
+    row-gap: 50px
+
+    padding-bottom: 50px
+
+  @media (max-width: 500px)
+    grid-template-columns: repeat(1, 1fr)
+
+
+.footer__blocks-item-list
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.footer__blocks-item-list--one
+  gap: 21px
+
+.footer__blocks-item-list--two
+  gap: 18px
+
+.footer__blocks-item-list--three
+  gap: 23px
+
+.footer__blocks-item-title
+  margin-bottom: 35px
+
+  font-weight: 700
+  font-size: 24px
+  line-height: 1
+  color: #FFFFFF
+
+.footer__blocks-list-item
+  font-weight: 400
+  font-size: 18px
+  line-height: 1
+  color: #FFFFFF
+
+// services
+.footer__blocks-list-item--dash
+  margin-left: 30px
+
+  position: relative
+
+  &:before
+    content: ""
+    display: block
+
+    width: 16px
+    height: 1px
+
+    background-color: #fff
+
+    position: absolute
+    top: calc(50% - 1px)
+    left: -28px
+
+.footer__blocks-item-text
+  max-width: 202px
+
+  font-weight: 350
+  font-size: 16px
+  line-height: 1
+  color: #767676
+
+.footer__blocks-item-socials
+  display: flex
+  align-items: center
+  gap: 15px
+
+// contacts
+.footer__blocks-list-item--contacts
+  display: flex
+  flex-direction: row
+  gap: 15px
+
+.footer__blocks-list-item--contacts-text-block
+  display: flex
+  flex-direction: column
+
+.footer__blocks-list-item--contacts-text
+  font-weight: 350
+  font-size: 18px
+  line-height: 1
+  color: #FFFFFF
+
+//form
+.footer__right-side-form-content
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  padding: 35px 15px
+
+  text-align: center
+
+.footer__right-side-form-title
+  margin-bottom: 29px
+
+  font-weight: 700
+  font-size: 26px
+  line-height: 1
+  color: #FFFFFF
+
+.footer__right-side-form
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  max-width: 495px
+
+  width: 50%
+  height: 100%
+
+  background-color: #1D1D1D
+
+  @media (max-width: 750px)
+    max-width: unset
+
+    width: 100%
+
+.footer__right-side-form-form
+  display: flex
+  flex-direction: column
+
+  max-width: 271px
+
+  width: 100%
+
+.footer__right-side-form-form-input,
+.footer__right-side-form-form-button
+  max-width: 271px
+  width: 100%
+  height: 51px
+
+.footer__right-side-form-form-input
+  margin-bottom: 10px
+  padding: 0 33px
+
+  background-color: transparent
+  border: 1px solid #737373
+  border-radius: 40px
+
+  font-weight: 350
+  font-size: 18px
+  line-height: 112.9%
+  color: #CECECE
+
+.footer__right-side-form-form-checkbox
+  flex-shrink: 0
+
+  width: 34px
+  height: 34px
+  opacity: 0
+
+  position: relative
+  z-index: 1
+
+.footer__right-side-form-form-checkbox-block
+  display: flex
+  align-items: center
+  gap: 20px
+
+  margin-top: 17px
+  margin-bottom: 23px
+
+  position: relative
+
+.footer__right-side-form-form-checkbox-custom-block
+  flex-shrink: 0
+
+  position: absolute
+  left: 0
+  //display: none
+
+.footer__right-side-form-form-checkbox-custom
+  width: 34px
+  height: 34px
+
+  background-color: #494949
+  border-radius: 50%
+
+  position: relative
+
+.footer__right-side-form-form-checkbox-custom--active
+  width: 22px
+  height: 22px
+
+  background-color: #C9F31D
+  border-radius: 50%
+  opacity: 0
+
+  transition: opacity .3s ease-in-out
+
+  position: absolute
+  top: 6px
+  left: 6px
+
+.footer__right-side-form-form-button
+  padding: 15px 0
+
+  background-color: transparent
+  border: 1px solid #C9F31D
+  border-radius: 40px
+
+  font-weight: 350
+  font-size: 18px
+  line-height: 112.9%
+  color: #FFFFFF
+
+.footer__right-side-form-form-checkbox-block-label
+  font-weight: 350
+  font-size: 15px
+  line-height: 1
+  color: #CECECE
