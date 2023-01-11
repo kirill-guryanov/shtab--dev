@@ -31,8 +31,15 @@
 
   position: relative
 
+  max-width: 100%
+  width: 100%
+
   @media (max-width: 1380px)
     flex-direction: column
+
+  .intro__container--inner
+    display: flex
+    justify-content: space-between
 
 // arrow to bottom
 .intro__arrow-to-bottom-arrow-block
@@ -48,7 +55,7 @@
 
   position: absolute
   right: calc(50% - 17px)
-  bottom: 40px
+  bottom: 85px
 
 .intro__arrow-to-bottom-arrow-image
   object-fit: none
@@ -235,15 +242,18 @@
 
   object-fit: cover
 
-.intro__slider-swiper-pagination
-  top: 33.5% !important
+.intro__slider-swiper-pagination .swiper-pagination-bullet-active
+  background: $saladColor !important
 
-  @media (max-width: 1380px)
-    top: unset!important
-    bottom: -18%!important
+// pagination
+.intro__splider--container .splide__pagination
+  transform: rotate(90deg)
 
-.intro__slider-swiper-pagination .swiper-pagination-bullet
-  margin: 15px 0!important
+  top: -9%
+  left: -76%
+
+.intro__splider--container .splide__pagination .splide__pagination__page
+  margin:  0 10px
 
   width: 19px
   height: 19px
@@ -252,8 +262,6 @@
   background: unset!important
   opacity: 1
 
-  @media (max-width: 1380px)
-    margin: 0 7px!important
-
-.intro__slider-swiper-pagination .swiper-pagination-bullet-active
-  background: $saladColor !important
+.intro__splider--container .splide__pagination .splide__pagination__page.is-active
+  background-color: #D0FF48!important
+  transform: unset !important
