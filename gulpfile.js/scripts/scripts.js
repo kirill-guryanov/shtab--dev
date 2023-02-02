@@ -16,6 +16,6 @@ exports.script = () => {
 		.pipe(webpackStream())
 		.pipe(uglify())
 		.pipe(concat('index.min.js'))
-		.pipe(map.write('../sourcemaps'))
+		.pipe(map.write())
 		.pipe(dest('./dist/assets/js'))
 }

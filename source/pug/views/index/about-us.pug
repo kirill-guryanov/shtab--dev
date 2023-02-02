@@ -82,8 +82,13 @@ section.about-us
 
     .about-us__container.container
         .about-us__left-side
-            img.about-us__left-side-image(
-                src="assets/images/about-us/left-side-image.jpg" alt="Фотография собеседования персонала студии"
+            //img.about-us__left-side-image-block(
+            //    class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.5"
+            //    src="assets/images/about-us/left-side-image.jpg" alt="Коллектив веб студии"
+            //    width="550" height="765"
+            //)
+            img.about-us__left-side-image-block(
+                src="assets/images/about-us/left-side-image.jpg" alt="Коллектив веб студии"
                 width="550" height="765"
             )
 
@@ -126,11 +131,11 @@ section.about-us
                             | невозможных
                             | задач
 
-                .about-us__right-side-read-more
+                a.about-us__right-side-read-more( href="#" )
                     .about-us__right-side-read-more-circle
 
                     .about-us__right-side-read-more-content
-                        a( href="#" ).about-us__right-side-read-more
+                        p.about-us__right-side-read-more
                             | Узнать подробнее
                         img.about-us__right-side-read-more-image(
                             src="assets/images/about-us/arrow-read-more.svg" alt="Белая стрелка"

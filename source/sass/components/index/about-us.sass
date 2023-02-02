@@ -1,3 +1,5 @@
+@import "mixins"
+
 .about-us
   background-color: #1B1B1B
 
@@ -8,7 +10,7 @@
   position: relative
 
   @media (max-width: 1170px)
-    min-height: 1720px
+    min-height: 820px
 
 //  decoration
 .about-us__decoration-image--left
@@ -20,45 +22,68 @@
   position: absolute
   right: 0
 
+  @media (max-width: 970px)
+    display: none
+
 //  container
 .about-us__container
   display: flex
   align-items: center
 
-  padding-top: 80px
+  padding-top: 80px!important
 
   z-index: 1
   position: relative
 
   @media (max-width: 1170px)
+    padding-top: 0
     flex-direction: column
 
 // left side
 .about-us__left-side
+  flex-shrink: 0
+
   padding-right: 45px
+
+  width: 595px
+  height: 765px
 
   border-right: 1px solid #3c3c3c
 
   @media (max-width: 1170px)
+    display: none
+
+    width: 120%
+    height: 400px
+
     padding-right: unset
     border: none
 
-.about-us__left-side-image
+.about-us__left-side-image-block
+  max-width: 550px
+
   width: 100%
-  height: auto
-  
+  height: 100%
+
+  @media (max-width: 1740px)
+    background-position: 50px
+
+  @media (max-width: 1170px)
+    max-width: 100%
+
+    background-position: center
+
 // right side
 .about-us__right-side
   padding-left: 60px
 
-  width: auto
+  width: 100%
 
   @media (max-width: 1170px)
-    margin: 50px 0 50px 72px
     padding-left: unset
 
   @media (max-width: 730px)
-    margin: 50px 0 230px 0
+    margin: 0 0 230px 0
 
 .about-us__right-side-content
   display: flex
@@ -74,7 +99,7 @@
   margin-bottom: 10px
 
   font-weight: 400
-  font-size: 20px
+  @include adaptiveFont(20, 14)
   line-height: 112.9%
   color: #FFFFFF
 
@@ -87,10 +112,10 @@
 .about-us__right-side-title
   margin-bottom: 20px
 
-  max-width: 550px
+  max-width: 100%
 
   font-weight: 800
-  font-size: 40px
+  @include adaptiveFont(40, 22)
   line-height: 112.9%
   color: #FFFFFF
 
@@ -98,10 +123,10 @@
 .about-us__right-side-suptitle
   margin-bottom: 70px
 
-  max-width: 630px
+  max-width: 100%
 
   font-weight: 400
-  font-size: 22px
+  @include adaptiveFont(22, 16)
   line-height: 112.9%
   color: #FFFFFF
 
@@ -126,6 +151,7 @@
 
   font-weight: 400
   font-size: 18px
+  @include adaptiveFont(18, 14)
   line-height: 112.9%
   color: #FFFFFF
 
@@ -145,10 +171,15 @@
   display: flex
   align-items: center
 
+  cursor: default
+
   font-weight: 700
   font-size: 18px
   line-height: 1
   color: #FFFFFF
+
+p.about-us__right-side-read-more
+  cursor: pointer
 
 .about-us__right-side-read-more-content
   display: flex
@@ -158,12 +189,8 @@
 
   cursor: pointer
 
-.about-us__right-side-read-more-circle
-  width: 102px
-  height: 102px
-
-  border: 1px solid #D0FF48
-  border-radius: 50%
+  position: relative
+  //pointer-events: none
 
 .about-us__right-side-read-more-image
   margin-left: 15px
@@ -189,10 +216,29 @@
   transform: rotate(-4deg)
 
 .about-us__running-line-list-salad
-    margin-left: -3150px
+  animation: scrolling calc(8 * 3s) linear infinite
 
-    @media (max-width: 770px)
-      margin-left: -4336px
+.about-us__running-line-list-white
+
+  margin-left: -1500px
+
+  animation: scrolling--white calc(8 * 3s) linear infinite
+
+@keyframes scrolling
+  0%
+    transform: translateX(0)
+  50%
+    transform: translateX(calc(-1 * 150px * 8))
+  100%
+    transform: translateX(0)
+
+@keyframes scrolling--white
+  0%
+    transform: translateX(0)
+  50%
+    transform: translateX(calc(1 * 150px * 8))
+  100%
+    transform: translateX(0)
 
 .about-us__running-line-white
   background-color: #fff
@@ -216,3 +262,21 @@
 
   @media (max-width: 770px)
     font-size: 14px
+
+// circles
+.services__read-more-circle,
+.blog__telegram__right-side-read-more-circle,
+.about-us__right-side-read-more-circle--black
+  transition: border .5s ease-in-out
+
+  border: 1px solid #000
+
+.services__read-more--black-border
+  &:hover.services__read-more-circle,
+  &:hover.blog__telegram__right-side-read-more-circle,
+  &:hover.about-us__right-side-read-more-circle--black
+    border: #D0FF48
+
+.parallax-window
+  min-height: 400px
+  background: transparent

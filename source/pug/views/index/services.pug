@@ -13,8 +13,9 @@ section.services
                         | услуг
 
             .section__titles__decoration-right
-                img.services__decoration-right-image(
-                    src="assets/images/services/decoration-right.svg" alt="Черная стрелка"
+                img.services__decoration-right-image.services__decoration-right-image--parallax(
+                    class="rellax" data-rellax-speed="-1"
+                    src="assets/images/services/decoration-right.svg" alt="Фигурки"
                     width="125" height="120"
                 )
 
@@ -43,7 +44,7 @@ section.services
                                     p Разработка чат-ботов и автоматизация
 
                     .services__list-item-read-more
-                        .services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
@@ -76,7 +77,7 @@ section.services
                                     p SMM
 
                     .services__list-item-read-more
-                        .services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
@@ -109,7 +110,7 @@ section.services
                                     p Аудит юзабилити / безопасности проектов
 
                     .services__list-item-read-more
-                        .services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
@@ -143,10 +144,22 @@ section.services
                                     p Обслуживание и настройка серверов
 
                     .services__list-item-read-more
-                        .services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
                                     src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка"
                                     width="23" height="23"
                                 )
+
+        .services__bottom-button
+            a.about-us__right-side-read-more( href="#" )
+                .about-us__right-side-read-more-circle.services__read-more-circle.services__read-more--black-border
+
+                .about-us__right-side-read-more-content
+                    p.about-us__right-side-read-more.about-us__right-side-read-more--black
+                        | Нужна консультация
+                    img.about-us__right-side-read-more-image(
+                        src="assets/images/blog/arrow-black.svg" alt="Черная стрелка"
+                        width="21" height="16"
+                    )

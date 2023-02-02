@@ -5,16 +5,22 @@
     )
 
     .intro__splider--container.splide( aria-label="Splide Basic HTML Example" )
+
+        .intro__arrow-to-bottom-arrow-block
+            .intro__arrow-to-bottom-arrow-block-content
+                img.intro__arrow-to-bottom-arrow-image.intro__arrow-to-bottom-arrow-image--black(
+                    src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта"
+                    width="16" height="30"
+                )
+                img.intro__arrow-to-bottom-arrow-image.intro__arrow-to-bottom-arrow-image--white(
+                    src="./assets/images/intro/arrow-to-bottom--white.svg" alt="Стрелка к следующему блоку на сайта"
+                    width="16" height="30"
+                )
+
         .splide__track
             .splide__list
                 .intro__container.splide__slide
                     .intro__container--inner.container
-                        .intro__arrow-to-bottom-arrow-block
-                            img.intro__arrow-to-bottom-arrow-image(
-                                src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта"
-                                width="16" height="30"
-                            )
-
                         .intro__content
                             .intro__content-digital-block
                                 .intro__content-digital-text digital
@@ -22,7 +28,7 @@
 
                             .intro__content-padding-left
                                 .intro__content-top
-                                    .intro__content-top-title РАЗРАБОТКА
+                                    .intro__content-top-title.intro__content-top-title--for-pagination-calibration РАЗРАБОТКА
                                     .intro__content-top-stars-image-block
                                         .intro__content-top-stars-image
                                             img.intro__content-stars-image(
@@ -39,12 +45,17 @@
 
                                 .intro__content-button-block
                                     button.intro__content-button Подробнее
-                                        img.intro__content-button-image(
-                                            src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
-                                            width="68" height="16"
-                                        )
+                                        .intro__content-button-block-images
+                                            img.intro__content-button-image(
+                                                src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
+                                                width="68" height="16"
+                                            )
+                                            img.intro__content-button-image.intro__content-button-image--salad(
+                                                src="./assets/images/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
+                                                width="68" height="16"
+                                            )
 
-                        .intro__splide-string1.splide( aria-label="Splide Basic HTML Example" )
+                        .intro__splide-string.intro__splide-string1.splide( aria-label="Splide Basic HTML Example" )
                             .intro__slider-swiper.splide__track
                                 .intro__slider-swiper-wrapper.splide__list
 
@@ -93,12 +104,6 @@
 
                 .intro__container.splide__slide
                     .intro__container--inner.container
-                        .intro__arrow-to-bottom-arrow-block
-                            img.intro__arrow-to-bottom-arrow-image(
-                                src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта"
-                                width="16" height="30"
-                            )
-
                         .intro__content
                             .intro__content-digital-block
                                 .intro__content-digital-text digital
@@ -106,7 +111,7 @@
 
                             .intro__content-padding-left
                                 .intro__content-top
-                                    .intro__content-top-title РАЗРАБОТКА
+                                    .intro__content-top-title ПОСТРОЙКА
                                     .intro__content-top-stars-image-block
                                         .intro__content-top-stars-image
                                             img.intro__content-stars-image(
@@ -123,12 +128,17 @@
 
                                 .intro__content-button-block
                                     button.intro__content-button Подробнее
-                                        img.intro__content-button-image(
-                                            src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
-                                            width="68" height="16"
-                                        )
+                                        .intro__content-button-block-images
+                                            img.intro__content-button-image(
+                                                src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
+                                                width="68" height="16"
+                                            )
+                                            img.intro__content-button-image.intro__content-button-image--salad(
+                                                src="./assets/images/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
+                                                width="68" height="16"
+                                            )
 
-                        .intro__splide-string3.splide( aria-label="Splide Basic HTML Example" )
+                        .intro__splide-string.intro__splide-string3.splide( aria-label="Splide Basic HTML Example" )
                             .intro__slider-swiper.splide__track
                                 .intro__slider-swiper-wrapper.splide__list
 
@@ -177,12 +187,6 @@
 
                 .intro__container.splide__slide
                     .intro__container--inner.container
-                        .intro__arrow-to-bottom-arrow-block
-                            img.intro__arrow-to-bottom-arrow-image(
-                                src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта"
-                                width="16" height="30"
-                            )
-
                         .intro__content
                             .intro__content-digital-block
                                 .intro__content-digital-text digital
@@ -190,7 +194,7 @@
 
                             .intro__content-padding-left
                                 .intro__content-top
-                                    .intro__content-top-title РАЗРАБОТКА
+                                    .intro__content-top-title ПОСТРОЕНИЕ
                                     .intro__content-top-stars-image-block
                                         .intro__content-top-stars-image
                                             img.intro__content-stars-image(
@@ -207,12 +211,17 @@
 
                                 .intro__content-button-block
                                     button.intro__content-button Подробнее
-                                        img.intro__content-button-image(
-                                            src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
-                                            width="68" height="16"
-                                        )
+                                        .intro__content-button-block-images
+                                            img.intro__content-button-image.intro__content-button-image--black(
+                                                src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
+                                                width="68" height="16"
+                                            )
+                                            img.intro__content-button-image.intro__content-button-image--salad(
+                                                src="./assets/images/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
+                                                width="68" height="16"
+                                            )
 
-                        .intro__splide-string2.splide( aria-label="Splide Basic HTML Example" )
+                        .intro__splide-string.intro__splide-string2.splide( aria-label="Splide Basic HTML Example" )
                             .intro__slider-swiper.splide__track
                                 .intro__slider-swiper-wrapper.splide__list
 

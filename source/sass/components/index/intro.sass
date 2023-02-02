@@ -1,4 +1,5 @@
 @import "./variables"
+@import "./mixins"
 
 .intro
   margin-top: 65px
@@ -13,7 +14,18 @@
   @media (max-width: 1380px)
     margin-top: 180px
 
-    height: auto
+    height: 895px
+
+  @media (max-width: 800px)
+    height: 855px
+
+  @media (max-width: 680px)
+    margin-top: 100px
+
+    height: 860px
+
+  @media (max-width: 540px)
+    height: 690px
 
 // left side decoration circle
 .intro__decoration-left-circle-image
@@ -21,6 +33,9 @@
 
   top: 84px
   left: 0
+
+  @media (max-width: 730px)
+    display: none
 
 // container
 .intro__container
@@ -37,9 +52,16 @@
   @media (max-width: 1380px)
     flex-direction: column
 
-  .intro__container--inner
-    display: flex
-    justify-content: space-between
+.intro__container--inner
+  display: flex
+  justify-content: space-between
+
+  @media (max-width: 1380px)
+    flex-direction: column
+    gap: 50px
+
+  @media (max-width: 540px)
+    gap: 40px
 
 // arrow to bottom
 .intro__arrow-to-bottom-arrow-block
@@ -52,13 +74,57 @@
 
   background-color: rgb(237 237 237)
   border-radius: 43px
+  cursor: pointer
+  border: 1px solid #fff
 
   position: absolute
   right: calc(50% - 17px)
-  bottom: 85px
+  bottom: 80px
+  z-index: 1
+
+  transition: border, background-color .3s ease-in-out
+
+  &:hover
+    background-color: #000
+    border: 1px solid #D0FF48
+
+  &:hover .intro__arrow-to-bottom-arrow-image--black
+    opacity: 0
+
+  &:hover .intro__arrow-to-bottom-arrow-image--white
+    opacity: 1
+
+  @media (max-width: 1380px)
+    bottom: 125px
+
+  @media (max-width: 800px)
+    bottom: 165px
+
+  @media (max-width: 540px)
+    bottom: 320px
+
+.intro__arrow-to-bottom-arrow-block-content
+  width: 100%
+  height: 100%
+
+  position: relative
 
 .intro__arrow-to-bottom-arrow-image
   object-fit: none
+
+  position: absolute
+  top: calc(50% - 15px)
+  left: calc(50% - 8px)
+
+.intro__arrow-to-bottom-arrow-image--black
+  opacity: 1
+
+  transition: opacity .3s ease-in-out
+
+.intro__arrow-to-bottom-arrow-image--white
+  opacity: 0
+
+  transition: opacity .3s ease-in-out
 
 //  digital
 .intro__content-digital-block
@@ -100,6 +166,12 @@
   padding-left: 70px
 
   @media (max-width: 1380px)
+    padding-left: unset
+
+  @media (max-width: 685px)
+    padding-left: 15px
+
+  @media (max-width: 500px)
     padding-left: 0
 
 //  content top
@@ -113,22 +185,10 @@
 
 .intro__content-top-title
   font-weight: 800
-  font-size: 110px
+  @include adaptiveFont(110, 35)
   line-height: 1
   text-transform: uppercase
   color: $oneBColor
-
-  @media (max-width: 1380px)
-    font-size: 90px
-
-  @media (max-width: 640px)
-    font-size: 70px
-
-  @media (max-width: 490px)
-    font-size: 50px
-
-  @media (max-width: 360px)
-    font-size: 44px
 
 // stars
 .intro__content-top-stars-image-block
@@ -147,9 +207,9 @@
 
 .intro__content-stars-image
 
-  @media (max-width: 490px)
-    width: 40px
-    height: 40px
+  @media (max-width: 780px)
+    width: 45px
+    height: 45px
 
 //  content bottom
 .intro__content-bottom
@@ -163,20 +223,22 @@
 
 .intro__content-text
   font-weight: 400
-  font-size: 22px
+  @include adaptiveFont(22, 18)
   line-height: 1
   color: #000
 
-  @media (max-width: 1380px)
+  @media (max-width: 1680px)
     max-width: 400px
-    margin-top: 25px
+
+  @media (max-width: 1380px)
+    margin-top: 30px
 
 //  content button
 .intro__content-button-block
   margin-top: 70px
 
   @media (max-width: 1380px)
-    margin-top: 55px
+    margin-top: 35px
 
   @media (max-width: 800px)
     margin-top: 25px
@@ -184,6 +246,7 @@
 .intro__content-button
   display: flex
   align-items: center
+  gap: 25px
 
   padding: 23px 37px
 
@@ -191,13 +254,48 @@
   border-radius: 50px
   background-color: transparent
 
+  transition: all .3s ease-in-out
+
   font-weight: 350
   font-size: 24px
   line-height: 1
   color: #000
 
+  &:hover
+    color: #fff
+    background-color: #000
+    border: 1px solid #D0FF48
+
+  &:hover .intro__content-button-image--salad
+    opacity: 1
+
+  &:hover .intro__content-button-image--black
+    opacity: 0
+
+
+.intro__content-button-block-images
+  display: flex
+  align-items: center
+
+  width: 67px
+
+  position: relative
+
 .intro__content-button-image
   margin-left: 25px
+
+  position: absolute
+  right: 0
+
+.intro__content-button-image--black
+  opacity: 1
+
+  transition: opacity .3s ease-in-out
+
+.intro__content-button-image--salad
+  opacity: 0
+
+  transition: opacity .3s ease-in-out
 
 //slider
 .intro__slider
@@ -213,16 +311,19 @@
 
 .intro__slider-swiper
   width: 100%
-  height: 100%
+  height: auto
 
   overflow: unset
   overflow-y: clip
 
   @media (max-width: 1380px)
-    height: auto
+    height: 300px
 
     overflow: unset
     overflow-x: clip
+
+  @media (max-width: 540px)
+    height: 200px
 
 .intro__slider-swiper-slide
   width: 100%
@@ -233,6 +334,9 @@
 
   @media (max-width: 1380px)
     height: 300px
+
+  @media (max-width: 540px)
+    height: 200px
 
 .intro__slider-swiper-slide img
   display: block
@@ -246,15 +350,17 @@
   background: $saladColor !important
 
 // pagination
-.intro__splider--container .splide__pagination
-  transform: rotate(90deg)
+.intro__splider--container .splide__pagination,
+.intro__splider--container .splide__pagination--ttb
+  right: unset
+  bottom: unset
+  left: 0!important
+  top: 0!important
 
-  top: -9%
-  left: -76%
+.intro__splider--container .splide__pagination li
+  position: relative!important
 
 .intro__splider--container .splide__pagination .splide__pagination__page
-  margin:  0 10px
-
   width: 19px
   height: 19px
 
@@ -265,3 +371,11 @@
 .intro__splider--container .splide__pagination .splide__pagination__page.is-active
   background-color: #D0FF48!important
   transform: unset !important
+
+
+.intro__splide-string
+  @media (max-width: 1380px)
+    height: 300px
+
+  @media (max-width: 540px)
+    height: 200px

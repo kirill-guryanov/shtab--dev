@@ -7,11 +7,9 @@ const concat = require('gulp-concat');
 const clean = require('gulp-clean-css');
 
 exports.scss = function() {
-	return src('./source/sass/**/*.sass')
+	return src('./source/sass/**/main.sass')
 		.pipe(sourcemaps.init())
-		.pipe(sass({
-			outputStyle: 'compressed'
-		}).on('error', sass.logError))
+		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
 			overrideBrowserslist: ['last 8 versions'],
 			browsers: [
@@ -27,8 +25,8 @@ exports.scss = function() {
 		.pipe(clean({
 			level: 2
 		}))
-		.pipe(concat("style.css"))
-		.pipe(sourcemaps.write("../sourcemaps"))
+		// .pipe(concat("style.css"))
+		.pipe(sourcemaps.write())
 		.pipe(dest('./dist/assets/css'));
 };
 

@@ -1,11 +1,16 @@
 include head
 
 body
+    include ../views/circle
     include ../views/header
+    include ../views/wide-screen-burger
     main
         include ../views/intro
         include ../views/about-us
         include ../views/services
+        include ../views/products
+        include ../views/reviews
+        include ../views/blog
     include ../views/footer
 
 // swiper script
@@ -13,5 +18,9 @@ script( src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" )
 // splide script
 script( src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" )
 script( src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js" )
+// parallax
+script( src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" )
+// aos
+script( src="https://unpkg.com/aos@next/dist/aos.js" )
 // my js
 script( src="./assets/js/index.min.js" )
