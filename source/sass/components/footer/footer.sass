@@ -3,58 +3,73 @@
 
   width: 92%
 
-  background-color: #121212
+  background-color: #1E1E1E
+  border-radius: 0 50px 0 0
 
   position: relative
 
-  @media (max-width: 1130px)
+  //@media (max-width: 1130px)
+  @media (max-width: 1460px)
     width: 100%
 
-  @media (max-width: 750px)
+  @media (max-width: 930px)
     flex-direction: column-reverse
-
-.footer__container
-  display: flex
-  flex-direction: column
-  align-itfems: center
 
 // left side
 .footer__left-side
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+
   width: 100%
   height: 100%
 
 // rights
 .footer__left-side-rights
-  padding: 19px 0 30px
+  //padding: 19px 0 30px
 
   border-top: 1px solid #313131
 
 .footer__left-side-rights-text
+  padding: 10px 0 0 0
+
   font-weight: 350
   @include adaptiveFont(18, 15)
   line-height: 1
   color: #FFFFFF
   opacity: .5
 
+  @media (max-width: 930px)
+    padding: 15px 0
+
 // block
 .footer__blocks
   display: flex
   justify-content: space-evenly
 
-  padding-top: 70px
-  padding-bottom: 110px
+  padding-top: 35px
+  padding-bottom: 0
 
   width: 100%
 
-  @media (max-width: 1380px)
+  &--between
+    justify-content: space-between
+
+  @media (max-width: 1225px)
+    justify-content: space-between
+
+  @media (max-width: 930px)
+    //padding-top: 30px
+    //padding-bottom: 60px
+
+  @media (max-width: 690px)
     display: grid
     grid-template-columns: repeat(2, 1fr)
     justify-items: center
-    row-gap: 50px
 
-    padding-bottom: 50px
+    //padding-bottom: 0
 
-  @media (max-width: 500px)
+  @media (max-width: 600px)
     grid-template-columns: repeat(1, 1fr)
 
 .footer__blocks-item-list
@@ -62,14 +77,20 @@
   flex-direction: column
   justify-content: space-between
 
+.footer__blocks-item
+  margin-bottom: 50px
+
 .footer__blocks-item-list--one
-  gap: 21px
+  max-width: 140px
 
-.footer__blocks-item-list--two
-  gap: 18px
+  & li:not(:last-child)
+    margin-bottom: 21px
 
-.footer__blocks-item-list--three
-  gap: 23px
+.footer__blocks-item-list--two li:not(:last-child)
+  margin-bottom: 18px
+
+.footer__blocks-item-list--three li:not(:last-child)
+  margin-bottom: 23px
 
 .footer__blocks-item-title
   margin-bottom: 35px
@@ -108,7 +129,7 @@
   max-width: 202px
 
   font-weight: 350
-  font-size: 16px
+  @include adaptiveFont(16, 15)
   line-height: 1
   color: #767676
 
@@ -116,6 +137,12 @@
   display: flex
   align-items: center
   gap: 15px
+
+  & a
+    transition: transform .3s ease-in-out
+
+    &:hover
+      transform: scale(1.1)
 
 // contacts
 .footer__blocks-list-item--contacts
@@ -147,7 +174,7 @@
   margin-bottom: 29px
 
   font-weight: 700
-  font-size: 26px
+  @include adaptiveFont(26, 20)
   line-height: 1
   color: #FFFFFF
 
@@ -163,8 +190,12 @@
   height: 100%
 
   background-color: #1D1D1D
+  border-radius: 0 50px 0 0
 
-  @media (max-width: 750px)
+  @media (max-width: 1540px)
+    width: 35%
+
+  @media (max-width: 930px)
     max-width: unset
 
     width: 100%
@@ -192,9 +223,11 @@
   border-radius: 40px
 
   font-weight: 350
-  font-size: 18px
+  @include adaptiveFont(18, 15)
   line-height: 112.9%
   color: #CECECE
+
+  transition: all .3s ease-in-out
 
 .footer__right-side-form-form-checkbox
   flex-shrink: 0
@@ -263,7 +296,7 @@
   transition: all .3s ease-in-out
 
   font-weight: 350
-  font-size: 18px
+  @include adaptiveFont(18, 15)
   line-height: 112.9%
   color: #FFFFFF
 
@@ -275,16 +308,14 @@
   cursor: pointer
 
   font-weight: 350
-  font-size: 15px
+  @include adaptiveFont(15, 14)
   line-height: 1
   color: #CECECE
   text-align: left
 
 .footer__blocks-item-logo-image
-  //cursor: pointer
-  opacity: .5
-
-  transition: opacity .3s ease-in-out
+  width: 100%
+  height: 100%
 
   &:hover
     opacity: 1

@@ -1,14 +1,23 @@
 const { watch, series } = require("gulp")
 
 const { pug } = require("./pug")
-const { scss } = require("./sass")
+const { scss } = require("./sass/sass")
+const { scss404 } = require("./sass/sass--404")
+const { scssBlog } = require("./sass/sass--blog")
+const { scssContacts } = require("./sass/sass--contacts")
+const { scssBlogOncePage } = require("./sass/sass--blog-once-page")
+const {  scssBrief, } = require("./sass/sass--brief")
 const { clear } = require("./del")
 const { server } = require("./browsersync")
 const { img } = require("./images")
-const { script } = require("./scripts")
+const { scripts404 } = require("./scripts/scripts404")
+const { scriptsBlog } = require("./scripts/scripts--blog")
+const { scriptsContacts } = require("./scripts/scripts--contacts")
+const { scriptsBlogOncePage } = require("./scripts/scripts--blog-once-page")
+const { scriptBrief } = require("./scripts/scripts--brief")
+const { script } = require("./scripts/scripts")
 const { fonts } = require("./fonts")
 
-
 exports.clear = clear
-exports.build = series(clear, pug, script, fonts,  scss, img, server)
-exports.serve = series(clear, pug, script, fonts,  scss, img, server)
+exports.build = series(clear, pug, script, scripts404, scriptsBlog, scriptsBlogOncePage, scriptsContacts, scriptBrief, fonts,  scss, scss404, scssBlog, scssBlogOncePage, scssContacts, scssBrief, img, server)
+exports.serve = series(clear, pug, script, scripts404, scriptsBlog, scriptsBlogOncePage, scriptsContacts, scriptBrief, fonts,  scss, scss404, scssBlog, scssBlogOncePage, scssContacts, scssBrief, img, server)

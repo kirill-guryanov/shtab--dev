@@ -1,6 +1,6 @@
 footer.footer
     .footer__left-side
-        .footer__container.container
+        .container.container--footer
             ul.footer__blocks
 
                 li.footer__blocks-item.footer__blocks-item--one
@@ -33,7 +33,7 @@ footer.footer
                                 )
 
                 li.footer__blocks-item
-                    .footer__blocks-item-title Услуги
+                    h6.footer__blocks-item-title Услуги
 
                     ul.footer__blocks-item-list.footer__blocks-item-list--two
                         li.footer__blocks-list-item.footer__blocks-list-item--dash
@@ -46,7 +46,7 @@ footer.footer
                             a( href="#" ) Техническая поддержка
 
                 li.footer__blocks-item
-                    .footer__blocks-item-title Контакты
+                    h6.footer__blocks-item-title Контакты
 
                     ul.footer__blocks-item-list.footer__blocks-item-list--three
                         li.footer__blocks-list-item.footer__blocks-list-item--contacts
@@ -54,7 +54,7 @@ footer.footer
                                 src="./assets/images/footer/footer-marker.svg" alt="Картинка маркер на карте"
                                 width="27" height="27"
                             )
-                            .footer__blocks-list-item--contacts-text-block
+                            address.footer__blocks-list-item--contacts-text-block
                                 p.footer__blocks-list-item--contacts-text г. Казань ул.
                                 p.footer__blocks-list-item--contacts-text Четаева д. 5А
 
@@ -63,21 +63,23 @@ footer.footer
                                 src="./assets/images/footer/footer-phone.svg" alt="Картинка телефонной трубки"
                                 width="24" height="24"
                             )
-                            a( href="tel:+79050226228" ).footer__blocks-list-item--contacts-text +7 (905) 022-62-28
+                            address
+                                a( href="tel:+79050226228" ).footer__blocks-list-item--contacts-text +7 (905) 022-62-28
 
                         li.footer__blocks-list-item.footer__blocks-list-item--contacts
                             img.footer__blocks-list-item--contacts-image(
                                 src="./assets/images/footer/footer-mail.svg" alt="Картинка почты"
                                 width="21" height="22"
                             )
-                            a.footer__blocks-list-item--contacts-text( href="mailto:info@itshtab.ru" ) info@itshtab.ru
+                            address
+                                a.footer__blocks-list-item--contacts-text( href="mailto:info@itshtab.ru" ) info@itshtab.ru
 
         .footer__left-side-rights
             p.footer__left-side-rights-text 2013 - 2023 | Все права защищены
 
     .footer__right-side-form
         .footer__right-side-form-content
-            .footer__right-side-form-title У вас есть задача для нас?
+            h6.footer__right-side-form-title У вас есть задача для нас?
 
             form.footer__right-side-form-form
                 input( type="name" placeholder="Имя" ).footer__right-side-form-form-input
@@ -92,5 +94,5 @@ footer.footer
                     label.footer__right-side-form-form-checkbox-block-label( for="footer-checkbox" )
                         | Даю согласие на обработку
                         | персональных данных
-                button( type="" ).footer__right-side-form-form-button Отправить
+                button( type="submit" ).footer__right-side-form-form-button Отправить
 

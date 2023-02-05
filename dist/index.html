@@ -2,178 +2,320 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- swiper styles-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <!-- splide styles-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- aos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css">
     <!-- my styles-->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components/index/index.css">
     <title>New Site</title>
   </head>
 </html>
 <body>
-  <header class="header">
-    <div class="header__container container">
-      <div class="header__logo-block"><a href="#"><img class="header__logo-block-image" src="./assets/images/header/header-logo.svg" alt="Логотип веб студии" width="219" height="58"></a></div>
+  <div class="preloader">
+    <div class="container--preloader">
+      <div class="preloader-item preloader-one"></div>
+      <div class="preloader-item preloader-two"></div>
+    </div>
+  </div>
+  <div class="progress-circle">
+    <div class="progress-circle__block">
+      <svg class="progress-ring" width="86" height="86">
+        <circle class="progress-ring__circle" stroke="#C6FF00" stroke-width="4" cx="43" cy="43" r="25"></circle>
+      </svg>
+      <div class="progress-circle-arrows"><img class="progress-circle-arrow progress-circle-arrow--salad" src="assets/images/circle/circle-arrow.svg" alt="Зеленая стрелка" width="20" height="36"><img class="progress-circle-arrow progress-circle-arrow--black" src="assets/images/circle/circle-arrow--black.svg" alt="Черная стрелка" width="20" height="36"></div>
+    </div>
+  </div>
+  <header class="header--main">
+    <div class="container container--header">
+      <div class="header__logo-block"><a href="index.html"><img class="header__logo-block-image header__logo-block-image--black" src="./assets/images/header/header-logo.svg" alt="Логотип веб студии" width="219" height="58"></a><a href="index.html"><img class="header__logo-block-image header__logo-block-image--white" src="./assets/images/header/header-logo--white.svg" alt="Логотип веб студии" width="219" height="58"></a></div>
       <div class="header__burger-block">
-        <div class="header__burger"><span></span><span></span><span></span></div>
+        <div class="header__burger"><span class="header__burger-span"></span><span class="header__burger-span"></span><span class="header__burger-span"></span></div>
       </div>
       <div class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#">Услуги</a></li>
-          <li class="header__nav-item"><a href="#">Проекты</a></li>
-          <li class="header__nav-item"><a href="#">Маркетологам</a></li>
-          <li class="header__nav-item"><a href="#">Контакты</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="#">Услуги</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="#">Проекты</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="#">Маркетологам</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="contacts.html">Контакты</a></li>
         </ul>
-        <div class="header__contacts header__contacts--narrow">
-          <ul class="header__contacts-items">
-            <div class="header__contacts-item"><a href="#"><img class="header__contacts-item-image" src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии" width="31" height="25"></a></div>
-            <div class="header__contacts-item"><a href="#"><img class="header__contacts-item-image" src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии" width="28" height="29"></a></div>
-            <div class="header__contacts-item"><a class="header__contacts-item-number" href="tel: +79050226228">+7 (905) 022 - 62 - 28</a>
-              <div class="header__contacts-item-back-call">Обратный звонок</div>
-            </div>
-          </ul>
-        </div>
+        <!--.header__contacts.header__contacts--narrow-->
+        <!--    ul.header__contacts-items.header__contacts-item--icons-->
+        <!--        .header__contacts-item-->
+        <!--            .header__contacts-item--icon.header__contacts-item--icon--black-->
+        <!--                a( href="#" )-->
+        <!--                    img.header__contacts-item-image.header__contacts-item-image--black(-->
+        <!--                        src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии"-->
+        <!--                        width="31" height="25"-->
+        <!--                    )-->
+        <!--            //.header__contacts-item--icon.header__contacts-item--icon--white-->
+        <!--            //    a( href="#" )-->
+        <!--            //        img.header__contacts-item-image.header__contacts-item-image--white(-->
+        <!--            //            src="./assets/images/header/telegram--transparent--white.svg" alt="Telegram веб студии"-->
+        <!--            //            width="31" height="25"-->
+        <!--            //        )-->
+        <!--        .header__contacts-item-->
+        <!--            .header__contacts-item--icon.header__contacts-item--icon--black-->
+        <!--                a( href="#" )-->
+        <!--                    img.header__contacts-item-image.header__contacts-item-image--black(-->
+        <!--                        src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии"-->
+        <!--                        width="28" height="29"-->
+        <!--                    )-->
+        <!--            //.header__contacts-item--icon.header__contacts-item--icon--white-->
+        <!--            //    a( href="#" )-->
+        <!--            //        img.header__contacts-item-image.header__contacts-item-image--white(-->
+        <!--            //            src="./assets/images/header/whatsapp--transparent--white.svg" alt="Whatsapp веб студии"-->
+        <!--            //            width="28" height="29"-->
+        <!--            //        )-->
+        <!---->
+        <!--        .header__contacts-item.header__contacts-item--numbers-->
+        <!--            a( href="tel: +79050226228" ).header__contacts-item-number +7 (905) 022 - 62 - 28-->
+        <!--            .header__contacts-item-back-call Обратный звонок-->
       </div>
       <div class="header__contacts header__contacts--wide">
-        <ul class="header__contacts-items">
-          <div class="header__contacts-item"><a href="#"><img class="header__contacts-item-image" src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии" width="31" height="25"></a></div>
-          <div class="header__contacts-item"><a href="#"><img class="header__contacts-item-image" src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии" width="28" height="29"></a></div>
-          <div class="header__contacts-item"><a class="header__contacts-item-number" href="tel: +79050226228">+7 (905) 022 - 62 - 28</a>
-            <div class="header__contacts-item-back-call">Обратный звонок</div>
-          </div>
+        <ul class="header__contacts-items header__contacts-item--icons">
+          <div class="header__contacts-item"><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--black" src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии" width="31" height="25"></a><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--white" src="./assets/images/header/telegram--transparent--white.svg" alt="Telegram веб студии" width="31" height="25"></a></div>
+          <div class="header__contacts-item"><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--black" src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии" width="28" height="29"></a><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--white" src="./assets/images/header/whatsapp--transparent--white.svg" alt="Whatsapp веб студии" width="28" height="29"></a></div>
+          <address class="header__contacts-item header__contacts-item--numbers"><a class="header__contacts-item-number" href="tel: +79050226228">+7 (905) 022 - 62 - 28</a><a class="header__contacts-item-number-image header__contacts-item-number-image--white" href="tel: +79050226228"><img src="./assets/images/header/phone.svg" alt="Телефон" width="23" height="23"></a><a class="header__contacts-item-number-image header__contacts-item-number-image--black" href="tel: +79050226228"><img src="./assets/images/header/phone-black.svg" alt="Телефон" width="23" height="23"></a>
+            <p class="header__contacts-item-back-call">Обратный звонок</p>
+          </address>
         </ul>
       </div>
     </div>
   </header>
+  <div class="wrapper wrapper--wide-screen-burger">
+    <div class="header">
+      <div class="header-container-wide">
+        <div class="header__menu header__menu-flex menu">
+          <div class="header-cont header-cont--top"><a class="header__logo--burger" href="index.html"><img src="./assets/images/wide-screen-burger/logo.svg" alt="itshtab"></a>
+            <button class="wide-screen-burger--close-button menu__icon icon-menu" type="button"><span></span></button>
+          </div><img class="flex__bg" src="./assets/images/wide-screen-burger/air1.png?_v=1664227750022" alt=""><img class="flex__bg2" src="./assets/images/wide-screen-burger/air2.png?_v=1664227750022" alt="">
+          <nav class="menu__body">
+            <div class="header-cont header-cont-bottom flex">
+              <div class="header__navi-box">
+                <ul class="menu__list">
+                  <li class="menu__item" id="home"><span class="menu__link">Главная<span><img src="./assets/images/wide-screen-burger/strela.svg?_v=1664227750022" alt="Перейти в раздел"></span></span></li>
+                  <li class="menu__item" id="uslugi"><span class="menu__link">Услуги<span><img src="./assets/images/wide-screen-burger/strela.svg?_v=1664227750022" alt="Перейти в раздел"></span></span></li>
+                  <li class="menu__item" id="portfolio"><span class="menu__link">Портфолио<span><img src="./assets/images/wide-screen-burger/strela.svg?_v=1664227750022" alt="Перейти в раздел"></span></span></li>
+                  <li class="menu__item" id="about-company"><span class="menu__link">О компании<span><img src="./assets/images/wide-screen-burger/strela.svg?_v=1664227750022" alt="Перейти в раздел"></span></span></li>
+                  <li class="menu__item" id="contacts-stroke"><span class="menu__link">Контакты<span><img src="./assets/images/wide-screen-burger/strela.svg?_v=1664227750022" alt="Перейти в раздел"></span></span></li>
+                </ul>
+                <ul class="header__sub-list hidden uslugi">
+                  <li><a href="404.html">404</a></li>
+                  <li><a href="blog.html">Блог</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                  <li><a href="blog-once-page.html">Блог одна страница</a></li>
+                </ul>
+                <ul class="header__sub-list hidden home">
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                </ul>
+                <ul class="header__sub-list hidden portfolio">
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                </ul>
+                <ul class="header__sub-list hidden about-company">
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                </ul>
+                <ul class="header__sub-list hidden contacts-stroke">
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                  <li><a href="#">Ссылка</a></li>
+                </ul>
+              </div>
+              <div class="header__fidbek">
+                <address class="header__address"><a class="header__call" href="tel:+79050226228">+7 (905) 022-62-28</a><a class="header__mail" href="mailto: info@itshtab.ru">info@itshtab.ru</a><a class="header__place" href="">Республика Татарстан,<br>г. Казань, ул. Четаева д.5А</a></address>
+                <div class="bb">
+                  <div class="header__social"><a href="#"><img src="./assets/images/wide-screen-burger/tg.svg" alt="телеграм"></a><a href="#"><img src="./assets/images/wide-screen-burger/wh.svg" alt="Ватсап"></a><a href="#"><img src="./assets/images/wide-screen-burger/vk.svg" alt="Вконтакте"></a></div>
+                  <div><a class="about-us__right-side-read-more about-us__right-side-read-more--wide-screen-header" href="#">
+                      <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+                        <circle class="for-button-hover-svg-pointer for-button-hover-svg--wide-screen-header" cx="102" cy="102" r="102" fill="transparent"></circle>
+                      </svg>
+                      <div class="about-us__right-side-read-more-circle about-us__right-side-read-more-circle--wide-screen-header"></div>
+                      <div class="about-us__right-side-read-more-content about-us__right-side-read-more-content--wide-screen-header">
+                        <p class="about-us__right-side-read-more--brief"><span class="about-us__right-side-read-more-span">Читать в</span>телеграм</p><img class="about-us__right-side-read-more-image about-us__right-side-read-more-image--wide-screen-heder" src="assets/images/wide-screen-burger/arrow.svg" alt="Телеграм" width="31" height="25">
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
   <main>
-    <div class="intro"><img class="intro__decoration-left-circle-image" src="./assets/images/intro/intro-decoration-left-circle.svg" alt="" width="184" height="384">
+    <div class="intro"><img class="intro__decoration-left-circle-image" src="assets/images/utils/semicircle-to-right--gray.svg" alt="" width="184" height="384">
       <div class="intro__splider--container splide" aria-label="Splide Basic HTML Example">
+        <div class="intro__arrow-to-bottom-arrow-block">
+          <div class="intro__arrow-to-bottom-arrow-block-content"><img class="intro__arrow-to-bottom-arrow-image intro__arrow-to-bottom-arrow-image--black" src="assets/images/index/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта" width="16" height="30"><img class="intro__arrow-to-bottom-arrow-image intro__arrow-to-bottom-arrow-image--white" src="assets/images/index/intro/arrow-to-bottom--white.svg" alt="Стрелка к следующему блоку на сайта" width="16" height="30"></div>
+        </div>
         <div class="splide__track">
           <div class="splide__list">
-            <div class="intro__container splide__slide">
-              <div class="intro__container--inner container">
-                <div class="intro__arrow-to-bottom-arrow-block"><img class="intro__arrow-to-bottom-arrow-image" src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта" width="16" height="30"></div>
+            <div class="container container--intro splide__slide">
+              <div class="intro__container--inner">
                 <div class="intro__content">
-                  <div class="intro__content-digital-block">
-                    <div class="intro__content-digital-text">digital</div>
+                  <div class="intro__content-digital-block intro__content-digital-block--for-pagination-calibration">
+                    <p class="intro__content-digital-text">digital</p>
                     <div class="intro__content-digital-line"></div>
                   </div>
                   <div class="intro__content-padding-left">
                     <div class="intro__content-top">
-                      <div class="intro__content-top-title">РАЗРАБОТКА</div>
+                      <h1 class="intro__content-top-title intro__content-top-title--for-pagination-calibration">РАЗРАБОТКА</h1>
                       <div class="intro__content-top-stars-image-block">
-                        <div class="intro__content-top-stars-image"><img class="intro__content-stars-image" src="./assets/images/intro/intro-stars.svg" alt="Декоративные звезды" width="61" height="62"></div>
+                        <div class="intro__content-top-stars-image"><img class="intro__content-stars-image" src="assets/images/index/intro/intro-stars.svg" alt="Декоративные звезды" width="61" height="62"></div>
                       </div>
                     </div>
                     <div class="intro__content-bottom">
-                      <div class="intro__content-text">
+                      <p class="intro__content-text">
                         Комплексная разработка ярких
                         продающих динамичных сайтов
                         под ключ для вас и вашего бизнеса
-                      </div>
-                      <div class="intro__content-top-title">САЙТОВ</div>
+                      </p>
+                      <h2 class="intro__content-top-title">САЙТОВ</h2>
                     </div>
-                    <div class="intro__content-button-block">
-                      <button class="intro__content-button">Подробнее<img class="intro__content-button-image" src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке" width="68" height="16"></button>
-                    </div>
+                    <div class="intro__content-button-block"><a class="about-us__right-side-read-more about-us__right-side-read-more--intro-1" href="#">
+                        <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+                          <circle class="for-button-hover-svg-pointer for-button-hover-svg--intro-1" cx="102" cy="102" r="102" fill="transparent"></circle>
+                        </svg>
+                        <div class="about-us__right-side-read-more-circle services__read-more-circle about-us__right-side-read-more-circle--intro-1"></div>
+                        <div class="about-us__right-side-read-more-content about-us__right-side-read-more-content--intro">
+                          <p class="about-us__right-side-read-more--brief about-us__right-side-read-more--black"><span>Узнать</span>подробнее</p><img class="about-us__right-side-read-more-image" src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка" width="23" height="23">
+                        </div></a></div>
                   </div>
                 </div>
-                <div class="intro__splide-string1 splide" aria-label="Splide Basic HTML Example">
+                <div class="intro__splide-string intro__splide-string1 splide" aria-label="Splide Basic HTML Example">
                   <div class="intro__slider-swiper splide__track">
                     <div class="intro__slider-swiper-wrapper splide__list">
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-1.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-2.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-3.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-1.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-2.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-3.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-1.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-2.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-3.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-1.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-2.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-3.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="intro__container splide__slide">
-              <div class="intro__container--inner container">
-                <div class="intro__arrow-to-bottom-arrow-block"><img class="intro__arrow-to-bottom-arrow-image" src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта" width="16" height="30"></div>
+            <div class="container container--intro splide__slide">
+              <div class="intro__container--inner">
                 <div class="intro__content">
                   <div class="intro__content-digital-block">
-                    <div class="intro__content-digital-text">digital</div>
+                    <p class="intro__content-digital-text">digital</p>
                     <div class="intro__content-digital-line"></div>
                   </div>
                   <div class="intro__content-padding-left">
                     <div class="intro__content-top">
-                      <div class="intro__content-top-title">РАЗРАБОТКА</div>
+                      <h1 class="intro__content-top-title">ПОСТРОЙКА</h1>
                       <div class="intro__content-top-stars-image-block">
-                        <div class="intro__content-top-stars-image"><img class="intro__content-stars-image" src="./assets/images/intro/intro-stars.svg" alt="Декоративные звезды" width="61" height="62"></div>
+                        <div class="intro__content-top-stars-image"><img class="intro__content-stars-image" src="assets/images/index/intro/intro-stars.svg" alt="Декоративные звезды" width="61" height="62"></div>
                       </div>
                     </div>
                     <div class="intro__content-bottom">
-                      <div class="intro__content-text">
+                      <p class="intro__content-text">
                         Комплексная разработка ярких
                         продающих динамичных сайтов
                         под ключ для вас и вашего бизнеса
-                      </div>
-                      <div class="intro__content-top-title">САЙТОВ</div>
+                      </p>
+                      <h2 class="intro__content-top-title">САЙТОВ</h2>
                     </div>
-                    <div class="intro__content-button-block">
-                      <button class="intro__content-button">Подробнее<img class="intro__content-button-image" src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке" width="68" height="16"></button>
-                    </div>
+                    <div class="intro__content-button-block"><a class="about-us__right-side-read-more about-us__right-side-read-more--intro-2" href="#">
+                        <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+                          <circle class="for-button-hover-svg-pointer for-button-hover-svg--intro-2" cx="102" cy="102" r="102" fill="transparent"></circle>
+                        </svg>
+                        <div class="about-us__right-side-read-more-circle services__read-more-circle about-us__right-side-read-more-circle--intro-2"></div>
+                        <div class="about-us__right-side-read-more-content about-us__right-side-read-more-content--intro">
+                          <p class="about-us__right-side-read-more--brief about-us__right-side-read-more--black"><span>Узнать</span>подробнее</p><img class="about-us__right-side-read-more-image" src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка" width="23" height="23">
+                        </div></a></div>
+                    <!--.intro__content-button-block-->
+                    <!--    button.intro__content-button Подробнее-->
+                    <!--        .intro__content-button-block-images-->
+                    <!--            img.intro__content-button-image(-->
+                    <!--                src="assets/images/index/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"-->
+                    <!--                width="68" height="16"-->
+                    <!--            )-->
+                    <!--            img.intro__content-button-image.intro__content-button-image--salad(-->
+                    <!--                src="assets/images/index/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"-->
+                    <!--                width="68" height="16"-->
+                    <!--            )-->
                   </div>
                 </div>
-                <div class="intro__splide-string3 splide" aria-label="Splide Basic HTML Example">
+                <div class="intro__splide-string intro__splide-string3 splide" aria-label="Splide Basic HTML Example">
                   <div class="intro__slider-swiper splide__track">
                     <div class="intro__slider-swiper-wrapper splide__list">
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-1.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-2.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-3.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-1.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-2.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-3.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-1.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-2.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-3.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-1.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-2.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-3.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="intro__container splide__slide">
-              <div class="intro__container--inner container">
-                <div class="intro__arrow-to-bottom-arrow-block"><img class="intro__arrow-to-bottom-arrow-image" src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта" width="16" height="30"></div>
+            <div class="container container--intro splide__slide">
+              <div class="intro__container--inner">
                 <div class="intro__content">
                   <div class="intro__content-digital-block">
-                    <div class="intro__content-digital-text">digital</div>
+                    <p class="intro__content-digital-text">digital</p>
                     <div class="intro__content-digital-line"></div>
                   </div>
                   <div class="intro__content-padding-left">
                     <div class="intro__content-top">
-                      <div class="intro__content-top-title">РАЗРАБОТКА</div>
+                      <h1 class="intro__content-top-title">ПОСТРОЕНИЕ</h1>
                       <div class="intro__content-top-stars-image-block">
-                        <div class="intro__content-top-stars-image"><img class="intro__content-stars-image" src="./assets/images/intro/intro-stars.svg" alt="Декоративные звезды" width="61" height="62"></div>
+                        <div class="intro__content-top-stars-image"><img class="intro__content-stars-image" src="assets/images/index/intro/intro-stars.svg" alt="Декоративные звезды" width="61" height="62"></div>
                       </div>
                     </div>
                     <div class="intro__content-bottom">
-                      <div class="intro__content-text">
+                      <p class="intro__content-text">
                         Комплексная разработка ярких
                         продающих динамичных сайтов
                         под ключ для вас и вашего бизнеса
-                      </div>
-                      <div class="intro__content-top-title">САЙТОВ</div>
+                      </p>
+                      <h3 class="intro__content-top-title">САЙТОВ</h3>
                     </div>
-                    <div class="intro__content-button-block">
-                      <button class="intro__content-button">Подробнее<img class="intro__content-button-image" src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке" width="68" height="16"></button>
-                    </div>
+                    <div class="intro__content-button-block"><a class="about-us__right-side-read-more about-us__right-side-read-more--intro-3" href="#">
+                        <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+                          <circle class="for-button-hover-svg-pointer for-button-hover-svg--intro-3" cx="102" cy="102" r="102" fill="transparent"></circle>
+                        </svg>
+                        <div class="about-us__right-side-read-more-circle services__read-more-circle about-us__right-side-read-more-circle--intro-3"></div>
+                        <div class="about-us__right-side-read-more-content about-us__right-side-read-more-content--intro">
+                          <p class="about-us__right-side-read-more--brief about-us__right-side-read-more--black"><span>Узнать</span>подробнее</p><img class="about-us__right-side-read-more-image" src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка" width="23" height="23">
+                        </div></a></div>
+                    <!--.intro__content-button-block-->
+                    <!--    button.intro__content-button Подробнее-->
+                    <!--        .intro__content-button-block-images-->
+                    <!--            img.intro__content-button-image.intro__content-button-image--black(-->
+                    <!--                src="assets/images/index/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"-->
+                    <!--                width="68" height="16"-->
+                    <!--            )-->
+                    <!--            img.intro__content-button-image.intro__content-button-image--salad(-->
+                    <!--                src="assets/images/index/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"-->
+                    <!--                width="68" height="16"-->
+                    <!--            )-->
                   </div>
                 </div>
-                <div class="intro__splide-string2 splide" aria-label="Splide Basic HTML Example">
+                <div class="intro__splide-string intro__splide-string2 splide" aria-label="Splide Basic HTML Example">
                   <div class="intro__slider-swiper splide__track">
                     <div class="intro__slider-swiper-wrapper splide__list">
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-1.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-2.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-3.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-1.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-2.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
-                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="./assets/images/intro/slider-3.jpg" alt="Ссылка с картинкой на сайте который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-1.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-2.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-3.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-1.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-2.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
+                      <div class="intro__slider-swiper-slide splide__slide"><a href="#"><img src="assets/images/index/intro/slider-3.jpg" alt="Ссылка с картинкой на сайт который сделала веб студией" width="381" height="294"></a></div>
                     </div>
                   </div>
                 </div>
@@ -183,7 +325,7 @@
         </div>
       </div>
     </div>
-    <section class="about-us"><img class="about-us__decoration-image--left" src="assets/images/about-us/about-us-decoration-image.svg" alt="Картинка с названием веб студии" width="102" height="560"><img class="about-us__decoration-image--right" src="assets/images/about-us/eclipse.svg" alt="Картинка с названием веб студии" width="408" height="384">
+    <section class="about-us"><img class="about-us__decoration-image--left" src="assets/images/index/about-us/about-us-decoration-image.svg" alt="Картинка с названием веб студии" width="102" height="560"><img class="about-us__decoration-image--right" src="assets/images/utils/semicircle-to-left--gray.svg" alt="Декоративный круг" width="408" height="384">
       <div class="about-us__running-line about-us__running-line-white">
         <ul class="about-us__running-line-list about-us__running-line-list-white">
           <li class="about-us__running-line-list-item">AGENCY</li>
@@ -258,8 +400,8 @@
           <li class="about-us__running-line-list-item">WEB</li>
         </ul>
       </div>
-      <div class="about-us__container container">
-        <div class="about-us__left-side"><img class="about-us__left-side-image" src="assets/images/about-us/left-side-image.jpg" alt="Фотография собеседования персонала студии" width="550" height="765"></div>
+      <div class="container container--about-us">
+        <div class="about-us__left-side"><img class="about-us__left-side-image-block" src="assets/images/index/about-us/left-side-image.jpg" alt="Коллектив веб студии" width="550" height="765"></div>
         <div class="about-us__right-side">
           <div class="about-us__right-side-content">
             <div class="about-us__right-side-overtitle">
@@ -293,17 +435,20 @@
                   задач
                 </li>
               </ul>
-            </div>
-            <div class="about-us__right-side-read-more">
-              <div class="about-us__right-side-read-more-circle"></div>
-              <div class="about-us__right-side-read-more-content"><a class="about-us__right-side-read-more" href="#">Узнать подробнее</a><img class="about-us__right-side-read-more-image" src="assets/images/about-us/arrow-read-more.svg" alt="Белая стрелка" width="23" height="23"></div>
-            </div>
+            </div><a class="about-us__right-side-read-more about-us__right-side-read-more--about-us" href="#">
+              <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+                <circle class="for-button-hover-svg-pointer for-button-hover-svg--about-us" cx="102" cy="102" r="102" fill="transparent"></circle>
+              </svg>
+              <div class="about-us__right-side-read-more-circle about-us__right-side-read-more-circle--about-us"></div>
+              <div class="about-us__right-side-read-more-content about-us__right-side-read-more-content--about-us">
+                <p class="about-us__right-side-read-more--brief"><span class="about-us__right-side-read-more-span">Узнать</span>подробнее</p><img class="about-us__right-side-read-more-image" src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка" width="23" height="23">
+              </div></a>
           </div>
         </div>
       </div>
     </section>
     <section class="services">
-      <div class="services__container container">
+      <div class="container container--services">
         <div class="section__titles">
           <div class="section__titles-left">
             <div class="section__overtitle">
@@ -314,7 +459,7 @@
               <h3 class="section__title-title">Широкий перечень<br>услуг</h3>
             </div>
           </div>
-          <div class="section__titles__decoration-right"><img class="services__decoration-right-image" src="assets/images/services/decoration-right.svg" alt="Черная стрелка" width="125" height="120"></div>
+          <div class="section__titles__decoration-right"><img class="services__decoration-right-image services__decoration-right-image--parallax" src="assets/images/index/services/decoration-right.svg" alt="Фигурки" width="125" height="120"></div>
         </div>
         <div class="services__list-block">
           <ul class="services__list">
@@ -346,11 +491,16 @@
                 </div>
               </div>
               <div class="services__list-item-read-more">
-                <div class="services__list-item-read-more-circle">
+                <button class="services__list-item-read-more-circle services__read-more-circle--services-table">
                   <div class="services__list-item-read-more-content">
-                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
+                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
                   </div>
-                </div>
+                  <!--svg.services__list-item-read-more-circle-svg( viewBox="0 0 100 100" )-->
+                  <!--    circle.services__list-item-read-more-circle-svg-circle( stroke="#C6FF00" stroke-width=1 cx=177 cy=177 r=175  )//(354 / 2) - (1 * 2) = 177 - 2
+                  -->
+                  <!--svg.services__list-item-read-more-circle-svg( width=86 height=86 )-->
+                  <!--    circle( stroke="#C6FF00" stroke-width=4 cx=43 cy=43 r=25 )-->
+                </button>
               </div>
             </li>
             <li class="services__list-item">
@@ -384,11 +534,11 @@
                 </div>
               </div>
               <div class="services__list-item-read-more">
-                <div class="services__list-item-read-more-circle">
+                <button class="services__list-item-read-more-circle services__read-more-circle--services-table">
                   <div class="services__list-item-read-more-content">
-                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
+                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
                   </div>
-                </div>
+                </button>
               </div>
             </li>
             <li class="services__list-item">
@@ -422,11 +572,11 @@
                 </div>
               </div>
               <div class="services__list-item-read-more">
-                <div class="services__list-item-read-more-circle">
+                <button class="services__list-item-read-more-circle services__read-more-circle--services-table">
                   <div class="services__list-item-read-more-content">
-                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
+                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
                   </div>
-                </div>
+                </button>
               </div>
             </li>
             <li class="services__list-item">
@@ -461,25 +611,191 @@
                 </div>
               </div>
               <div class="services__list-item-read-more">
-                <div class="services__list-item-read-more-circle">
+                <button class="services__list-item-read-more-circle services__read-more-circle--services-table">
                   <div class="services__list-item-read-more-content">
-                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
+                    <p class="services__list-item-read-more-content-p">Узнать подробнее</p><img class="services__list-item-read-more-content-arrow" src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка" width="23" height="23">
+                  </div>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="services__bottom-button"><a class="about-us__right-side-read-more about-us__right-side-read-more--services-bottom" href="#">
+            <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+              <circle class="for-button-hover-svg-pointer for-button-hover-svg--services-bottom" cx="102" cy="102" r="102" fill="transparent"></circle>
+            </svg>
+            <div class="about-us__right-side-read-more-circle services__read-more-circle services__read-more--black-border services__read-more-circle--services-bottom"></div>
+            <div class="about-us__right-side-read-more-content about-us__right-side-read-more-content--services">
+              <p class="about-us__right-side-read-more--black"><span>Нужна</span>консультация</p><img class="about-us__right-side-read-more-image" src="assets/images/index/blog/arrow-black.svg" alt="Черная стрелка" width="21" height="16">
+            </div></a></div>
+      </div>
+    </section>
+    <section class="products"><img class="products__decoration-circle" src="assets/images/index/products/circle--big.svg" alt="Декоративные круги" width="1085" height="1485"><img class="products__decoration-lines" src="assets/images/index/products/decorative-lines.svg" alt="Декоративные круги" width="1880" height="1880">
+      <div class="container container--products">
+        <div class="section__titles section__titles--white">
+          <div class="section__titles-left">
+            <div class="section__overtitle">
+              <p class="section__overtitle-text section__overtitle-text--white">Портфолио</p>
+              <div class="section__overtitle-line"></div>
+            </div>
+            <div class="section__title">
+              <h3 class="section__title-title section__title-title--white">Продукты студии</h3>
+            </div>
+          </div>
+          <div class="section__titles__decoration-right--white"><img class="services__decoration-right-image products__decoration-right-image" src="assets/images/index/products/decoration-star.svg" alt="Белая звездочка" width="86" height="86"></div>
+        </div>
+        <div class="products__gallery">
+          <div class="products__gallery-items-column-item" data-aos="new-animation"><img class="products__gallery-items-column-item-top-image products__gallery-items-column-item-top-image--ribera" src="assets/images/index/products/ribera-title.svg" alt="Логотип компании Ribera" width="310" height="116"><img class="products__gallery-items-column-item-bottom-image products__gallery-items-column-item-bottom-image--roll" src="assets/images/index/products/ribera-roll.svg" alt="Ролик" width="520" height="300"></div>
+          <div class="products__gallery-items-column-item" data-aos="new-animation">
+            <div class="products__gallery-items-column-item-left--hookah"></div>
+            <div class="products__gallery-items-column-item-right--hookah"></div><img class="products__gallery-items-column-item-top-image--hookah" src="assets/images/index/products/hokah-title.svg" alt="Логотип компании Hookahtrade" width="302" height="30">
+          </div>
+          <div class="products__gallery-items-column-item products__gallery-items-column-item--advance products__gallery-items-column-item--three" data-aos="new-animation"><img class="products__gallery-items-column-item-top-image products__gallery-items-column-item-top-image--advance" src="assets/images/index/products/advance-title.svg" alt="Логотип компании Advance" width="287" height="108"><img class="products__gallery-items-column-item-bottom-image--advance" src="assets/images/index/products/advance-statue.svg" alt="Статую компании Advance" width="484" height="363"></div>
+          <div class="products__gallery-items-column-item products__gallery-items-column-item--494" data-aos="new-animation"><img class="products__gallery-items-column-item-top-image products__gallery-items-column-item-top-image--494-title" src="assets/images/index/products/494-title.svg" alt="Логотип автостудии 494" width="218" height="103"><img class="products__gallery-items-column-item-bottom-image products__gallery-items-column-item-bottom-image--494-car" src="assets/images/index/products/494-car.svg" alt="Машина" width="606" height="311"></div>
+          <div class="products__gallery-items-column-item products__gallery-items-column-item--flagman" data-aos="new-animation"><img class="products__gallery-items-column-item-top-image products__gallery-items-column-item-top-image--flagman" src="assets/images/index/products/flagman-buildings.svg" alt="Картинка высоток" width="395" height="230"><img class="products__gallery-items-column-item-bottom-image products__gallery-items-column-item-bottom-image--flagman" src="assets/images/index/products/flagman-title.svg" alt="Логотип компании Flagman" width="363" height="160"></div>
+          <div class="products__gallery-items-column-item products__gallery-items-column-item--logistic" data-aos="new-animation"><img class="products__gallery-items-column-item-top-image products__gallery-items-column-item-top-image--logistic" src="assets/images/index/products/logistic-title.svg" alt="Логотип компании Logistic" width="354" height="113"><img class="products__gallery-items-column-item-bottom-image--logistic" src="assets/images/index/products/logistic-track.svg" alt="Картинка машины" width="437" height="314"></div>
+        </div>
+        <div class="products__button-block"><a class="about-us__right-side-read-more about-us__right-side-read-more--products" href="#">
+            <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+              <circle class="for-button-hover-svg-pointer for-button-hover-svg--products" cx="102" cy="102" r="102" fill="transparent"></circle>
+            </svg>
+            <div class="about-us__right-side-read-more-circle about-us__right-side-read-more-circle--products"></div>
+            <div class="about-us__right-side-read-more-content about-us__right-side-read-more-content-two about-us__right-side-read-more-content--products">
+              <p class="about-us__right-side-read-more--brief"><span class="about-us__right-side-read-more-span">Узнать</span>подробнее</p><img class="about-us__right-side-read-more-image" src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка" width="23" height="23">
+            </div></a></div>
+      </div>
+    </section>
+    <section class="reviews">
+      <svg class="reviews__splide-arrow-for-slides reviews__splide-arrow-prev splide__arrow--next" width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.7071 7.29289C27.0976 7.68342 27.0976 8.31658 26.7071 8.70711L20.3431 15.0711C19.9526 15.4616 19.3195 15.4616 18.9289 15.0711C18.5384 14.6805 18.5384 14.0474 18.9289 13.6569L24.5858 8L18.9289 2.34315C18.5384 1.95262 18.5384 1.31946 18.9289 0.928932C19.3195 0.538407 19.9526 0.538407 20.3431 0.928932L26.7071 7.29289ZM1 9C0.447716 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44771 0.447716 7 1 7L1 9ZM26 9L1 9L1 7L26 7L26 9Z"></path>
+      </svg>
+      <svg class="reviews__splide-arrow-for-slide reviews__splide-arrow-next splide__arrow--prev" width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.7071 7.29289C27.0976 7.68342 27.0976 8.31658 26.7071 8.70711L20.3431 15.0711C19.9526 15.4616 19.3195 15.4616 18.9289 15.0711C18.5384 14.6805 18.5384 14.0474 18.9289 13.6569L24.5858 8L18.9289 2.34315C18.5384 1.95262 18.5384 1.31946 18.9289 0.928932C19.3195 0.538407 19.9526 0.538407 20.3431 0.928932L26.7071 7.29289ZM1 9C0.447716 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44771 0.447716 7 1 7L1 9ZM26 9L1 9L1 7L26 7L26 9Z"></path>
+      </svg>
+      <!-- ===========================--><img class="reviews__decoration-lines" src="assets/images/index/reviews/decoration-lines.svg" alt="Декоративные линии" width="1059" height="242"><img class="reviews__decoration-text" src="assets/images/index/reviews/decoration-reviews.svg" alt="Декоративный текст" width="158" height="613">
+      <!-- ===========================-->
+      <div class="container container--rewievs">
+        <div class="section__titles section__titles--white section__titles--reviews">
+          <div class="section__titles-left section__titles-left--reviews">
+            <div class="section__overtitle">
+              <p class="section__overtitle-text section__overtitle-text--white">Благодарности</p>
+              <div class="section__overtitle-line"></div>
+            </div>
+            <div class="section__title">
+              <h3 class="reviews__section__title-title section__title-title section__title-title--white">Что говорят наши клиенты</h3>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__splide splide" aria-label="Splide Basic HTML Example">
+          <div class="reviews__list-block splide__track">
+            <ul class="reviews__list splide__list">
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-1.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-2.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-3.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-4.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-1.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-2.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-3.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+              <li class="reviews__list-item splide__slide"><img class="reviews__list-item-image" src="assets/images/index/reviews/item-4.jpg" alt="Благодартсвенное письмо" width="310" height="423"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container container--blog">
+        <div class="section__titles section__titles__blog">
+          <div class="section__titles-left">
+            <div class="section__overtitle">
+              <p class="section__overtitle-text">Последние записи</p>
+              <div class="section__overtitle-line"></div>
+            </div>
+            <div class="section__title">
+              <h3 class="section__title-title">Блог агентства</h3>
+            </div>
+          </div>
+          <div class="section__titles__decoration-right-text-block">
+            <p class="section__titles__decoration-right-text">
+              Читайте полезное интересное бла бла бла блабла бла
+              бла бла бла бла бла не пропускайте последние обновления
+            </p>
+          </div>
+          <div class="section__titles__decoration-right section__titles__decoration-right--blog"><a class="about-us__right-side-read-more about-us__right-side-read-more--blog-top" href="blog.html">
+              <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+                <circle class="for-button-hover-svg-pointer for-button-hover-svg--blog-top" cx="102" cy="102" r="102" fill="transparent"></circle>
+              </svg>
+              <div class="about-us__right-side-read-more-circle about-us__right-side-read-more-circle--black services__read-more--black-border about-us__right-side-read-more-circle--blog-top"></div>
+              <div class="about-us__right-side-read-more-content">
+                <p class="about-us__right-side-read-more--black"><span>Перейти</span>в блог</p><img class="about-us__right-side-read-more-image" src="assets/images/index/blog/arrow-black.svg" alt="Черная стрелка" width="23" height="23">
+              </div></a></div>
+        </div>
+        <div class="blog__items-block">
+          <ul class="blog__items-list">
+            <li class="blog__items-item"><img class="blog__items-item-image" src="assets/images/index/blog/item-1.jpg" alt="Фото ноутбука" width="334" height="386">
+              <div class="blog__items-item-block">
+                <div class="blog__items-item-visible-block">
+                  <div class="blog__items-item-visible-block-top">
+                    <p class="blog__items-item-visible-block-top-title">SMM</p>
+                    <div class="blog__items-item-visible-block-top-circle"></div>
+                    <time class="blog__items-item-visible-block-top-date" datetime="2023-01-23">4 января 2023</time>
+                  </div>
+                  <div class="blog__items-item-visible-block-body">
+                    <p class="blog__items-item-visible-block-body-text">Важность ведения страниц вашего бизнеса в социальных сетях</p><a class="blog__items-item-hidden-block-body-read-block" href="#">
+                      <p class="blog__items-item-hidden-block-body-read-text">Читать статью</p><img class="blog__items-item-hidden-block-body-read" src="assets/images/index/blog/arrow-salad.svg" alt="Черная стрелка" width="14" height="14"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="blog__items-item"><img class="blog__items-item-image" src="assets/images/index/blog/item-2.jpg" alt="Фото ноутбука" width="334" height="386">
+              <div class="blog__items-item-block">
+                <div class="blog__items-item-visible-block">
+                  <div class="blog__items-item-visible-block-top">
+                    <p class="blog__items-item-visible-block-top-title">SMM</p>
+                    <div class="blog__items-item-visible-block-top-circle"></div>
+                    <time class="blog__items-item-visible-block-top-date" datetime="2023-01-23">4 января 2023</time>
+                  </div>
+                  <div class="blog__items-item-visible-block-body">
+                    <p class="blog__items-item-visible-block-body-text">Важность ведения страниц вашего бизнеса в социальных сетях</p><a class="blog__items-item-hidden-block-body-read-block" href="#">
+                      <p class="blog__items-item-hidden-block-body-read-text">Читать статью</p><img class="blog__items-item-hidden-block-body-read" src="assets/images/index/blog/arrow-salad.svg" alt="Черная стрелка" width="14" height="14"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="blog__items-item"><img class="blog__items-item-image" src="assets/images/index/blog/item-3.jpg" alt="Фото ноутбука" width="334" height="386">
+              <div class="blog__items-item-block">
+                <div class="blog__items-item-visible-block">
+                  <div class="blog__items-item-visible-block-top">
+                    <p class="blog__items-item-visible-block-top-title">SMM</p>
+                    <div class="blog__items-item-visible-block-top-circle"></div>
+                    <time class="blog__items-item-visible-block-top-date" datetime="2023-01-23">4 января 2023</time>
+                  </div>
+                  <div class="blog__items-item-visible-block-body">
+                    <p class="blog__items-item-visible-block-body-text">Важность ведения страниц вашего бизнеса в социальных сетях</p><a class="blog__items-item-hidden-block-body-read-block" href="#">
+                      <p class="blog__items-item-hidden-block-body-read-text">Читать статью</p><img class="blog__items-item-hidden-block-body-read" src="assets/images/index/blog/arrow-salad.svg" alt="Черная стрелка" width="14" height="14"></a>
                   </div>
                 </div>
               </div>
             </li>
           </ul>
         </div>
+        <div class="blog__telegram"><a class="about-us__right-side-read-more about-us__right-side-read-more--blog-telegram" href="#">
+            <svg class="for-button-hover-svg" viewBox="0 0 204 204">
+              <circle class="for-button-hover-svg-pointer for-button-hover-svg--blog-telegram" cx="102" cy="102" r="102" fill="transparent"></circle>
+            </svg>
+            <div class="about-us__right-side-read-more-circle blog__telegram__right-side-read-more-circle services__read-more--black-border about-us__right-side-read-more-circle--blog-telegram"></div>
+            <div class="about-us__right-side-read-more-content">
+              <p class="about-us__right-side-read-more--black"><span>Читать</span>в телеграм</p><img class="about-us__right-side-read-more-image" src="assets/images/index/blog/telegram.svg" alt="Телеграм" width="31" height="25">
+            </div></a></div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__left-side">
-      <div class="footer__container container">
+      <div class="container container--footer">
         <ul class="footer__blocks">
           <li class="footer__blocks-item footer__blocks-item--one">
             <ul class="footer__blocks-item-list footer__blocks-item-list--one">
-              <li class="footer__blocks-item-logo"><img class="footer__blocks-item-logo-image" src="./assets/images/footer/footer-logo.svg" alt="Логотип веб студии" width="196" height="52"></li>
+              <li class="footer__blocks-item-logo"><a href="#"><img class="footer__blocks-item-logo-image" src="./assets/images/footer/footer-logo.svg" alt="Логотип веб студии" width="196" height="52"></a></li>
               <li>
                 <p class="footer__blocks-item-text">Ваша команда комплексного интернет маркетинга</p>
               </li>
@@ -487,7 +803,7 @@
             </ul>
           </li>
           <li class="footer__blocks-item">
-            <div class="footer__blocks-item-title">Услуги</div>
+            <h6 class="footer__blocks-item-title">Услуги</h6>
             <ul class="footer__blocks-item-list footer__blocks-item-list--two">
               <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Разработка сайтов</a></li>
               <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Привлечение трафика</a></li>
@@ -496,16 +812,20 @@
             </ul>
           </li>
           <li class="footer__blocks-item">
-            <div class="footer__blocks-item-title">Контакты</div>
+            <h6 class="footer__blocks-item-title">Контакты</h6>
             <ul class="footer__blocks-item-list footer__blocks-item-list--three">
               <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-marker.svg" alt="Картинка маркер на карте" width="27" height="27">
-                <div class="footer__blocks-list-item--contacts-text-block">
+                <address class="footer__blocks-list-item--contacts-text-block">
                   <p class="footer__blocks-list-item--contacts-text">г. Казань ул.</p>
                   <p class="footer__blocks-list-item--contacts-text">Четаева д. 5А</p>
-                </div>
+                </address>
               </li>
-              <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-phone.svg" alt="Картинка телефонной трубки" width="24" height="24"><a class="footer__blocks-list-item--contacts-text" href="tel:+79050226228">+7 (905) 022-62-28</a></li>
-              <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-mail.svg" alt="Картинка почты" width="21" height="22"><a class="footer__blocks-list-item--contacts-text" href="mailto:info@itshtab.ru">info@itshtab.ru</a></li>
+              <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-phone.svg" alt="Картинка телефонной трубки" width="24" height="24">
+                <address><a class="footer__blocks-list-item--contacts-text" href="tel:+79050226228">+7 (905) 022-62-28</a></address>
+              </li>
+              <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-mail.svg" alt="Картинка почты" width="21" height="22">
+                <address><a class="footer__blocks-list-item--contacts-text" href="mailto:info@itshtab.ru">info@itshtab.ru</a></address>
+              </li>
             </ul>
           </li>
         </ul>
@@ -516,7 +836,7 @@
     </div>
     <div class="footer__right-side-form">
       <div class="footer__right-side-form-content">
-        <div class="footer__right-side-form-title">У вас есть задача для нас?</div>
+        <h6 class="footer__right-side-form-title">У вас есть задача для нас?</h6>
         <form class="footer__right-side-form-form">
           <input class="footer__right-side-form-form-input" type="name" placeholder="Имя">
           <input class="footer__right-side-form-form-input" type="tel" placeholder="Телефон">
@@ -532,7 +852,7 @@
               персональных данных
             </label>
           </div>
-          <button class="footer__right-side-form-form-button" type="">Отправить</button>
+          <button class="footer__right-side-form-form-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -543,5 +863,9 @@
 <!-- splide script-->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+<!-- aos-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- scroll-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 <!-- my js-->
 <script src="./assets/js/index.min.js"></script>

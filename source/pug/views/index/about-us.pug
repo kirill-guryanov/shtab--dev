@@ -1,10 +1,10 @@
 section.about-us
     img.about-us__decoration-image--left(
-        src="assets/images/about-us/about-us-decoration-image.svg" alt="Картинка с названием веб студии"
+        src="assets/images/index/about-us/about-us-decoration-image.svg" alt="Картинка с названием веб студии"
         width="102" height="560"
     )
     img.about-us__decoration-image--right(
-        src="assets/images/about-us/eclipse.svg" alt="Картинка с названием веб студии"
+        src="assets/images/utils/semicircle-to-left--gray.svg" alt="Декоративный круг"
         width="408" height="384"
     )
 
@@ -80,15 +80,10 @@ section.about-us
             li.about-us__running-line-list-item AGENCY
             li.about-us__running-line-list-item WEB
 
-    .about-us__container.container
+    .container.container--about-us
         .about-us__left-side
-            //img.about-us__left-side-image-block(
-            //    class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.5"
-            //    src="assets/images/about-us/left-side-image.jpg" alt="Коллектив веб студии"
-            //    width="550" height="765"
-            //)
             img.about-us__left-side-image-block(
-                src="assets/images/about-us/left-side-image.jpg" alt="Коллектив веб студии"
+                src="assets/images/index/about-us/left-side-image.jpg" alt="Коллектив веб студии"
                 width="550" height="765"
             )
 
@@ -131,13 +126,17 @@ section.about-us
                             | невозможных
                             | задач
 
-                a.about-us__right-side-read-more( href="#" )
-                    .about-us__right-side-read-more-circle
+                a.about-us__right-side-read-more.about-us__right-side-read-more--about-us( href="#" )
+                    svg.for-button-hover-svg( viewBox="0 0 204 204" )
+                        circle.for-button-hover-svg-pointer.for-button-hover-svg--about-us( cx="102" cy="102" r="102" fill="transparent" )
 
-                    .about-us__right-side-read-more-content
-                        p.about-us__right-side-read-more
-                            | Узнать подробнее
+                    .about-us__right-side-read-more-circle.about-us__right-side-read-more-circle--about-us
+
+                    .about-us__right-side-read-more-content.about-us__right-side-read-more-content--about-us
+                        p.about-us__right-side-read-more--brief
+                            span.about-us__right-side-read-more-span Узнать
+                            | подробнее
                         img.about-us__right-side-read-more-image(
-                            src="assets/images/about-us/arrow-read-more.svg" alt="Белая стрелка"
+                            src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка"
                             width="23" height="23"
                         )

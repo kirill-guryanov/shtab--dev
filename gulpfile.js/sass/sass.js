@@ -7,7 +7,7 @@ const concat = require('gulp-concat');
 const clean = require('gulp-clean-css');
 
 exports.scss = function() {
-	return src('./source/sass/**/main.sass')
+	return src('./source/sass/**/index.sass')
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({

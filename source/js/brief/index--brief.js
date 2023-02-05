@@ -1,0 +1,20 @@
+// circle
+import "../circle/circle--brief"
+// header
+import "../header/text"
+import "../header/color-inversion"
+// button
+import "./button"
+// to next section
+import "./to-next-section"
+// checkboxes
+import "./checkboxes"
+// wide-screen-burger
+import "../wide-screen-burger/wide-screen-burger.min"
+import "../wide-screen-burger/wide-screen-burger"
+import "../wide-screen-burger/button"
+// footer
+import "../footer/rights-top-border"
+import "../footer/checkbox"
+// utils
+import "../utils/allign-buttons-span--for-brief-page"

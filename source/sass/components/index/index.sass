@@ -1,0 +1,36 @@
+@import "../circle/circle"
+@import "../header/header"
+@import "../header/wide-screen-burger"
+@import "../header/style.css"
+@import "../index/intro"
+@import "../index/about-us"
+@import "../index/products"
+@import "../index/reviews"
+@import "../index/services"
+@import "../index/blog"
+@import "../footer/footer"
+// utils
+@import "../utils/buttons"
+@import "../utils/container"
+@import "../utils/preloader"
+@import "../utils/variables"
+@import "../utils/mixins"
+@import "../utils/fonts"
+@import "../utils/reset"
+// variables
+@import "source/sass/components/utils/variables"
+
+body
+  display: flex
+  flex-direction: column
+
+  font-family: 'Circe', serif
+
+  position: relative
+
+main
+  flex-grow: 1
+
+input:focus
+  border: 1px solid $saladColor
+  outline: none

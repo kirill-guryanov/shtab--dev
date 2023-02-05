@@ -1,0 +1,31 @@
+.preloader
+  width: 100%
+  height: 100%
+
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  z-index: 0
+
+  &--active
+    z-index: 4
+
+.preloader-one
+  background-color: green
+
+.preloader-two
+  background-color: red
+
+.preloader-item
+  width: 0
+  height: 100%
+
+  transition: all 2s ease-in-out
+
+  position: absolute
+
+  &--active
+    width: 100%
+

@@ -1,58 +1,61 @@
 .intro
     img.intro__decoration-left-circle-image(
-        src="./assets/images/intro/intro-decoration-left-circle.svg" alt=""
+        src="assets/images/utils/semicircle-to-right--gray.svg" alt=""
         width="184" height="384"
     )
 
     .intro__splider--container.splide( aria-label="Splide Basic HTML Example" )
-
         .intro__arrow-to-bottom-arrow-block
             .intro__arrow-to-bottom-arrow-block-content
                 img.intro__arrow-to-bottom-arrow-image.intro__arrow-to-bottom-arrow-image--black(
-                    src="./assets/images/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта"
+                    src="assets/images/index/intro/arrow-to-bottom.svg" alt="Стрелка к следующему блоку на сайта"
                     width="16" height="30"
                 )
                 img.intro__arrow-to-bottom-arrow-image.intro__arrow-to-bottom-arrow-image--white(
-                    src="./assets/images/intro/arrow-to-bottom--white.svg" alt="Стрелка к следующему блоку на сайта"
+                    src="assets/images/index/intro/arrow-to-bottom--white.svg" alt="Стрелка к следующему блоку на сайта"
                     width="16" height="30"
                 )
 
         .splide__track
             .splide__list
-                .intro__container.splide__slide
-                    .intro__container--inner.container
+                .container.container--intro.splide__slide
+                    .intro__container--inner
                         .intro__content
-                            .intro__content-digital-block
-                                .intro__content-digital-text digital
+                            .intro__content-digital-block.intro__content-digital-block--for-pagination-calibration
+                                p.intro__content-digital-text digital
                                 .intro__content-digital-line
 
                             .intro__content-padding-left
                                 .intro__content-top
-                                    .intro__content-top-title.intro__content-top-title--for-pagination-calibration РАЗРАБОТКА
+                                    h1.intro__content-top-title.intro__content-top-title--for-pagination-calibration РАЗРАБОТКА
                                     .intro__content-top-stars-image-block
                                         .intro__content-top-stars-image
                                             img.intro__content-stars-image(
-                                                src="./assets/images/intro/intro-stars.svg" alt="Декоративные звезды"
+                                                src="assets/images/index/intro/intro-stars.svg" alt="Декоративные звезды"
                                                 width="61" height="62"
                                             )
 
                                 .intro__content-bottom
-                                    .intro__content-text
+                                    p.intro__content-text
                                         | Комплексная разработка ярких
                                         | продающих динамичных сайтов
                                         | под ключ для вас и вашего бизнеса
-                                    .intro__content-top-title САЙТОВ
+                                    h2.intro__content-top-title САЙТОВ
 
                                 .intro__content-button-block
-                                    button.intro__content-button Подробнее
-                                        .intro__content-button-block-images
-                                            img.intro__content-button-image(
-                                                src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
-                                                width="68" height="16"
-                                            )
-                                            img.intro__content-button-image.intro__content-button-image--salad(
-                                                src="./assets/images/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
-                                                width="68" height="16"
+                                    a.about-us__right-side-read-more.about-us__right-side-read-more--intro-1( href="#" )
+                                        svg.for-button-hover-svg( viewBox="0 0 204 204" )
+                                            circle.for-button-hover-svg-pointer.for-button-hover-svg--intro-1( cx="102" cy="102" r="102" fill="transparent" )
+
+                                        .about-us__right-side-read-more-circle.services__read-more-circle.about-us__right-side-read-more-circle--intro-1
+
+                                        .about-us__right-side-read-more-content.about-us__right-side-read-more-content--intro
+                                            p.about-us__right-side-read-more--brief.about-us__right-side-read-more--black
+                                                span Узнать
+                                                | подробнее
+                                            img.about-us__right-side-read-more-image(
+                                                src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка"
+                                                width="23" height="23"
                                             )
 
                         .intro__splide-string.intro__splide-string1.splide( aria-label="Splide Basic HTML Example" )
@@ -62,81 +65,97 @@
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-1.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-1.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-2.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-2.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-3.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-3.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-1.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-1.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-2.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-2.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-3.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-3.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
 
-                .intro__container.splide__slide
-                    .intro__container--inner.container
+                .container.container--intro.splide__slide
+                    .intro__container--inner
                         .intro__content
                             .intro__content-digital-block
-                                .intro__content-digital-text digital
+                                p.intro__content-digital-text digital
                                 .intro__content-digital-line
 
                             .intro__content-padding-left
                                 .intro__content-top
-                                    .intro__content-top-title ПОСТРОЙКА
+                                    h1.intro__content-top-title ПОСТРОЙКА
                                     .intro__content-top-stars-image-block
                                         .intro__content-top-stars-image
                                             img.intro__content-stars-image(
-                                                src="./assets/images/intro/intro-stars.svg" alt="Декоративные звезды"
+                                                src="assets/images/index/intro/intro-stars.svg" alt="Декоративные звезды"
                                                 width="61" height="62"
                                             )
 
                                 .intro__content-bottom
-                                    .intro__content-text
+                                    p.intro__content-text
                                         | Комплексная разработка ярких
                                         | продающих динамичных сайтов
                                         | под ключ для вас и вашего бизнеса
-                                    .intro__content-top-title САЙТОВ
+                                    h2.intro__content-top-title САЙТОВ
 
                                 .intro__content-button-block
-                                    button.intro__content-button Подробнее
-                                        .intro__content-button-block-images
-                                            img.intro__content-button-image(
-                                                src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
-                                                width="68" height="16"
+                                    a.about-us__right-side-read-more.about-us__right-side-read-more--intro-2( href="#" )
+                                        svg.for-button-hover-svg( viewBox="0 0 204 204" )
+                                            circle.for-button-hover-svg-pointer.for-button-hover-svg--intro-2( cx="102" cy="102" r="102" fill="transparent" )
+
+                                        .about-us__right-side-read-more-circle.services__read-more-circle.about-us__right-side-read-more-circle--intro-2
+
+                                        .about-us__right-side-read-more-content.about-us__right-side-read-more-content--intro
+                                            p.about-us__right-side-read-more--brief.about-us__right-side-read-more--black
+                                                span Узнать
+                                                | подробнее
+                                            img.about-us__right-side-read-more-image(
+                                                src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка"
+                                                width="23" height="23"
                                             )
-                                            img.intro__content-button-image.intro__content-button-image--salad(
-                                                src="./assets/images/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
-                                                width="68" height="16"
-                                            )
+
+                                //.intro__content-button-block
+                                //    button.intro__content-button Подробнее
+                                //        .intro__content-button-block-images
+                                //            img.intro__content-button-image(
+                                //                src="assets/images/index/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
+                                //                width="68" height="16"
+                                //            )
+                                //            img.intro__content-button-image.intro__content-button-image--salad(
+                                //                src="assets/images/index/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
+                                //                width="68" height="16"
+                                //            )
 
                         .intro__splide-string.intro__splide-string3.splide( aria-label="Splide Basic HTML Example" )
                             .intro__slider-swiper.splide__track
@@ -145,81 +164,97 @@
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-1.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-1.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-2.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-2.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-3.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-3.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-1.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-1.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-2.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-2.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-3.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-3.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
 
-                .intro__container.splide__slide
-                    .intro__container--inner.container
+                .container.container--intro.splide__slide
+                    .intro__container--inner
                         .intro__content
                             .intro__content-digital-block
-                                .intro__content-digital-text digital
+                                p.intro__content-digital-text digital
                                 .intro__content-digital-line
 
                             .intro__content-padding-left
                                 .intro__content-top
-                                    .intro__content-top-title ПОСТРОЕНИЕ
+                                    h1.intro__content-top-title ПОСТРОЕНИЕ
                                     .intro__content-top-stars-image-block
                                         .intro__content-top-stars-image
                                             img.intro__content-stars-image(
-                                                src="./assets/images/intro/intro-stars.svg" alt="Декоративные звезды"
+                                                src="assets/images/index/intro/intro-stars.svg" alt="Декоративные звезды"
                                                 width="61" height="62"
                                             )
 
                                 .intro__content-bottom
-                                    .intro__content-text
+                                    p.intro__content-text
                                         | Комплексная разработка ярких
                                         | продающих динамичных сайтов
                                         | под ключ для вас и вашего бизнеса
-                                    .intro__content-top-title САЙТОВ
+                                    h3.intro__content-top-title САЙТОВ
 
                                 .intro__content-button-block
-                                    button.intro__content-button Подробнее
-                                        .intro__content-button-block-images
-                                            img.intro__content-button-image.intro__content-button-image--black(
-                                                src="./assets/images/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
-                                                width="68" height="16"
+                                    a.about-us__right-side-read-more.about-us__right-side-read-more--intro-3( href="#" )
+                                        svg.for-button-hover-svg( viewBox="0 0 204 204" )
+                                            circle.for-button-hover-svg-pointer.for-button-hover-svg--intro-3( cx="102" cy="102" r="102" fill="transparent" )
+
+                                        .about-us__right-side-read-more-circle.services__read-more-circle.about-us__right-side-read-more-circle--intro-3
+
+                                        .about-us__right-side-read-more-content.about-us__right-side-read-more-content--intro
+                                            p.about-us__right-side-read-more--brief.about-us__right-side-read-more--black
+                                                span Узнать
+                                                | подробнее
+                                            img.about-us__right-side-read-more-image(
+                                                src="assets/images/index/about-us/arrow-read-more.svg" alt="Белая стрелка"
+                                                width="23" height="23"
                                             )
-                                            img.intro__content-button-image.intro__content-button-image--salad(
-                                                src="./assets/images/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
-                                                width="68" height="16"
-                                            )
+
+                                //.intro__content-button-block
+                                //    button.intro__content-button Подробнее
+                                //        .intro__content-button-block-images
+                                //            img.intro__content-button-image.intro__content-button-image--black(
+                                //                src="assets/images/index/intro/intro-arrow-in-button.svg" alt="Стрелка продолжить в кнопке"
+                                //                width="68" height="16"
+                                //            )
+                                //            img.intro__content-button-image.intro__content-button-image--salad(
+                                //                src="assets/images/index/intro/intro-arrow-in-button--salad.svg" alt="Стрелка продолжить в кнопке"
+                                //                width="68" height="16"
+                                //            )
 
                         .intro__splide-string.intro__splide-string2.splide( aria-label="Splide Basic HTML Example" )
                             .intro__slider-swiper.splide__track
@@ -228,42 +263,42 @@
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-1.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-1.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-2.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-2.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-3.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-3.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-1.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-1.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-2.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-2.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )
                                     .intro__slider-swiper-slide.splide__slide
                                         a(href="#")
                                             img(
-                                                src="./assets/images/intro/slider-3.jpg"
-                                                alt="Ссылка с картинкой на сайте который сделала веб студией"
+                                                src="assets/images/index/intro/slider-3.jpg"
+                                                alt="Ссылка с картинкой на сайт который сделала веб студией"
                                                 width="381" height="294"
                                             )

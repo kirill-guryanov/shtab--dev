@@ -1,5 +1,5 @@
 section.services
-    .services__container.container
+    .container.container--services
         .section__titles
             .section__titles-left
                 .section__overtitle
@@ -14,8 +14,7 @@ section.services
 
             .section__titles__decoration-right
                 img.services__decoration-right-image.services__decoration-right-image--parallax(
-                    class="rellax" data-rellax-speed="-1"
-                    src="assets/images/services/decoration-right.svg" alt="Фигурки"
+                    src="assets/images/index/services/decoration-right.svg" alt="Фигурки"
                     width="125" height="120"
                 )
 
@@ -44,13 +43,19 @@ section.services
                                     p Разработка чат-ботов и автоматизация
 
                     .services__list-item-read-more
-                        button.services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle.services__read-more-circle--services-table
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
-                                    src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка"
+                                    src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка"
                                     width="23" height="23"
                                 )
+
+                            //svg.services__list-item-read-more-circle-svg( viewBox="0 0 100 100" )
+                            //    circle.services__list-item-read-more-circle-svg-circle( stroke="#C6FF00" stroke-width=1 cx=177 cy=177 r=175  )
+                                //(354 / 2) - (1 * 2) = 177 - 2
+                            //svg.services__list-item-read-more-circle-svg( width=86 height=86 )
+                            //    circle( stroke="#C6FF00" stroke-width=4 cx=43 cy=43 r=25 )
 
                 li.services__list-item
                     .services__list-item-title-block
@@ -77,11 +82,11 @@ section.services
                                     p SMM
 
                     .services__list-item-read-more
-                        button.services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle.services__read-more-circle--services-table
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
-                                    src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка"
+                                    src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка"
                                     width="23" height="23"
                                 )
 
@@ -110,11 +115,11 @@ section.services
                                     p Аудит юзабилити / безопасности проектов
 
                     .services__list-item-read-more
-                        button.services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle.services__read-more-circle--services-table
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
-                                    src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка"
+                                    src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка"
                                     width="23" height="23"
                                 )
 
@@ -144,22 +149,26 @@ section.services
                                     p Обслуживание и настройка серверов
 
                     .services__list-item-read-more
-                        button.services__list-item-read-more-circle
+                        button.services__list-item-read-more-circle.services__read-more-circle--services-table
                             .services__list-item-read-more-content
                                 p.services__list-item-read-more-content-p Узнать подробнее
                                 img.services__list-item-read-more-content-arrow(
-                                    src="assets/images/services/arrow-read-more.svg" alt="Черная стрелка"
+                                    src="assets/images/index/services/arrow-read-more.svg" alt="Черная стрелка"
                                     width="23" height="23"
                                 )
 
         .services__bottom-button
-            a.about-us__right-side-read-more( href="#" )
-                .about-us__right-side-read-more-circle.services__read-more-circle.services__read-more--black-border
+            a.about-us__right-side-read-more.about-us__right-side-read-more--services-bottom( href="#" )
+                svg.for-button-hover-svg( viewBox="0 0 204 204" )
+                    circle.for-button-hover-svg-pointer.for-button-hover-svg--services-bottom( cx="102" cy="102" r="102" fill="transparent" )
 
-                .about-us__right-side-read-more-content
-                    p.about-us__right-side-read-more.about-us__right-side-read-more--black
-                        | Нужна консультация
+                .about-us__right-side-read-more-circle.services__read-more-circle.services__read-more--black-border.services__read-more-circle--services-bottom
+
+                .about-us__right-side-read-more-content.about-us__right-side-read-more-content--services
+                    p.about-us__right-side-read-more--black
+                        span Нужна
+                        | консультация
                     img.about-us__right-side-read-more-image(
-                        src="assets/images/blog/arrow-black.svg" alt="Черная стрелка"
+                        src="assets/images/index/blog/arrow-black.svg" alt="Черная стрелка"
                         width="21" height="16"
                     )

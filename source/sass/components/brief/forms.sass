@@ -1,0 +1,442 @@
+.forms
+  margin-top: 125px
+  margin-left: 200px
+
+  position: relative
+
+  @media (max-width: 1550px)
+    margin-left: 0
+
+  @media (max-width: 910px)
+    margin-top: 60px
+
+//  title
+.forms__title-block
+  margin-bottom: 46px
+
+  @media (max-width: 1024px)
+    margin-bottom: 25px
+
+.forms__title
+  padding: 18px 25px
+
+  max-width: 420px
+
+  background-color: #C9F31D
+  border-radius: 5px
+
+  font-weight: 700
+  @include adaptiveFont(22, 16)
+  line-height: 1.2
+  color: #2C2C2C
+
+  @media (max-width: 1280px)
+    @include adaptiveFont(18, 16)
+
+  @media (max-width: 1024px)
+    max-width: 310px
+
+  &--flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+//  header
+.forms__header
+  display: flex
+  flex-direction: column
+
+  margin: 0 auto 105px
+
+  @media (max-width: 1536px)
+    max-width: 1135px
+
+  @media (max-width: 1280px)
+    margin: 0 auto 60px
+
+  @media (max-width: 775px)
+    margin: 0 auto 50px
+
+.forms__header-title
+  margin-bottom: 45px
+
+  font-weight: 700
+  @include adaptiveFont(30, 16)
+  line-height: 109%
+  color: #FFFFFF
+
+  @media (max-width: 1280px)
+    margin-bottom: 25px
+
+    //@include adaptiveFont(20, 16)
+
+.forms__header-texts
+  display: flex
+  flex-direction: column
+
+  max-width: 740px
+
+.forms__header-text-top
+  margin-bottom: 35px
+
+  font-weight: 350
+  @include adaptiveFont(30, 16)
+  line-height: 109%
+  color: #FFFFFF
+  opacity: .6
+
+  @media (max-width: 1280px)
+    @include adaptiveFont(20, 16)
+
+.forms__header-text-bottom
+  font-weight: 350
+  @include adaptiveFont(30, 16)
+  line-height: 109%
+  color: #FFFFFF
+
+  @media (max-width: 1280px)
+    @include adaptiveFont(20, 16)
+
+// company
+.forms__about-company
+  @media (max-width: 1536px)
+    display: flex
+    justify-content: center
+
+.forms__about-company-content
+  display: flex
+
+  max-width: 1135px
+
+  width: 100%
+
+.forms__about-company-content-form
+  display: flex
+
+.forms__block-left
+  margin-right: 115px
+
+  max-width: 433px
+
+  width: 100%
+
+  @media (max-width: 910px)
+    margin-right: 35px
+
+  @media (max-width: 830px)
+    margin-bottom: 38px
+
+    max-width: 100%
+
+  &--mb
+    margin-right: 0
+    margin-bottom: 37px
+
+    max-width: 873px
+
+  &--narrow
+    max-width: 293px
+
+.forms__block-left-title
+  margin-bottom: 22px
+
+  font-weight: 400
+  @include adaptiveFont(20, 18)
+  line-height: 127.5%
+  color: #FFFFFF
+
+  &--biggest-font
+    margin-bottom: 15px
+
+    @include adaptiveFont(22, 20)
+
+.forms__block-left-text
+  font-weight: 350
+  @include adaptiveFont(18, 16)
+  line-height: 127.5%
+  color: #FFFFFF
+
+.forms__block-right
+
+  width: 100%
+
+  &--flex
+    display: flex
+
+    @media (max-width: 990px)
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-column-gap: 15px
+      grid-row-gap: 15px
+
+    @media (max-width: 850px)
+      grid-template-columns: repeat(3, 1fr)
+
+    @media (max-width: 580px)
+      grid-template-columns: repeat(2, 1fr)
+      justify-items: center
+
+    @media (max-width: 420px)
+      grid-template-columns: repeat(1, 1fr)
+
+.forms__block
+  display: flex
+
+  @media (max-width: 830px)
+    flex-direction: column
+
+  &--column
+    flex-direction: column
+
+// form
+.forms__form
+  display: flex
+  flex-direction: column
+
+  width: 100%
+
+.forms__content-button--center
+  display: flex
+  justify-content: center
+
+.forms__content
+  margin-bottom: 75px
+
+  width: 100%
+
+  @media (max-width: 1280px)
+    margin-bottom: 55px
+
+  @media (max-width: 830px)
+    margin-bottom: 40px
+
+.forms__form-input-fieldset
+  display: flex
+  flex-direction: column
+
+  max-width: 433px
+
+  width: 100%
+
+  @media (max-width: 830px)
+    max-width: 100%
+
+  &--wide
+    max-width: 100%
+
+.forms__form-input-label
+  margin-bottom: 16px
+
+  font-weight: 400
+  @include adaptiveFont(20, 16)
+  line-height: 127.5%
+  color: #FFFFFF
+
+  @media (max-width: 1280px)
+    @include adaptiveFont(16, 16)
+
+
+  &--no-wrap
+    white-space: nowrap
+
+.forms__form-input
+  padding: 15px 25px
+
+  max-width: 433px
+
+  width: 100%
+  height: 61px
+
+  background-color: #212121
+  border: 1px solid #FFFFFF
+  border-radius: 10px
+
+  transition: border .3s ease-in-out
+
+  font-weight: 350
+  @include adaptiveFont(17, 15)
+  line-height: 127.5%
+  color: #fff
+
+  @media (max-width: 1280px)
+    height: 50px
+
+  @media (max-width: 830px)
+    max-width: 100%
+
+  &:focus
+    border: 1px solid $saladColor
+
+  &:not(:last-child)
+    margin-bottom: 26px
+
+    @media (max-width: 1280px)
+      margin-bottom: 20px
+
+  &::placeholder
+    font-weight: 350
+    @include adaptiveFont(17, 15)
+    line-height: 127.5%
+    color: #ACACAC
+
+  &--tail
+    height: 191px
+
+    @media (max-width: 1280px)
+      height: 156px
+
+  &--big-mb:not(:last-child)
+    margin-bottom: 38px
+
+.forms__form-textarea
+  resize: none
+
+  max-width: 100%
+
+  &--narrow
+    max-width: 588px
+
+    @media (max-width: 830px)
+      max-width: 100%
+
+.input__radio-label
+  margin-left: 13px
+
+  font-weight: 350
+  @include adaptiveFont(20, 16)
+  line-height: 127.5%
+  color: #FFFFFF
+
+  cursor: pointer
+
+  @media (max-width: 1280px)
+    @include adaptiveFont(16, 16)
+
+.input__radio
+  flex-shrink: 0
+
+  width: 28px
+  height: 28px
+
+  background-color: #494949
+  filter: opacity(0)
+  cursor: pointer
+
+  position: absolute
+  left: 0
+  z-index: 1
+
+  &:checked + .input__radio-custom .input__radio-custom-checked
+    filter: opacity(1)
+
+.forms__block-left-radio-main-block
+  display: flex
+  align-items: center
+
+  margin-bottom: 19px
+
+.forms__block-left-radio-block
+  display: flex
+  align-items: center
+
+  width: 28px
+  height: 28px
+
+  cursor: pointer
+
+  position: relative
+
+.input__radio-custom
+  flex-shrink: 0
+
+  width: 28px
+  height: 28px
+
+  background-color: #494949
+  border-radius: 50%
+  cursor: pointer
+
+.input__radio-custom-checked
+  width: 18px
+  height: 18px
+
+  filter: opacity(0)
+  transition: filter .3s ease-in-out
+
+  background: #C9F31D
+  border-radius: 50%
+  cursor: pointer
+
+  position: absolute
+  top: 5px
+  left: 5px
+
+.forms__form-radio-block
+  max-width: 200px
+
+  min-height: 52px
+
+  width: 100%
+  height: 100%
+
+  border: 1px solid $saladColor
+  border-radius: 40px
+  background-color: transparent
+  cursor: pointer
+
+  transition: background-color .3s ease-in-out
+
+  overflow: hidden
+
+  position: relative
+  z-index: 2
+
+  @media (max-width: 1280px)
+    min-height: 44px
+
+  &:not(:last-child)
+    margin-right: 20px
+    margin-bottom: 15px
+
+    @media (max-width: 990px)
+      margin: 0
+
+  &--active .forms__form-radio-label
+    color: #232323
+
+  &--active
+    background-color: $saladColor
+
+.forms__form-checkbox
+  filter: opacity(0)
+
+.forms__form-radio-block-bg
+  width: 100%
+  height: 100%
+
+  background-color: transparent
+  transition: background-color .3s ease-in-out
+
+  position: absolute
+  left: 0
+  top: 0
+
+.forms__form-radio-label
+  white-space: nowrap
+
+  font-weight: 400
+  @include adaptiveFont(17, 15)
+  line-height: 127.5%
+  color: #fff
+
+  cursor: pointer
+  transform: translate(-50%, -50%)
+  transition: color .3s ease-in-out
+
+  position: absolute
+  left: 50%
+  top: 50%
+  z-index: 1
+
+  @media (max-width: 1280px)
+    @include adaptiveFont(16, 15)

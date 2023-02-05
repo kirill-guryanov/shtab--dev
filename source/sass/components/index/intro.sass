@@ -1,5 +1,5 @@
-@import "./variables"
-@import "./mixins"
+@import "source/sass/components/utils/variables"
+@import "source/sass/components/utils/mixins"
 
 .intro
   margin-top: 65px
@@ -11,21 +11,49 @@
 
   position: relative
 
-  @media (max-width: 1380px)
-    margin-top: 180px
+  @media (max-width: 1536px)
+    height: 795px
 
-    height: 895px
+  @media (max-width: 1440px)
+    height: 835px
 
-  @media (max-width: 800px)
-    height: 855px
+  @media (max-width: 1366px)
+    height: 705px
 
-  @media (max-width: 680px)
-    margin-top: 100px
+  @media (max-width: 1280px)
+    height: 650px
 
-    height: 860px
+  @media (max-width: 1070px)
+    height: 530px
 
-  @media (max-width: 540px)
-    height: 690px
+  @media (max-width: 960px)
+    height: 470px
+
+  @media (max-width: 854px)
+    height: 415px
+
+  @media (max-width: 620px)
+    margin-top: 14px
+
+    padding-bottom: 30px
+
+    height: auto
+
+  @media (max-width: 480px)
+    margin-top: 10px
+
+    //height: 635px
+
+  @media (max-width: 390px)
+    margin-top: 50px
+
+    //height: 565px
+
+  @media (max-width: 380px)
+    //height: 485px
+
+  @media (max-width: 370px)
+    //height: 480px
 
 // left side decoration circle
 .intro__decoration-left-circle-image
@@ -34,34 +62,27 @@
   top: 84px
   left: 0
 
+  @media (max-width: 1440px)
+    width: 121px
+    height: 258px
+
+    top: 120px
+
+  @media (max-width: 1366px)
+    width: 105px
+    height: 158px
+
   @media (max-width: 730px)
     display: none
-
-// container
-.intro__container
-  display: flex
-  justify-content: space-between
-
-  height: inherit
-
-  position: relative
-
-  max-width: 100%
-  width: 100%
-
-  @media (max-width: 1380px)
-    flex-direction: column
 
 .intro__container--inner
   display: flex
   justify-content: space-between
 
-  @media (max-width: 1380px)
-    flex-direction: column
-    gap: 50px
+  width: 100%
 
-  @media (max-width: 540px)
-    gap: 40px
+  @media (max-width: 620px)
+    flex-direction: column
 
 // arrow to bottom
 .intro__arrow-to-bottom-arrow-block
@@ -86,7 +107,7 @@
 
   &:hover
     background-color: #000
-    border: 1px solid #D0FF48
+    border: 1px solid $saladColor
 
   &:hover .intro__arrow-to-bottom-arrow-image--black
     opacity: 0
@@ -94,14 +115,35 @@
   &:hover .intro__arrow-to-bottom-arrow-image--white
     opacity: 1
 
-  @media (max-width: 1380px)
-    bottom: 125px
+  @media (max-width: 1536px)
+    bottom: 235px
 
-  @media (max-width: 800px)
-    bottom: 165px
+  @media (max-width: 1440px)
+    bottom: 200px
 
-  @media (max-width: 540px)
+  @media (max-width: 1366px)
     bottom: 320px
+
+  @media (max-width: 1280px)
+    bottom: 360px
+
+  @media (max-width: 1070px)
+    width: 31px
+    height: 52px
+
+    bottom: 485px
+
+  @media (max-width: 960px)
+    width: 28px
+    height: 46px
+
+    bottom: 620px
+
+  @media (max-width: 854px)
+    bottom: 600px
+
+  @media (max-width: 620px)
+    display: none
 
 .intro__arrow-to-bottom-arrow-block-content
   width: 100%
@@ -112,9 +154,17 @@
 .intro__arrow-to-bottom-arrow-image
   object-fit: none
 
+  transform: translate(-50%, -50%)
+
   position: absolute
-  top: calc(50% - 15px)
-  left: calc(50% - 8px)
+  top: 50%
+  left: 50%
+
+  @media (max-width: 960px)
+    width: 14px
+    height: 24px
+
+    object-fit: contain
 
 .intro__arrow-to-bottom-arrow-image--black
   opacity: 1
@@ -133,15 +183,18 @@
 
   margin-bottom: 50px
 
+  @media (max-width: 960px)
+    margin-bottom: 20px
+
 .intro__content-digital-text
   font-weight: 800
-  font-size: 24px
+  @include adaptiveFont(24, 14)
   line-height: 1
   text-transform: uppercase
   color: #000
 
 .intro__content-digital-line
-  margin-bottom: 5px
+  //margin-bottom: 5px
   margin-left: 10px
 
   width: 66px
@@ -155,24 +208,52 @@
   flex-direction: column
   justify-content: center
 
-  margin-right: 45px
+  //margin-right: 45px
+  margin-right: 100px
 
   max-width: 857px
 
-  @media (max-width: 1380px)
-    margin: 0 auto
+  @media (max-width: 1536px)
+    margin-top: -210px
+
+  @media (max-width: 1440px)
+    margin-top: -180px
+
+  @media (max-width: 1366px)
+    margin-top: -325px
+
+  @media (max-width: 1070px)
+    margin-top: -480px
+
+  //@media (max-width: 1090px)
+  //  margin-right: 15px
+
+  @media (max-width: 960px)
+    margin-top: -580px
+
+  @media (max-width: 720px)
+    margin-right: 70px
+
+  @media (max-width: 620px)
+    margin-right: 15px
+
+  @media (max-width: 620px)
+    margin: 80px auto 50px
+
+  //@media (max-width: 480px)
+  //  margin: 40px auto 50px
+
+  @media (max-width: 390px)
+    margin: 40px auto 30px
 
 .intro__content-padding-left
   padding-left: 70px
 
-  @media (max-width: 1380px)
+  @media (max-width: 1070px)
+    padding-left: 25px
+
+  @media (max-width: 620px)
     padding-left: unset
-
-  @media (max-width: 685px)
-    padding-left: 15px
-
-  @media (max-width: 500px)
-    padding-left: 0
 
 //  content top
 .intro__content-top
@@ -180,15 +261,31 @@
   justify-content: space-between
   align-items: center
 
-  @media (max-width: 780px)
-    position: relative
-
 .intro__content-top-title
   font-weight: 800
-  @include adaptiveFont(110, 35)
+  @include adaptiveFont(110, 20)
   line-height: 1
   text-transform: uppercase
   color: $oneBColor
+
+  @media (max-width: 1440px)
+    @include adaptiveFont(80, 30)
+
+  @media (max-width: 960px)
+    @include adaptiveFont(50, 30)
+
+  @media (max-width: 800px)
+    @include adaptiveFont(70, 30)
+
+  @media (max-width: 620px)
+    @include adaptiveFont(100, 50)
+
+  @media (max-width: 380px)
+    @include adaptiveFont(30, 30)
+
+  &:last-child
+    @media (max-width: 800px)
+      margin-bottom: 20px
 
 // stars
 .intro__content-top-stars-image-block
@@ -207,7 +304,7 @@
 
 .intro__content-stars-image
 
-  @media (max-width: 780px)
+  @media (max-width: 1070px)
     width: 45px
     height: 45px
 
@@ -217,7 +314,7 @@
   justify-content: space-between
   align-items: center
 
-  @media (max-width: 1380px)
+  @media (max-width: 800px)
     flex-direction: column-reverse
     align-items: flex-start
 
@@ -230,17 +327,29 @@
   @media (max-width: 1680px)
     max-width: 400px
 
-  @media (max-width: 1380px)
-    margin-top: 30px
+  @media (max-width: 1440px)
+    margin-right: 10px
+    max-width: 280px
+
+    @include adaptiveFont(18, 16)
+
+  @media (max-width: 1070px)
+    @include adaptiveFont(16, 14)
+
+  @media (max-width: 960px)
+    @include adaptiveFont(14, 14)
+
+  @media (max-width: 620px)
+    max-width: 240px
 
 //  content button
 .intro__content-button-block
-  margin-top: 70px
+  margin-top: 30px
 
-  @media (max-width: 1380px)
-    margin-top: 35px
+  @media (max-width: 1070px)
+    margin-top: 45px
 
-  @media (max-width: 800px)
+  @media (max-width: 960px)
     margin-top: 25px
 
 .intro__content-button
@@ -257,21 +366,26 @@
   transition: all .3s ease-in-out
 
   font-weight: 350
-  font-size: 24px
+  @include adaptiveFont(24, 16)
   line-height: 1
   color: #000
+
+  @media (max-width: 1070px)
+    padding: 14px 28px
+
+  @media (max-width: 960px)
+    padding: 14px 14px
 
   &:hover
     color: #fff
     background-color: #000
-    border: 1px solid #D0FF48
+    border: 1px solid $saladColor
 
   &:hover .intro__content-button-image--salad
     opacity: 1
 
   &:hover .intro__content-button-image--black
     opacity: 0
-
 
 .intro__content-button-block-images
   display: flex
@@ -281,11 +395,25 @@
 
   position: relative
 
+  @media (max-width: 960px)
+    margin-left: -30px
+
+  @media (max-width: 800px)
+    margin-left: -45px
+
 .intro__content-button-image
   margin-left: 25px
 
   position: absolute
   right: 0
+
+  @media (max-width: 1070px)
+    margin: 0
+
+    width: 50px
+
+  @media (max-width: 800px)
+    width: 35px
 
 .intro__content-button-image--black
   opacity: 1
@@ -303,7 +431,7 @@
 
   height: 100%
 
-  @media (max-width: 1380px)
+  @media (max-width: 620px)
     margin-top: 55px
     margin-bottom: 190px
 
@@ -316,66 +444,36 @@
   overflow: unset
   overflow-y: clip
 
-  @media (max-width: 1380px)
-    height: 300px
+  @media (max-width: 620px)
+    height: auto
 
     overflow: unset
     overflow-x: clip
 
-  @media (max-width: 540px)
-    height: 200px
-
 .intro__slider-swiper-slide
-  width: 100%
+  width: 381px
 
   text-align: center
   font-size: 18px
   background: #fff
 
-  @media (max-width: 1380px)
-    height: 300px
+  @media (max-width: 1300px)
+    width: 300px
 
-  @media (max-width: 540px)
-    height: 200px
+  @media (max-width: 1000px)
+    width: 260px
 
-.intro__slider-swiper-slide img
-  display: block
+  @media (max-width: 960px)
+    width: 220px
 
+  @media (max-width: 620px)
+    width: 280px
+
+  @media (max-width: 490px)
+    width: 230px
+
+.splide__slide img
   width: 100%
   height: 100%
 
-  object-fit: cover
-
-.intro__slider-swiper-pagination .swiper-pagination-bullet-active
-  background: $saladColor !important
-
-// pagination
-.intro__splider--container .splide__pagination,
-.intro__splider--container .splide__pagination--ttb
-  right: unset
-  bottom: unset
-  left: 0!important
-  top: 0!important
-
-.intro__splider--container .splide__pagination li
-  position: relative!important
-
-.intro__splider--container .splide__pagination .splide__pagination__page
-  width: 19px
-  height: 19px
-
-  border: 1px solid #000
-  background: unset!important
-  opacity: 1
-
-.intro__splider--container .splide__pagination .splide__pagination__page.is-active
-  background-color: #D0FF48!important
-  transform: unset !important
-
-
-.intro__splide-string
-  @media (max-width: 1380px)
-    height: 300px
-
-  @media (max-width: 540px)
-    height: 200px
+  object-fit: fill

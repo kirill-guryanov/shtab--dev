@@ -1,26 +1,27 @@
 include head
 
 body
-    include ../views/circle
-    include ../views/header
-    include ../views/wide-screen-burger
+    include ../../views/preloader/preloader
+    include ../../views/circle/circle
+    include ../../views/header/header
+    include ../../views/header/wide-screen-burger
     main
-        include ../views/intro
-        include ../views/about-us
-        include ../views/services
-        include ../views/products
-        include ../views/reviews
-        include ../views/blog
-    include ../views/footer
+        include ../../views/index/intro
+        include ../../views/index/about-us
+        include ../../views/index/services
+        include ../../views/index/products
+        include ../../views/index/reviews
+        include ../../views/index/blog
+    include ../../views/footer/footer
 
 // swiper script
 script( src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" )
 // splide script
 script( src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" )
 script( src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js" )
-// parallax
-script( src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" )
 // aos
 script( src="https://unpkg.com/aos@next/dist/aos.js" )
+// scroll
+script( src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous" )
 // my js
 script( src="./assets/js/index.min.js" )

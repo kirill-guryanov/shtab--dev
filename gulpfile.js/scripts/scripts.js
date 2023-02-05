@@ -8,7 +8,7 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 
 exports.script = () => {
-	return src('./source/js/index.js', {sourcemaps: true})
+	return src('./source/js/index/index.js', {sourcemaps: true})
 		.pipe(map.init())
 		.pipe(babel({
 			presets: ['@babel/env']

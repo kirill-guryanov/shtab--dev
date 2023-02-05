@@ -1,11 +1,15 @@
-const checkbox = document.querySelector(".footer__right-side-form-form-checkbox")
-const checkboxCustomActive = document.querySelector(".footer__right-side-form-form-checkbox-custom--active")
+window.addEventListener('load', function() {
 
-checkbox.addEventListener("click", () => {
-  if (!checkbox.checked) {
-    checkboxCustomActive.style.opacity = 0
-  }
-  if (checkbox.checked) {
-    checkboxCustomActive.style.opacity = 1
-  }
+  const checkbox = document.querySelector(".footer__right-side-form-form-checkbox")
+  const checkboxCustomActive = document.querySelector(".footer__right-side-form-form-checkbox-custom--active")
+
+  checkbox.addEventListener("click", () => {
+    if (!checkbox.checked) {
+      checkboxCustomActive.style.opacity = 0
+    }
+    if (checkbox.checked) {
+      checkboxCustomActive.style.opacity = 1
+    }
+  })
+
 })
