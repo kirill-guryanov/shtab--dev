@@ -5,15 +5,15 @@ import "../circle/circle--brief";
 // header
 import "../header/text";
 import "../header/color-inversion";
+// burgerMenu
+import "../burgerMenu/burgerMenu";
+import "../burgerMenu/buttonsImplementation";
 // button
 import "./buttonsImplementation";
 // to next section
 import "./to-next-section";
 // checkboxes
 import "./checkboxes";
-// wide-screen-burger
-import "../wide-screen-burger/wide-screen-burger.min";
-import "../wide-screen-burger/wide-screen-burger";
 // footer
 import "../footer/rights-top-border";
 import "../footer/checkbox";

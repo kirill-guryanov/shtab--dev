@@ -1,0 +1,96 @@
+// variables
+@import "../utils/variables"
+// utils
+@import "../utils/container"
+@import "../utils/preloader"
+@import "../utils/mixins"
+@import "../utils/fonts"
+@import "../utils/reset"
+@import "../utils/fillingButton"
+@import "../utils/sectionTitles"
+// sections
+@import "../circle/circle"
+@import "../header/header"
+@import "../utils/burgerMenu"
+@import "./intro"
+@import "./projectsSection"
+@import "./offer"
+@import "../footer/footer"
+
+html
+  scroll-behavior: smooth
+
+body
+  display: flex
+  flex-direction: column
+
+  font-family: 'Circe', serif
+
+  position: relative
+
+main
+  flex-grow: 1
+
+input:focus
+  border: 1px solid $saladColor
+  outline: none
+
+#butter
+  position: fixed
+
+// header phone
+.header__contacts-item-number-image
+  display: none
+
+  margin-right: 15px
+
+  &--black
+    @media (max-width: 390px)
+      display: inherit
+
+  &--white
+    @media (max-width: 390px)
+      display: none
+
+// header
+.header--main
+  // padding: 65px 0 10px 0
+
+  background-color: #1E1E1E
+
+  // @media (max-width: 1280px)
+  //   padding: 25px 0 10px 0
+
+  // &--min-padding
+  //   padding: 10px 0 15px
+
+.header__burger-span
+  background-color: #fff
+
+.header__nav-item,
+.header__contacts-item-number,
+.header__contacts-item-back-call
+  color: #fff
+
+.header__logo-block-image--black
+  display: none
+
+.header__logo-block-image--white
+  display: block
+
+//.header__contacts-item--icon--black
+//  display: none
+//
+//.header__contacts-item--icon--white
+//  display: block
+
+.header__contacts-item-image--black
+  display: none
+
+.header__contacts-item-image--white
+  display: block
+
+// header letters
+.header__nav-item-text
+  .block:last-child
+    color: #ffffff

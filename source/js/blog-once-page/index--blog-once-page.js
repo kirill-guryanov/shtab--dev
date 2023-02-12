@@ -7,13 +7,12 @@ import "./buttonsImplementation";
 // header
 import "../header/text";
 import "../header/color-inversion";
+// burgerMenu
+import "../burgerMenu/burgerMenu";
+import "../burgerMenu/buttonsImplementation";
 // splide
 import "../blog-once-page/splide";
 import "../blog-once-page/splide-arrows";
-// wide-screen-burger
-import "../wide-screen-burger/wide-screen-burger.min";
-import "../wide-screen-burger/wide-screen-burger";
-import "../wide-screen-burger/button";
 // footer
 import "../footer/rights-top-border";
 import "../footer/checkbox";

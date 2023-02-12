@@ -3,14 +3,13 @@ import "../utils/preloader";
 // header
 import "../header/text";
 import "../header/color-inversion";
+// burgerMenu
+import "../burgerMenu/burgerMenu";
+import "../burgerMenu/buttonsImplementation";
 // decoration circle
 import "./cirlce-with-lines";
 // decoration lines
 import "./decoration-lines";
-// wide-screen-burger
-import "../wide-screen-burger/wide-screen-burger.min";
-import "../wide-screen-burger/wide-screen-burger";
-import "../wide-screen-burger/button";
 // intro
 import "./buttonsImplementation";
 // footer

@@ -1,4 +1,4 @@
-import {addInteractivityToButton} from "../utils/addInteractivityToButton";
+import { addInteractivityToButton } from "../utils/addInteractivityToButton";
 
 document.addEventListener("DOMContentLoaded", () => {
   addInteractivityToButton(
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     true,
     "whiteArrow",
     true
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--brief-bottom",
     ".fillingButton__svg-circle--brief-bottom",
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     true,
     [20, 20],
     "bigWhiteFirst"
-  )
-})
+  );
+});
 
 window.addEventListener("resize", () => {
   addInteractivityToButton(
@@ -39,5 +39,5 @@ window.addEventListener("resize", () => {
     0,
     0,
     false
-  )
-})
+  );
+});

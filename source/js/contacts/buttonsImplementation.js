@@ -1,4 +1,4 @@
-import {addInteractivityToButton} from "../utils/addInteractivityToButton";
+import { addInteractivityToButton } from "../utils/addInteractivityToButton";
 
 document.addEventListener("DOMContentLoaded", () => {
   addInteractivityToButton(
@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     true,
     "blackArrow",
     false
-  )
-})
+  );
+});
 
 window.addEventListener("resize", () => {
   addInteractivityToButton(
@@ -25,5 +25,5 @@ window.addEventListener("resize", () => {
     0,
     0,
     false
-  )
-})
+  );
+});

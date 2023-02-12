@@ -1,0 +1,92 @@
+// @import "../utils/variables"
+    
+.intro
+    display: flex
+    align-items: center
+    justify-content: center
+
+    padding: 180px 0 70px
+
+    background-color: #1E1E1E
+
+    overflow: hidden
+
+    position: relative
+
+.intro__decorativeCircle
+    transform: translateY(-50%)
+
+    position: absolute
+    left: 0
+    top: 50%
+
+    @media ( max-width: 780px )
+        display: none
+
+// content
+.intro__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    position: relative
+    z-index: 1
+
+    @media ( max-width: 780px )
+        flex-direction: column-reverse
+        
+
+// left side
+// .intro__contentLeftSide
+
+.intro__contentLeftSideTitle
+    margin-bottom: 50px
+
+    font-weight: 800
+    @include adaptiveFont(100, 35)
+    line-height: 1.2
+    color: #fff
+
+    @media ( max-width: 780px )
+        text-align: center
+
+.intro__contentLeftSideButtons
+    display: flex
+
+.intro__contentLeftSideButton
+    margin-bottom: 10px
+    margin-right: 10px
+    padding: 12px 25px
+
+    background-color: #fff
+    border-radius: 30px
+    border: 1px solid #C9C9C9
+    transition: background-color, border .3s ease
+    cursor: pointer
+
+    font-weight: 350
+    @include adaptiveFont(20, 16)
+    color: #000
+
+    &--active
+        background-color: $saladColor
+        border-color: $saladColor
+
+// line
+.intro__contentLine
+    margin: 0 40px
+
+    width: 100%
+    height: 1px
+
+    background-color: #3A3A3A
+
+    @media ( max-width: 780px )
+        display: none
+
+// right side
+// .intro__contentRightSide
+
+.intro__contentRightSideImage
+    @media ( max-width: 780px )
+        margin-left: 80px

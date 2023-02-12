@@ -1,0 +1,20 @@
+include head
+
+body.hidden
+    include ../../views/utils/preloader
+    include ../../views/utils/burgerMenu
+
+    include ../../views/circle/circle
+
+    #butter
+        include ../../views/header/header
+        main
+            include ../../views/projects/intro
+            include ../../views/projects/projectsSection
+            include ../../views/projects/offer
+        include ../../views/footer/footer
+
+// aos
+script( src="https://unpkg.com/aos@next/dist/aos.js" )
+// my js
+script( src="./assets/js/projectsIndex.min.js" )

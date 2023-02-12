@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
     spanAnimationBgWrapper.style.left =
       titleWithSpan.offsetLeft +
       titleWithSpan.offsetParent.offsetLeft -
-      5 +
+      2 +
       "px";
     spanAnimationBgWrapper.style.top =
       titleWithSpan.offsetTop + titleWithSpan.offsetParent.offsetTop + "px";
@@ -33,7 +33,7 @@ window.addEventListener("resize", () => {
     spanAnimationBgWrapper.style.left =
       titleWithSpan.offsetLeft +
       titleWithSpan.offsetParent.offsetLeft -
-      5 +
+      2 +
       "px";
     spanAnimationBgWrapper.style.top =
       titleWithSpan.offsetTop + titleWithSpan.offsetParent.offsetTop + "px";

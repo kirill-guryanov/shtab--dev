@@ -1,14 +1,13 @@
 // preloader
 import "../utils/preloader";
 // burgerMenu
-import "../utils/burgerMenu";
+import "../burgerMenu/burgerMenu";
+import "../burgerMenu/buttonsImplementation";
 // circle
 import "../circle/circle";
 // header
 import "../header/text";
 import "../header/color-inversion";
-// burgerMenu
-import "../burgerMenu/buttonsImplementation";
 // intro
 import "./intro/splideItems";
 import "./intro/splideMain";
