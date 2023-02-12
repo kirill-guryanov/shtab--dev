@@ -124,7 +124,7 @@
     display: flex
     justify-content: space-between
 
-    height: fit-content
+    // height: fit-content
     
     @media (max-width: 1130px) 
         justify-content: center
@@ -147,7 +147,10 @@
 .burgerMenu__contentNavigation-leftSideItem
     display: flex
     align-items: center
-    flex-shrink: 0        
+    flex-shrink: 0     
+
+    &:not(:last-child)
+        margin-bottom: 15px
 
 .burgerMenu__contentNavigation-leftSideItemText
     flex-shrink: 0
@@ -185,6 +188,13 @@
 // navigation right side
 .burgerMenu__contentNavigation-rightSide
     border-left: 2px solid #fff
+
+    transition: filter .3s ease
+
+    filter: opacity(0)
+
+    &--visible
+        filter: opacity(1)
 
 .burgerMenu__contentNavigation-rightSideList
     display: none

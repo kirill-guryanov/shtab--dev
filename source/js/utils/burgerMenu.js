@@ -13,8 +13,11 @@ const burgerMenu = document.querySelector(".burgerMenu");
 const itemsForHover = document.querySelectorAll(
   ".burgerMenu__contentNavigation-leftSideItem"
 );
-const itemsForShow = document.querySelectorAll(
+const rightSide = document.querySelector(
   ".burgerMenu__contentNavigation-rightSide"
+);
+const itemsForShow = document.querySelectorAll(
+  ".burgerMenu__contentNavigation-rightSideList"
 );
 const closeButton = document.querySelector(".header__closeBurgerMenuBtn");
 
@@ -90,15 +93,19 @@ itemsForHover.forEach((itemForHover) => {
 
     itemForHover.addEventListener("mouseenter", (e) => {
       const hoverData = e.target.dataset.burgerMenuLink;
+
+      rightSide.classList.add(
+        "burgerMenu__contentNavigation-rightSide--visible"
+      );
       // reset animation class on all itemForShow
       deleteAnimationClass(
         itemForShow,
-        "burgerMenu__contentNavigation-rightSide--animated"
+        "burgerMenu__contentNavigation-rightSideList--animated"
       );
       // show dependent list
       if (hoverData === showData) {
         itemForShow.classList.add(
-          "burgerMenu__contentNavigation-rightSide--animated"
+          "burgerMenu__contentNavigation-rightSideList--animated"
         );
       }
     });
