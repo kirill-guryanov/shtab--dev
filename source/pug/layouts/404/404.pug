@@ -1,13 +1,15 @@
 include head
 
-body
+body.hidden
+    include ../../views/utils/preloader
     include ../../views/404/decoration-lines
     include ../../views/header/header
     include ../../views/header/wide-screen-burger
-    main
-        include ../../views/404/intro
-
-    include ../../views/footer/footer
+    #butter
+        main
+            include ../../views/404/intro
+    
+        include ../../views/footer/footer
 
 // my js
 script( src="./assets/js/index--404.min.js" )

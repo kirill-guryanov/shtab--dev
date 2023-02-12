@@ -157,6 +157,7 @@
   color: #FFFFFF
 
 .forms__block-right
+  margin-right: -10px
 
   width: 100%
 
@@ -164,19 +165,17 @@
     display: flex
 
     @media (max-width: 990px)
-      display: grid
       grid-template-columns: repeat(4, 1fr)
-      grid-column-gap: 15px
-      grid-row-gap: 15px
 
-    @media (max-width: 850px)
+    @media (max-width: 1115px)
+      display: grid
       grid-template-columns: repeat(3, 1fr)
 
-    @media (max-width: 580px)
+    @media (max-width: 740px)
       grid-template-columns: repeat(2, 1fr)
       justify-items: center
 
-    @media (max-width: 420px)
+    @media (max-width: 470px)
       grid-template-columns: repeat(1, 1fr)
 
 .forms__block
@@ -234,7 +233,6 @@
 
   @media (max-width: 1280px)
     @include adaptiveFont(16, 16)
-
 
   &--no-wrap
     white-space: nowrap
@@ -372,12 +370,15 @@
   left: 5px
 
 .forms__form-radio-block
+  margin-right: 20px
+  margin-bottom: 15px
+
   max-width: 200px
 
   min-height: 52px
 
   width: 100%
-  height: 100%
+  height: fit-content
 
   border: 1px solid $saladColor
   border-radius: 40px
@@ -393,13 +394,6 @@
 
   @media (max-width: 1280px)
     min-height: 44px
-
-  &:not(:last-child)
-    margin-right: 20px
-    margin-bottom: 15px
-
-    @media (max-width: 990px)
-      margin: 0
 
   &--active .forms__form-radio-label
     color: #232323

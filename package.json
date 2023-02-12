@@ -7,11 +7,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "7.20.5",
     "@babel/preset-env": "7.20.2",
     "browser-sync": "2.27.11",
     "del": "6.0.0",
+    "eslint-config-prettier": "^8.6.0",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "8.0.0",
     "gulp-babel": "8.0.0",
@@ -27,8 +28,14 @@
     "gulp-uglify-es": "3.0.0",
     "gulp-webp": "4.0.1",
     "npm": "9.2.0",
+    "prettier": "2.8.4",
     "sass": "1.57.1",
     "webpack": "5.75.0",
-    "webpack-stream": "7.0.0"
+    "webpack-stream": "7.0.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-import": "^2.27.5"
+  },
+  "dependencies": {
+    
   }
 }

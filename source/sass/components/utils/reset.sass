@@ -8,7 +8,12 @@ html, body
   font-size: 14px
   line-height: 1
 
-  //overflow-x: hidden
+html
+  scroll-behavior: smooth
+
+.hidden
+  display: unset
+  overflow: hidden
 
 *,
 *:before,
@@ -64,3 +69,8 @@ a:focus, a:active
 
 address
   font-style: unset
+
+.visibleHidden
+  visibility: hidden
+  width: 0
+  height: 0

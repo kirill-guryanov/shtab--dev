@@ -2,8 +2,9 @@
 @import "../utils/mixins"
 @import "../utils/fonts"
 @import "../utils/reset"
-@import "../utils/buttons"
 @import "../utils/container"
+@import "../utils/fillingButton"
+@import "../utils/preloader"
 
 @import "../header/header"
 @import "../header/wide-screen-burger"
@@ -144,6 +145,11 @@ input:focus
 
   @media(max-width: 500px)
     max-width: 290px
+
+.intro404__button
+  display: flex
+  align-items: center
+  justify-content: center
 
 // lines
 .decoration-lines

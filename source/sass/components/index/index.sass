@@ -1,5 +1,18 @@
+// variables
+@import "../utils/variables"
+// utils
+@import "../utils/container"
+@import "../utils/preloader"
+@import "../utils/variables"
+@import "../utils/mixins"
+@import "../utils/fonts"
+@import "../utils/reset"
+@import "../utils/fillingButton"
+@import "../utils/sectionTitles"
+// sections
 @import "../circle/circle"
 @import "../header/header"
+@import "../utils/burgerMenu"
 @import "../header/wide-screen-burger"
 @import "../header/style.css"
 @import "../index/intro"
@@ -9,16 +22,9 @@
 @import "../index/services"
 @import "../index/blog"
 @import "../footer/footer"
-// utils
-@import "../utils/buttons"
-@import "../utils/container"
-@import "../utils/preloader"
-@import "../utils/variables"
-@import "../utils/mixins"
-@import "../utils/fonts"
-@import "../utils/reset"
-// variables
-@import "source/sass/components/utils/variables"
+
+html
+  scroll-behavior: smooth
 
 body
   display: flex
@@ -34,3 +40,6 @@ main
 input:focus
   border: 1px solid $saladColor
   outline: none
+
+#butter
+  position: fixed

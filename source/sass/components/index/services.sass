@@ -1,239 +1,155 @@
 .services
-  padding-top: 75px
-  padding-bottom: 65px
+    padding-top: 120px
+    padding-bottom: 85px
 
-  overflow: hidden
+    overflow: hidden 
 
-  position: relative
+    position: relative
 
-//.section__titles
-.section__titles
-  display: flex
-  justify-content: space-between
+.decorative-circle-left,
+.decorative-lines-left
+    position: absolute
+    z-index: -1
 
-.section__titles-left
-  @media (max-width: 680px)
-    margin-right: 35px
+.decorative-circle-left
+    left: -119px
+    top: -86px
 
-.section__titles__decoration-right
-  width: 125px
-  height: 120px
+    @media (max-width: 900px) 
+        display: none
 
-.services__decoration-right-image--parallax
-  display: inline-block
+.decorative-lines-left
+    right: 0
+    top: -40px
 
-  @media (max-width: 680px)
-    width: 99px
-    height: 117px
+.services-list
+    display: grid
+    grid-template-columns: 1fr 1fr
 
-.section__overtitle
-  display: flex
-  align-items: center
+    margin-top: 60px
 
-  margin-bottom: 10px
+    @media (max-width: 900px) 
+        grid-template-columns: 1fr
 
-.section__overtitle-text
-  font-weight: 400
-  @include adaptiveFont(20, 14)
-  line-height: 1
-  color: #000000
+.servisec-list__item
+    display: grid
+    align-items: center
 
-.section__overtitle-line
-  margin-left: 25px
+    padding-left: 85px
+    padding-top: 61px
+    padding-bottom: 51px
 
-  width: 66px
-  height: 1px
-  border: 1px solid rgb(197 197 197)
+    max-width: 700px
+    height: auto
 
-.section__title-title
-  font-weight: 800
-  @include adaptiveFont(40, 25)
-  line-height: 1
-  color: #000000
+    position: relative
 
-.services__list-block
-  margin-top: 85px
+    &:not(:last-child)
+        @media (max-width: 900px) 
+            margin-bottom: 15px
 
-  width: 100%
+    @media (max-width: 1280px) 
+        padding-left: 40px
+        padding-right: 40px
 
-  @media (max-width: 680px)
-    margin-top: 50px
+    @media (max-width: 900px) 
+        justify-items: center
+        padding-top: 35px
+        padding-bottom: 35px
 
-.services__list
-  width: 100%
+    @media (max-width: 420px)
+        padding-left: 15px
+        padding-right: 15px
 
-  @media (max-width: 440px)
-    overflow-x: auto
-    overflow-y: hidden
+    &:hover .servisec-list__item-title-span
+        color: #404040
 
-.services__list-item
-  display: flex
-  justify-content: space-between
+    &:hover .servisec-list__item-title-span-bg::before
+        transform: translateX(0)
 
-  width: 100%
+.servisec-list__item-title-span
+    transition: color .3s ease
 
-  border-bottom: 1px solid rgb(197 197 197)
+.servisec-list__item-title-span-wrapper
+    position: absolute
 
-  @media (max-width: 1160px)
-    justify-content: space-around
+    transform: rotate(359deg)
 
-  @media (max-width: 780px)
-    justify-content: space-between
+    overflow: hidden
+        
+.servisec-list__item-title-span-bg
+    transition: color .3s ease
 
-  @media (max-width: 440px)
-    width: 500px
+    &::before
+        content: ""
+        display: block
 
-  &:nth-child(1)
-    border-top: 1px solid rgb(197 197 197)
-    border-bottom: 1px solid rgb(197 197 197)
+        width: 100%
+        height: 100%
 
-.services__list-item-title-block
-  display: flex
-  align-items: flex-start
+        background-color: #D0FF48
+        transition: transform .3s ease
+        transform: translateX(-100%)
 
-  max-width: 315px
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 1
 
-  width: 100%
+.servisec-list__item-img
+    width: 100%
+    height: 100%
 
-  border-right: 1px solid rgb(197 197 197)
+    object-fit: cover
 
-  position: relative
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: -1
 
-  @media (max-width: 1160px)
-    max-width: 210px
+.servisec-list__item-content
+    display: grid
+    grid-template-columns: 1fr
 
-  @media (max-width: 925px)
-    max-width: 180px
+.servisec-list__item-title
+    margin-bottom: 60px
 
-  @media (max-width: 720px)
-    max-width: 140px
+    font-weight: 700
+    @include adaptiveFont(40, 20)
+    line-height: 105%
+    color: #fff
 
-  @media (max-width: 565px)
-    max-width: 110px
+    position: relative
+    z-index: 2
 
-.services__list-item-title-block--without-border
-  border: none
+    @media (max-width: 900px) 
+        text-align: center
 
-.services__list-item-title-overflow-line
-  border-right: 1px solid rgb(197 197 197)
+.servisec-list__item-list
+    display: grid
+    grid-template-columns: 1fr
 
-  position: absolute
-  top: 0
-  bottom: 0
-  right: 0
+.servisec-list__item-list-item
+    display: flex
+    align-items: center
 
-.services__list-item-title
-  margin-top: 30px
-  margin-right: 100px
+    &:not(:last-child)
+        margin-bottom: 15px
 
-  font-weight: 700
-  @include adaptiveFont(40, 18)
-  line-height: 1
-  color: #000000
+    &:last-child
+        margin-bottom: 30px
 
-.services__list-item-description
-  display: flex
-  justify-content: center
-  align-items: flex-start
+    p
+        color: #fff
+        font-size: 16px
+        line-height: 105%
 
-  width: 50%
+.servisec-list__item-list-item-stroke
+    margin-right: 15px
 
-  position: relative
+    width: 21px
+    height: 1px
 
-.services__list-item-description--border-right
-  border-right: 1px solid rgb(197 197 197)
-
-.services__list-item-description-overflow-line
-  width: 1px
-  height: 100%
-
-  border-right: 1px solid rgb(197 197 197)
-
-  position: absolute
-  z-index: 1
-  right: 0
-  bottom: 0
-
-.services__list-item-description-content
-  display: flex
-  flex-direction: column
-  gap: 35px
-
-  padding: 30px 15px
-
-  max-width: 385px
-
-  width: 100%
-
-.services__list-item-description-p
-  font-weight: 350
-  @include adaptiveFont(20, 16)
-  line-height: 1
-  color: #000000
-
-.services__list-item-description-list
-  display: flex
-  flex-direction: column
-  gap: 10px
-
-.services__list-item-description-list-item
-  display: flex
-  align-items: center
-  gap: 15px
-
-.services__list-item-description-list-item p
-  font-weight: 700
-  @include adaptiveFont(20, 14)
-  line-height: 1
-  color: #000000
-
-.services__list-item-description-list-item-line
-  flex-shrink: 0
-
-  width: 27px
-  height: 1px
-
-  background-color: #000
-
-// read more
-.services__list-item-read-more
-  display: flex
-  align-items: center
-  justify-content: center
-
-  padding: 0 15px
-
-  width: 30%
-
-  @media (max-width: 1160px)
-    width: 15%
-
-  @media (max-width: 780px)
-    width: 20%
-
-.services__list-item-read-more-content
-  display: flex
-  align-items: center
-  gap: 10px
-
-  cursor: pointer
-
-  position: relative
-  pointer-events: none
-
-  @media (max-width: 490px)
-    flex-direction: column
-
-.services__list-item-read-more-content-arrow
-  @media (max-width: 845px)
-    width: 15px
-    height: 15px
-
-.services__bottom-button
-  display: flex
-  justify-content: center
-
-  margin-top: 65px
-
-.services__bottom-button-circle
-  border: 1px solid #000
+    background-color: #fff

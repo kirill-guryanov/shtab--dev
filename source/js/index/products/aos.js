@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+// window.addEventListener('load', function() {
 
   AOS.init();
 // You can also pass an optional settings object
@@ -25,4 +25,4 @@ window.addEventListener('load', function() {
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   });
 
-})
+// })

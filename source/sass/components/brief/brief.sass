@@ -3,6 +3,7 @@
 @import "../utils/fonts"
 @import "../utils/reset"
 @import "../circle/circle"
+@import "../utils/preloader"
 
 @import "../header/header"
 @import "./intro"
@@ -11,8 +12,9 @@
 @import "../header/style.css"
 @import "../footer/footer"
 
-@import "../utils/buttons"
+@import "../utils/fillingButton"
 @import "../utils/container"
+
 
 body
   display: flex
@@ -29,6 +31,9 @@ main
 
 .body--hidden
   overflow: hidden
+
+.intro
+  overflow: unset
 
 input:focus
   border: 1px solid $saladColor

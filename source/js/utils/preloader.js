@@ -1,31 +1,24 @@
-window.addEventListener('load', function() {
+const body = document.querySelector("body");
+const loaderBg = document.querySelector(".loader");
+const loaderFirst = document.querySelector(".loader-first");
+const loaderSecond = document.querySelector(".loader-second");
 
-  // preloader parent block
-  const preloaderParentBlock = document.querySelector(".preloader")
-  // preloaders
-  const preloaderOne = document.querySelector(".preloader-one")
-  const preloaderTwo = document.querySelector(".preloader-two")
-  // preloaders active class
-  const preloaderActiveClass = "preloader-item--active"
-  // preloader container active class
-  const preloaderParentBlockActiveClass = "preloader--active"
-  // all <a>
-  const allLinkTags = document.querySelectorAll("a")
+window.addEventListener("load", () => {
+  body.classList.remove("hidden");
+  loaderBg.classList.add("loader--hide");
+  loaderFirst.classList.add("loader-first--active");
+  loaderSecond.classList.add("loader-second--active");
 
-  allLinkTags.forEach(a => {
-    a.addEventListener("click", (event) => {
-
-      event.preventDefault()
-
-      // set preloader container active class
-      preloaderParentBlock.classList.add(preloaderParentBlockActiveClass)
-      // set preloaders active class
-      preloaderOne.classList.add(preloaderActiveClass)
-      setTimeout(()=>{
-        preloaderTwo.classList.add(preloaderActiveClass)
-      }, 2000)
-
-    })
-  })
-
-})
+  loaderBg.addEventListener(
+    "animationstart",
+    () => {
+      setTimeout(() => {
+        loaderBg.classList.add("loader--none");
+      }, 1100);
+    },
+    {
+      once: true,
+      useCapture: false,
+    }
+  );
+});
