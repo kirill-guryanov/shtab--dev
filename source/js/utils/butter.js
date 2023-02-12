@@ -1,4 +1,4 @@
-if (window.innerWidth <= 1100) {
+if (window.innerWidth >= 1100) {
   window.onload = () => {
     (function (root) {
       var Butter = function () {
@@ -130,4 +130,6 @@ if (window.innerWidth <= 1100) {
       root.butter = new Butter().init();
     })(this);
   };
+} else {
+  document.querySelector("#butter").style.position = "unset";
 }
