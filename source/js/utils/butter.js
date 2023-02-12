@@ -6,7 +6,7 @@ window.onload = () => {
       this.defaults = {
         wrapperId: "butter",
         wrapperDamper: 0.7,
-        cancelOnTouch: true,
+        cancelOnTouch: false,
       };
 
       this.validateOptions = function (ops) {
