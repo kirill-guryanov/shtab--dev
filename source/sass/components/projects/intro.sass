@@ -13,6 +13,9 @@
 
     position: relative
 
+    @media ( max-width: 780px )
+        padding-top: 115px
+
 .intro__decorativeCircle
     transform: translateY(-50%)
 
@@ -20,7 +23,7 @@
     left: 0
     top: 50%
 
-    @media ( max-width: 780px )
+    @media ( max-width: 1100px )
         display: none
 
 // content
@@ -34,10 +37,14 @@
 
     @media ( max-width: 780px )
         flex-direction: column-reverse
-        
 
 // left side
-// .intro__contentLeftSide
+.intro__contentLeftSide
+    @media ( max-width: 780px )
+        margin-top: -60px
+
+    @media ( max-width: 420px )
+        margin-top: 0
 
 .intro__contentLeftSideTitle
     margin-bottom: 50px
@@ -52,8 +59,13 @@
 
 .intro__contentLeftSideButtons
     display: flex
+    justify-content: center
+
+    @media ( max-width: 950px)
+        flex-wrap: wrap
 
 .intro__contentLeftSideButton
+
     margin-bottom: 10px
     margin-right: 10px
     padding: 12px 25px
@@ -88,5 +100,14 @@
 // .intro__contentRightSide
 
 .intro__contentRightSideImage
+
+    @media ( max-width: 1000px )
+        width: 500px
+        height: 288px
+
     @media ( max-width: 780px )
         margin-left: 80px
+
+    @media ( max-width: 420px )
+        width: 450px
+        height: 218px

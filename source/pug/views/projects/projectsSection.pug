@@ -6,30 +6,116 @@ section.projects
         .projects__verticalLine
         .projects__verticalLine
 
-    .projects__obliqueLines
+    img.projects__obliqueLines(
+        src="assets/images/utils/obliqueLinesWithSalad.svg" alt="Декоративные линии"
+        width=175 height=305
+    )
 
-    .glowingCircleTop
-    .glowingCircleBottom
+    .container.container--projects
+        img.glowingCircleTop(
+            src="assets/images/projects/glowingCircle.png" alt="Светящийся круг"
+            width=863 height=863
+        )
+        img.glowingCircleBottom(
+            src="assets/images/projects/glowingCircle.png" alt="Светящийся круг"
+            width=863 height=863
+        )
 
-    .container
         .projects__itemsWrapper
-            article.projects__item
-                .projects__itemImageWrapper
-                    img.projects__itemImage(
-                        src="assets/images/projects/rag.jpg" alt="Превью сайта"
-                        width=650 height=520
-                    )
-                    img.projects__itemImageDecoration(
-                        src="assets/images/projects/imagesDecoration.svg" alt="Декоративный элемент"
-                        width=310 height=148
-                    )
-                .projects__itemTitleWrapper
-                    h2.projects__itemTitle
-                    .projects__itemTitleLine
-                p.projects__itemSuptitle
+            .projects__itemsWrapperLeft
+                article.projects__item
+                    a(href="").projects__itemImageWrapper
+                        img.projects__itemImage(
+                            src="assets/images/projects/rag.jpg" alt="Превью сайта"
+                            width=650 height=520
+                        )
+                        img.projects__itemImageDecoration(
+                            src="assets/images/projects/imagesDecoration.svg" alt="Декоративный элемент"
+                            width=310 height=148
+                        )
+                    .projects__itemTitleWrapper
+                        h2.projects__itemTitle Рибера Казань
+                        .projects__itemTitleLine
+                    p.projects__itemSuptitle Корпоративный сайт
+
+                article.projects__item
+                    a(href="").projects__itemImageWrapper
+                        img.projects__itemImage(
+                            src="assets/images/projects/logistic.jpg" alt="Превью сайта"
+                            width=650 height=520
+                        )
+                        img.projects__itemImageDecoration(
+                            src="assets/images/projects/imagesDecoration.svg" alt="Декоративный элемент"
+                            width=310 height=148
+                        )
+                    .projects__itemTitleWrapper
+                        h2.projects__itemTitle Рибера Казань
+                        .projects__itemTitleLine
+                    p.projects__itemSuptitle Корпоративный сайт
+                    
+                article.projects__item
+                    a(href="").projects__itemImageWrapper
+                        img.projects__itemImage(
+                            src="assets/images/projects/polygonal.jpg" alt="Превью сайта"
+                            width=650 height=520
+                        )
+                        img.projects__itemImageDecoration(
+                            src="assets/images/projects/imagesDecoration.svg" alt="Декоративный элемент"
+                            width=310 height=148
+                        )
+                    .projects__itemTitleWrapper
+                        h2.projects__itemTitle Рибера Казань
+                        .projects__itemTitleLine
+                    p.projects__itemSuptitle Корпоративный сайт
+
+            .projects__itemsWrapperRight
+                article.projects__item
+                    a(href="").projects__itemImageWrapper
+                        img.projects__itemImage(
+                            src="assets/images/projects/man.jpg" alt="Превью сайта"
+                            width=650 height=520
+                        )
+                        img.projects__itemImageDecoration(
+                            src="assets/images/projects/imagesDecoration.svg" alt="Декоративный элемент"
+                            width=310 height=148
+                        )
+                    .projects__itemTitleWrapper
+                        h2.projects__itemTitle Рибера Казань
+                        .projects__itemTitleLine
+                    p.projects__itemSuptitle Корпоративный сайт
+
+                article.projects__item
+                    a(href="").projects__itemImageWrapper
+                        img.projects__itemImage(
+                            src="assets/images/projects/macbook.jpg" alt="Превью сайта"
+                            width=650 height=520
+                        )
+                        img.projects__itemImageDecoration(
+                            src="assets/images/projects/imagesDecoration.svg" alt="Декоративный элемент"
+                            width=310 height=148
+                        )
+                    .projects__itemTitleWrapper
+                        h2.projects__itemTitle Рибера Казань
+                        .projects__itemTitleLine
+                    p.projects__itemSuptitle Корпоративный сайт
+
+                article.projects__item
+                    a(href="").projects__itemImageWrapper
+                        img.projects__itemImage(
+                            src="assets/images/projects/relax.jpg" alt="Превью сайта"
+                            width=650 height=520
+                        )
+                        img.projects__itemImageDecoration(
+                            src="assets/images/projects/imagesDecoration.svg" alt="Декоративный элемент"
+                            width=310 height=148
+                        )
+                    .projects__itemTitleWrapper
+                        h2.projects__itemTitle Рибера Казань
+                        .projects__itemTitleLine
+                    p.projects__itemSuptitle Корпоративный сайт
 
         .projects__slideButtons
-            button.projects__slideButton 1
+            button.projects__slideButton.projects__slideButton--active 1
             button.projects__slideButton 1
             button.projects__slideButton 1
             button.projects__slideButton 1

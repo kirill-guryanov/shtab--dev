@@ -131,5 +131,5 @@ if (window.innerWidth >= 1100) {
     })(this);
   };
 } else {
-  document.querySelector("#butter").style.position = "unset";
+  document.querySelector("#butter").style.position = "absolute";
 }

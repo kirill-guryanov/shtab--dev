@@ -1,13 +1,15 @@
 // preloader
 import "../utils/preloader";
 // circle
-import "../circle/circle";
+import "../circle/circle--projects";
 // header
 import "../header/text";
-import "../header/color-inversion";
+import "../header/animationWithScroll";
 // burgerMenu
 import "../burgerMenu/burgerMenu";
 import "../burgerMenu/buttonsImplementation";
+// offer
+import "./offerTitleBg";
 // buttons
 import "./buttonsImplementation";
 // footer

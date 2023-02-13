@@ -2,11 +2,11 @@ import { addInteractivityToButton } from "../utils/addInteractivityToButton";
 
 document.addEventListener("DOMContentLoaded", () => {
   addInteractivityToButton(
-    ".fillingButton--offer",
-    ".fillingButton__svg-circle--offer",
-    ".fillingButton__circle--offer",
+    ".fillingButton--projectsOffer",
+    ".fillingButton__svg-circle--projectsOffer",
+    ".fillingButton__circle--projectsOffer",
     2,
-    22,
+    2,
     0,
     0,
     true,
@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("resize", () => {
   addInteractivityToButton(
-    ".fillingButton--offer",
-    ".fillingButton__svg-circle--offer",
-    ".fillingButton__circle--offer",
+    ".fillingButton--projectsOffer",
+    ".fillingButton__svg-circle--projectsOffer",
+    ".fillingButton__circle--projectsOffer",
     2,
-    22,
+    2,
     0,
     0,
     false
