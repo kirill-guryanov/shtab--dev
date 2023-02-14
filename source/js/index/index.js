@@ -7,7 +7,7 @@ import "../burgerMenu/buttonsImplementation";
 import "../circle/circle";
 // header
 import "../header/text";
-import "../header/color-inversion";
+import "../header/animationWithScroll";
 // intro
 import "./intro/splideItems";
 import "./intro/splideMain";

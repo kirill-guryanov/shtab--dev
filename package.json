@@ -12,7 +12,9 @@
     "@babel/preset-env": "7.20.2",
     "browser-sync": "2.27.11",
     "del": "6.0.0",
+    "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "8.0.0",
     "gulp-babel": "8.0.0",
@@ -32,10 +34,10 @@
     "sass": "1.57.1",
     "webpack": "5.75.0",
     "webpack-stream": "7.0.0",
-    "eslint": "^8.33.0",
-    "eslint-plugin-import": "^2.27.5"
+    "stylelint": "^14.16.1",
+    "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0"
   },
-  "dependencies": {
-    
-  }
+  "dependencies": {}
 }

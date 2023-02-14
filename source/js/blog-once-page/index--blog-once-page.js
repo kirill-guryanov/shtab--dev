@@ -6,7 +6,7 @@ import "../circle/circle--blog-once-page";
 import "./buttonsImplementation";
 // header
 import "../header/text";
-import "../header/color-inversion";
+import "../header/animationWithScroll";
 // burgerMenu
 import "../burgerMenu/burgerMenu";
 import "../burgerMenu/buttonsImplementation";

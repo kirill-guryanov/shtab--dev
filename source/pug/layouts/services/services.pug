@@ -1,0 +1,19 @@
+include head
+
+body.hidden
+    include ../../views/utils/preloader
+    include ../../views/utils/burgerMenu
+
+    include ../../views/circle/circle
+          
+    include ../../views/header/header 
+    #butter
+        main
+            include ../../views/services/intro
+            include ../../views/services/info
+            include ../../views/services/statistics
+            include ../../views/services/offer
+        include ../../views/footer/footer
+
+// my js
+script( src="./assets/js/indexServices.min.js" )

@@ -10,6 +10,7 @@ const { scssContacts } = require("./sass/sass--contacts");
 const { scssBlogOncePage } = require("./sass/sass--blog-once-page");
 const { scssBrief } = require("./sass/sass--brief");
 const { scssProjects } = require("./sass/sass--projects");
+const { scssServices } = require("./sass/sass--services");
 const { img } = require("./images");
 const { script } = require("./scripts/scripts");
 const { scripts404 } = require("./scripts/scripts404");
@@ -18,6 +19,7 @@ const { scriptsContacts } = require("./scripts/scripts--contacts");
 const { scriptsBlogOncePage } = require("./scripts/scripts--blog-once-page");
 const { scriptBrief } = require("./scripts/scripts--brief");
 const { scriptsProjects } = require("./scripts/scripts--projects");
+const { scriptsServices } = require("./scripts/scripts--services");
 
 exports.server = () => {
   browserSync.init({
@@ -34,7 +36,8 @@ exports.server = () => {
       scssContacts,
       scssBlogOncePage,
       scssBrief,
-      scssProjects
+      scssProjects,
+      scssServices
     )
   ).on("change", browserSync.reload);
   watch("./source/images/**/*.{jpg,png,webp,svg}", parallel(img)).on(
@@ -50,7 +53,8 @@ exports.server = () => {
       scriptsContacts,
       scriptsBlogOncePage,
       scriptBrief,
-      scriptsProjects
+      scriptsProjects,
+      scriptsServices
     )
   ).on("change", browserSync.reload);
 };

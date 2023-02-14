@@ -88,6 +88,15 @@ export function addInteractivityToButton(
         parent.offsetParent.offsetParent.offsetTop +
         addedTop;
       break;
+    case 4:
+      y = (event, addedTop) =>
+        event.pageY -
+        parent.offsetTop -
+        parent.offsetParent.offsetTop -
+        parent.offsetParent.offsetParent.offsetTop -
+        parent.offsetParent.offsetParent.offsetParent.offsetTop +
+        addedTop;
+      break;
   }
   // get span for color inversion
   let buttonContentBlockSpan;

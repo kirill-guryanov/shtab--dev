@@ -4,7 +4,7 @@
     opacity: 1
 
 .container--header-black-mode
-    @media (max-width: 1200px) 
+    @media (max-width: 1200px)
         justify-content: space-between
 
 .header__logo-block-image--black-mode
@@ -26,10 +26,10 @@
         transform: rotate(360deg)
 
     & img
-        @media (max-width: 1440px) 
+        @media (max-width: 1440px)
             width: 35px
             height: 35px
-            
+
         @media (max-width: 1200px)
             width: 20px
             height: 20px
@@ -41,7 +41,7 @@
 
     background-color: #1D1D1D
     filter: opacity(0)
-    transition: filter .3s ease
+    transition: all .3s ease
 
     overflow-x: hidden
     overflow-y: auto
@@ -66,7 +66,7 @@
     left: 0
 
 .burgerMenu__animatedWords_wordToRight,
-.burgerMenu__animatedWords_wordToLeft 
+.burgerMenu__animatedWords_wordToLeft
     transition: all 1.5s ease
 
     font-weight: 300
@@ -102,8 +102,7 @@
 
     @media (max-width: 1130px)
         display: block
-    
-    
+
 .burgerMenu__contentSides
     display: flex
     align-items: center
@@ -112,12 +111,12 @@
     margin-top: 98px
     padding-bottom: 20px
 
-    @media (max-width: 1130px) 
-        flex-direction: column    
+    @media (max-width: 1130px)
+        flex-direction: column
 
         margin-top: 120px
 
-    @media (max-width: 570px) 
+    @media (max-width: 570px)
         margin-top: 90px
 
 // navigation left side
@@ -126,8 +125,8 @@
     justify-content: space-between
 
     // height: fit-content
-    
-    @media (max-width: 1130px) 
+
+    @media (max-width: 1130px)
         justify-content: center
 
         margin-bottom: 100px
@@ -139,16 +138,16 @@
 
     margin-right: 95px
 
-    @media (max-width: 1300px) 
+    @media (max-width: 1300px)
         margin-right: 45px
 
-    @media (max-width: 720px) 
+    @media (max-width: 720px)
         margin-right: 20px
 
 .burgerMenu__contentNavigation-leftSideItem
     display: flex
     align-items: center
-    flex-shrink: 0     
+    flex-shrink: 0
 
     &:not(:last-child)
         margin-bottom: 15px
@@ -184,7 +183,6 @@
 
         @media ( max-width: 720px )
             width: 30px
-            
 
 // navigation right side
 .burgerMenu__contentNavigation-rightSide
@@ -211,7 +209,6 @@
         display: block
 
         animation: 1s ease 0s 1 normal forwards running opacityToOne
-        
 
 @keyframes opacityToOne
     from
@@ -226,7 +223,7 @@
 
     cursor: pointer
 
-    @media (max-width: 570px) 
+    @media (max-width: 570px)
         width: min-content
 
     &:not(:last-child)
@@ -248,7 +245,7 @@
     &:hover
         font-weight: 700
 
-    @media (max-width: 570px) 
+    @media (max-width: 570px)
         width: min-content
 
 // address
@@ -261,13 +258,13 @@
 
     color: #fff
 
-    @media (max-width: 1130px) 
+    @media (max-width: 1130px)
         align-items: center
 
         margin-left: 0
 
     & a
-        display: inherit        
+        display: inherit
 
 .burgerMenu__contentAddresses-phone
     margin-bottom: 15px
@@ -275,7 +272,7 @@
     font-weight: 400
     @include adaptiveFont(35, 20)
 
-.burgerMenu__contentAddresses-mail 
+.burgerMenu__contentAddresses-mail
     margin-bottom: 10px
 
     font-weight: 400
@@ -286,7 +283,6 @@
 
     font-weight: 400
     @include adaptiveFont(27, 18)
-
 
 .burgerMenu__contentAddresses-socials
     display: flex
@@ -303,5 +299,3 @@
 
     &:hover
         transform: scale(1.2)
-
-        
