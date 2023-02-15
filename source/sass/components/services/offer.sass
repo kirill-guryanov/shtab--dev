@@ -3,13 +3,26 @@
 
     background-color: #fff
 
+    overflow: hidden
+
     position: relative
+    z-index: 1
 
 .offer__decorativeCircle
     position: absolute
     left: -5%
     top: -50%
-    z-index: -1
+
+    @media (max-width: 1350px)
+        transform: rotate(70deg)
+
+        left: unset
+        right: -20%
+        top: -20%
+
+    @media (max-width: 1005px)
+        right: -23%
+        top: -25%
 
     @media (max-width: 640px)
         display: none

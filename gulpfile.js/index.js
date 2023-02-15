@@ -9,6 +9,7 @@ const { scssBlogOncePage } = require("./sass/sass--blog-once-page");
 const { scssBrief } = require("./sass/sass--brief");
 const { scssProjects } = require("./sass/sass--projects");
 const { scssServices } = require("./sass/sass--services");
+const { scssProductsOncePage } = require("./sass/sass--productsOncePage");
 
 const { clear } = require("./del");
 const { server } = require("./browsersync");
@@ -22,6 +23,9 @@ const { scriptsBlogOncePage } = require("./scripts/scripts--blog-once-page");
 const { scriptBrief } = require("./scripts/scripts--brief");
 const { scriptsProjects } = require("./scripts/scripts--projects");
 const { scriptsServices } = require("./scripts/scripts--services");
+const {
+  scriptsProductsOncePage,
+} = require("./scripts/scripts--productsOncePage");
 const { script } = require("./scripts/scripts");
 
 exports.clear = clear;
@@ -36,6 +40,7 @@ exports.build = series(
   scriptBrief,
   scriptsProjects,
   scriptsServices,
+  scriptsProductsOncePage,
   fonts,
   scss,
   scss404,
@@ -45,6 +50,7 @@ exports.build = series(
   scssBrief,
   scssProjects,
   scssServices,
+  scssProductsOncePage,
   img,
   server
 );
@@ -59,6 +65,7 @@ exports.serve = series(
   scriptBrief,
   scriptsProjects,
   scriptsServices,
+  scriptsProductsOncePage,
   fonts,
   scss,
   scss404,
@@ -68,6 +75,7 @@ exports.serve = series(
   scssBrief,
   scssProjects,
   scssServices,
+  scssProductsOncePage,
   img,
   server
 );
