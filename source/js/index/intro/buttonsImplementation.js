@@ -1,4 +1,4 @@
-import {addInteractivityToButton} from  "../../utils/addInteractivityToButton";
+import { addInteractivityToButton } from "../../utils/addInteractivityToButton";
 
 if (window.innerWidth > 1070) {
   addInteractivityToButton(
@@ -12,7 +12,7 @@ if (window.innerWidth > 1070) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-2",
     ".fillingButton__svg-circle--intro-2",
@@ -24,7 +24,7 @@ if (window.innerWidth > 1070) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-3",
     ".fillingButton__svg-circle--intro-3",
@@ -36,7 +36,7 @@ if (window.innerWidth > 1070) {
     true,
     "blackArrow",
     false
-  )
+  );
 }
 
 if (window.innerWidth <= 1070) {
@@ -51,7 +51,7 @@ if (window.innerWidth <= 1070) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-2",
     ".fillingButton__svg-circle--intro-2",
@@ -63,7 +63,7 @@ if (window.innerWidth <= 1070) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-3",
     ".fillingButton__svg-circle--intro-3",
@@ -75,10 +75,8 @@ if (window.innerWidth <= 1070) {
     true,
     "blackArrow",
     false
-  )
-}
-
-if (window.innerWidth <= 620) {
+  );
+} else if (window.innerWidth <= 620) {
   addInteractivityToButton(
     ".fillingButton--intro-1",
     ".fillingButton__svg-circle--intro-1",
@@ -90,7 +88,7 @@ if (window.innerWidth <= 620) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-2",
     ".fillingButton__svg-circle--intro-2",
@@ -102,7 +100,7 @@ if (window.innerWidth <= 620) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-3",
     ".fillingButton__svg-circle--intro-3",
@@ -114,10 +112,8 @@ if (window.innerWidth <= 620) {
     true,
     "blackArrow",
     false
-  )
-}
-
-if (window.innerWidth <= 380) {
+  );
+} else if (window.innerWidth <= 380) {
   addInteractivityToButton(
     ".fillingButton--intro-1",
     ".fillingButton__svg-circle--intro-1",
@@ -129,7 +125,7 @@ if (window.innerWidth <= 380) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-2",
     ".fillingButton__svg-circle--intro-2",
@@ -141,7 +137,7 @@ if (window.innerWidth <= 380) {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--intro-3",
     ".fillingButton__svg-circle--intro-3",
@@ -153,7 +149,7 @@ if (window.innerWidth <= 380) {
     true,
     "blackArrow",
     false
-  )
+  );
 }
 
 window.addEventListener("resize", () => {
@@ -167,7 +163,7 @@ window.addEventListener("resize", () => {
       0,
       -65,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-2",
       ".fillingButton__svg-circle--intro-2",
@@ -177,7 +173,7 @@ window.addEventListener("resize", () => {
       0,
       -65,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-3",
       ".fillingButton__svg-circle--intro-3",
@@ -187,7 +183,7 @@ window.addEventListener("resize", () => {
       0,
       -65,
       false
-    )
+    );
   }
 
   if (window.innerWidth <= 1070) {
@@ -200,7 +196,7 @@ window.addEventListener("resize", () => {
       0,
       -65,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-2",
       ".fillingButton__svg-circle--intro-2",
@@ -210,7 +206,7 @@ window.addEventListener("resize", () => {
       0,
       -65,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-3",
       ".fillingButton__svg-circle--intro-3",
@@ -220,7 +216,7 @@ window.addEventListener("resize", () => {
       0,
       -65,
       false
-    )
+    );
   }
 
   if (window.innerWidth <= 620) {
@@ -233,7 +229,7 @@ window.addEventListener("resize", () => {
       0,
       -10,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-2",
       ".fillingButton__svg-circle--intro-2",
@@ -243,7 +239,7 @@ window.addEventListener("resize", () => {
       0,
       -10,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-3",
       ".fillingButton__svg-circle--intro-3",
@@ -253,7 +249,7 @@ window.addEventListener("resize", () => {
       0,
       -10,
       false
-    )
+    );
   }
 
   if (window.innerWidth <= 380) {
@@ -266,7 +262,7 @@ window.addEventListener("resize", () => {
       0,
       -50,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-2",
       ".fillingButton__svg-circle--intro-2",
@@ -276,7 +272,7 @@ window.addEventListener("resize", () => {
       0,
       -50,
       false
-    )
+    );
     addInteractivityToButton(
       ".fillingButton--intro-3",
       ".fillingButton__svg-circle--intro-3",
@@ -286,6 +282,6 @@ window.addEventListener("resize", () => {
       0,
       -50,
       false
-    )
+    );
   }
-})
+});

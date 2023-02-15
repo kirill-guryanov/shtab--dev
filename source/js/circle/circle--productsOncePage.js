@@ -90,14 +90,32 @@ window.addEventListener("load", function () {
   // sections
   window.addEventListener("scroll", () => {
     const intro = document.querySelector(".intro").offsetTop;
+    const info = document.querySelector(".info").offsetTop;
+    const offer = document.querySelector(".offer").offsetTop;
     const footer = document.querySelector(".footer").offsetTop;
 
     const viewPortHeight = window.innerHeight;
     const scrollTop = window.scrollY;
 
     const currentPosition = viewPortHeight + scrollTop - 20;
-    // blog
+    // intro
     if (currentPosition >= intro) {
+      clearArrowsClasses();
+
+      circle.style.fill = "#1D1D1D";
+      circleArrowSalad.classList.add("progress-circle-arrow--active");
+      circleArrowBlack.classList.add("progress-circle-arrow--not-active");
+    }
+    // info
+    if (currentPosition >= info) {
+      clearArrowsClasses();
+
+      circle.style.fill = "#1D1D1D";
+      circleArrowSalad.classList.add("progress-circle-arrow--active");
+      circleArrowBlack.classList.add("progress-circle-arrow--not-active");
+    }
+    // offer
+    if (currentPosition >= offer) {
       clearArrowsClasses();
 
       circle.style.fill = "#1D1D1D";

@@ -1,79 +1,67 @@
-let mainCounter = 0;
+const itemsForAnimation = document.querySelectorAll(".statistics__itemNumber");
 
-window.addEventListener("load", () => {
-  if (window.innerWidth > 500) {
-    if (mainCounter <= 1) {
-      animateNumbers(3);
+itemsForAnimation.forEach((itemForAnimation) => {
+  itemForAnimation.addEventListener(
+    "animationStarted",
+    () => {
+      animateNumbers(itemForAnimation);
+    },
+    {
+      once: true,
     }
-  } else {
-    if (mainCounter <= 100) {
-      animateNumbers(3);
-    }
-  }
+  );
 });
 
 window.addEventListener("scroll", () => {
-  const checkForAnimation = document.querySelector(
+  const animationStarted = new Event("animationStarted");
+
+  const itemsForAnimation = document.querySelectorAll(
     ".statistics__itemNumber.animated"
   );
 
-  if (checkForAnimation) {
-    if (window.innerWidth > 500) {
-      if (mainCounter <= 1) {
-        animateNumbers(3);
-      }
-    } else {
-      if (mainCounter <= 100) {
-        animateNumbers(3);
-      }
-    }
+  if (itemsForAnimation) {
+    itemsForAnimation.forEach((itemForAnimation) => {
+      itemForAnimation.dispatchEvent(animationStarted);
+    });
   }
 });
 
-function animateNumbers(animeationDurationInSeconds) {
-  const itemsForNumberChange = document.querySelectorAll(
-    ".statistics__itemNumber.animated"
-  );
-
-  const animeationDuration = animeationDurationInSeconds;
-
-  itemsForNumberChange.forEach((itemForNumberChange) => {
-    let counter = 1;
-
-    if (itemForNumberChange.dataset.neededAmountWithPlus) {
-      const neededAmountWithPlus =
-        itemForNumberChange.dataset.neededAmountWithPlus;
-
-      const timeStepNeededAmountWithPlus =
-        (1000 * animeationDuration) / neededAmountWithPlus;
-
-      const animate = setInterval(() => {
-        if (counter <= neededAmountWithPlus) {
-          itemForNumberChange.textContent = `${counter}+`;
+function animateNumbers(itemForAnimation) {
+  const animeationDuration = 4;
+  let counter = 1;
+  // if dataset present
+  if (itemForAnimation.dataset.neededAmount) {
+    // how many numbers need to change
+    const neededAmount = itemForAnimation.dataset.neededAmount;
+    // step of time for interval
+    const timeStep = (1000 * animeationDuration) / neededAmount;
+    // change numbers
+    const animate = setInterval(() => {
+      if (counter <= neededAmount) {
+        // continue
+        if (itemForAnimation.dataset.withPlus !== "true") {
+          itemForAnimation.textContent = counter;
         } else {
-          clearInterval(animate);
+          itemForAnimation.textContent = `${counter}+`;
         }
+      } else {
+        // stop
+        clearInterval(animate);
+      }
 
-        counter++;
-      }, timeStepNeededAmountWithPlus);
-    }
+      counter++;
+    }, timeStep);
+  }
+}
 
-    if (itemForNumberChange.dataset.neededAmount) {
-      const neededAmount = itemForNumberChange.dataset.neededAmount;
+function offset(el) {
+  const rect = el.getBoundingClientRect();
 
-      const timeStep = (1000 * animeationDuration) / neededAmount;
+  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      const animate = setInterval(() => {
-        if (counter <= neededAmount) {
-          itemForNumberChange.textContent = counter;
-        } else {
-          clearInterval(animate);
-        }
-
-        counter++;
-      }, timeStep);
-    }
-  });
-
-  mainCounter++;
+  return {
+    top: rect.top + scrollTop,
+    left: rect.left + scrollLeft,
+  };
 }

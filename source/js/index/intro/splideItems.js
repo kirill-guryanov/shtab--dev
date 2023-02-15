@@ -1,134 +1,269 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const splideItem1 = new Splide( '.intro__splide-string1', {
-    type   : 'loop',
-    drag   : 'free',
-    focus  : 'center',
-    perPage: 3,
+if (window.innerWidth >= 390) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splideItem1 = new Splide(".intro__splide-string1", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
 
-    autoScroll: {
-      speed: 1,
-    },
+      autoScroll: {
+        speed: 1,
+      },
 
-    gap: 15,
+      gap: 15,
 
-    pagination: false,
-    arrows: false,
-    direction: 'ttb',
+      pagination: false,
+      arrows: false,
+      direction: "ttb",
 
-    autoWidth: true,
+      autoWidth: true,
 
-    breakpoints: {
-      50000000: {
-        height: 950,
+      breakpoints: {
+        50000000: {
+          height: 950,
+        },
+        1300: {
+          perPage: 4,
+        },
+        960: {
+          perPage: 5,
+        },
+        620: {
+          direction: "ltr",
+          perPage: 2,
+          gap: 10,
+          height: 200,
+        },
+        440: {
+          perPage: 2,
+        },
+        428: {
+          height: 180,
+        },
       },
-      1300: {
-        perPage: 4,
+    });
+
+    const splideItem2 = new Splide(".intro__splide-string2", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+
+      autoScroll: {
+        speed: 1,
       },
-      960: {
-        perPage: 5
+
+      gap: 15,
+
+      pagination: false,
+      arrows: false,
+      direction: "ttb",
+
+      autoWidth: true,
+
+      breakpoints: {
+        50000000: {
+          height: 950,
+        },
+        1300: {
+          perPage: 4,
+        },
+        960: {
+          perPage: 5,
+        },
+        620: {
+          direction: "ltr",
+          perPage: 2,
+          gap: 10,
+          height: 200,
+        },
+        440: {
+          perPage: 2,
+        },
+        428: {
+          height: 180,
+        },
       },
-      620: {
-        direction: "ltr",
-        perPage: 2,
-        gap: 10,
-        height: 200
+    });
+    const splideItem3 = new Splide(".intro__splide-string3", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+
+      autoScroll: {
+        speed: 1,
       },
-      440: {
-        perPage: 2,
+
+      gap: 15,
+
+      pagination: false,
+      arrows: false,
+      direction: "ttb",
+
+      autoWidth: true,
+
+      breakpoints: {
+        50000000: {
+          height: 950,
+        },
+        1300: {
+          perPage: 4,
+        },
+        960: {
+          perPage: 5,
+        },
+        620: {
+          direction: "ltr",
+          perPage: 2,
+          gap: 10,
+          height: 200,
+        },
+        440: {
+          perPage: 2,
+        },
+        428: {
+          height: 180,
+        },
       },
-      428: {
-        height: 180
-      },
-    },
+    });
+
+    splideItem1.mount(window.splide.Extensions);
+    splideItem2.mount(window.splide.Extensions);
+    splideItem3.mount(window.splide.Extensions);
   });
+} else {
+  document.addEventListener("DOMContentLoaded", function () {
+    const splideItem1 = new Splide(".intro__splide-string1", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
 
-  const splideItem2 = new Splide( '.intro__splide-string2', {
-    type   : 'loop',
-    drag   : 'free',
-    focus  : 'center',
-    perPage: 3,
-
-    autoScroll: {
-      speed: 1,
-    },
-
-    gap: 15,
-
-    pagination: false,
-    arrows: false,
-    direction: 'ttb',
-
-    autoWidth: true,
-
-    breakpoints: {
-      50000000: {
-        height: 950,
+      autoScroll: {
+        speed: 1,
       },
-      1300: {
-        perPage: 4,
-      },
-      960: {
-        perPage: 5
-      },
-      620: {
-        direction: "ltr",
-        perPage: 2,
-        gap: 10,
-        height: 200
-      },
-      440: {
-        perPage: 2,
-      },
-      428: {
-        height: 180
-      },
-    },
-  })
-  const splideItem3 = new Splide( '.intro__splide-string3', {
-    type   : 'loop',
-    drag   : 'free',
-    focus  : 'center',
-    perPage: 3,
 
-    autoScroll: {
-      speed: 1,
-    },
+      gap: 15,
 
-    gap: 15,
+      pagination: false,
+      arrows: false,
+      direction: "ttb",
 
-    pagination: false,
-    arrows: false,
-    direction: 'ttb',
+      autoWidth: true,
 
-    autoWidth: true,
+      breakpoints: {
+        50000000: {
+          height: 950,
+        },
+        1300: {
+          perPage: 4,
+        },
+        960: {
+          perPage: 5,
+        },
+        620: {
+          direction: "ltr",
+          perPage: 2,
+          gap: 10,
+          height: 200,
+        },
+        440: {
+          perPage: 2,
+        },
+        428: {
+          height: 180,
+        },
+      },
+    });
 
-    breakpoints: {
-      50000000: {
-        height: 950,
-      },
-      1300: {
-        perPage: 4,
-      },
-      960: {
-        perPage: 5
-      },
-      620: {
-        direction: "ltr",
-        perPage: 2,
-        gap: 10,
-        height: 200
-      },
-      440: {
-        perPage: 2,
-      },
-      428: {
-        height: 180
-      },
-    },
-  })
+    const splideItem2 = new Splide(".intro__splide-string2", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
 
+      autoScroll: {
+        speed: 1,
+      },
 
-  splideItem1.mount( window.splide.Extensions );
-  splideItem2.mount( window.splide.Extensions );
-  splideItem3.mount( window.splide.Extensions );
-});
+      gap: 15,
+
+      pagination: false,
+      arrows: false,
+      direction: "ttb",
+
+      autoWidth: true,
+
+      breakpoints: {
+        50000000: {
+          height: 950,
+        },
+        1300: {
+          perPage: 4,
+        },
+        960: {
+          perPage: 5,
+        },
+        620: {
+          direction: "ltr",
+          perPage: 2,
+          gap: 10,
+          height: 200,
+        },
+        440: {
+          perPage: 2,
+        },
+        428: {
+          height: 180,
+        },
+      },
+    });
+    const splideItem3 = new Splide(".intro__splide-string3", {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+
+      autoScroll: {
+        speed: 1,
+      },
+
+      gap: 15,
+
+      pagination: false,
+      arrows: false,
+      direction: "ttb",
+
+      autoWidth: true,
+
+      breakpoints: {
+        50000000: {
+          height: 950,
+        },
+        1300: {
+          perPage: 4,
+        },
+        960: {
+          perPage: 5,
+        },
+        620: {
+          direction: "ltr",
+          perPage: 2,
+          gap: 10,
+          height: 200,
+        },
+        440: {
+          perPage: 2,
+        },
+        428: {
+          height: 180,
+        },
+      },
+    });
+
+    splideItem1.mount();
+    splideItem2.mount();
+    splideItem3.mount();
+  });
+}

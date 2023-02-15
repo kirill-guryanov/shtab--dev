@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const splideMain = new Splide( '.intro__splider--container', {
+document.addEventListener("DOMContentLoaded", function () {
+  const splideMain = new Splide(".intro__splider--container", {
     perPage: 1,
 
-    type   : 'loop',
-    focus  : 'center',
+    type: "loop",
+    focus: "center",
     arrows: false,
 
     pagination: true,
@@ -12,26 +12,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     interval: 6000,
 
-    pauseOnHover : false,
-    pauseOnFocus : false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
 
     breakpoints: {
       1000000: {
-        direction: 'ttb',
-        paginationDirection: 'ttb',
+        direction: "ttb",
+        paginationDirection: "ttb",
         height: 1000,
       },
       1070: {
-        direction: 'ltr',
-        focus  : 'center',
+        direction: "ltr",
+        focus: "center",
       },
       854: {
-        paginationDirection: 'ltr'
+        paginationDirection: "ltr",
       },
       620: {
         height: null,
-        autoHeight: true
-      }
-    }
-  }).mount()
-})
+        autoHeight: true,
+      },
+    },
+  }).mount();
+});

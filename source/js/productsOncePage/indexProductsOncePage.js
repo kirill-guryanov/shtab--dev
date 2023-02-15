@@ -4,7 +4,7 @@ import "../utils/preloader";
 import "../burgerMenu/burgerMenu";
 import "../burgerMenu/buttonsImplementation";
 // circle
-// import "../circle/circle";
+import "../circle/circle--productsOncePage";
 // header
 import "../header/text";
 import "../header/animationWithScroll";
@@ -20,5 +20,4 @@ import "../footer/rights-top-border";
 // utils
 import "../utils/allignButtonsSpan";
 import "../utils/butter";
-// import "../utils/animationOnScroll";
 import "./buttonsImplementation";

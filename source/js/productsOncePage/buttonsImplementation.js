@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".fillingButton__svg-circle--infoOffer",
     ".fillingButton__circle--infoOffer",
     3,
-    4,
+    3,
     0,
     0,
     true,
@@ -21,7 +21,7 @@ window.addEventListener("resize", () => {
     ".fillingButton__svg-circle--infoOffer",
     ".fillingButton__circle--infoOffer",
     3,
-    4,
+    3,
     0,
     0,
     false

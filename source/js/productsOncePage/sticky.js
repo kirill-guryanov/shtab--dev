@@ -10,19 +10,6 @@ if (window.innerWidth >= 1115) {
   itemForSticky.style.width = `${initialWidth}px`;
   itemForStickyWrapper.style.width = `${initialWidth}px`;
 
-  document.addEventListener("DOMContentLoaded", () => {
-    // const isSticky = itemForSticky.style.position === "fixed";
-    // if (isSticky) {
-    // }
-  });
-
-  window.addEventListener("resize", () => {
-    // itemForStickyWrapper.style.width = initialWidth;
-    // itemForSticky.style.width = initialWidth;
-  });
-
-  // console.log(itemForSticky.getBoundingClientRect().width;);
-
   window.addEventListener("scroll", () => {
     // header height
     const headerHeight = header.getBoundingClientRect().height;

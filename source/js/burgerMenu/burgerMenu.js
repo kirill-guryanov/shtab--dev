@@ -1,4 +1,6 @@
 const body = document.querySelector("body");
+// console.log(header.style.backgroundColor);
+console.log();
 
 const WordToRight = document.querySelector(
   ".burgerMenu__animatedWords_wordToRight"
