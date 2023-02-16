@@ -11,20 +11,7 @@ exports.scssProjects = function () {
     src("./source/sass/**/projects.sass")
       .pipe(sourcemaps.init())
       .pipe(sass().on("error", sass.logError))
-      .pipe(
-        autoprefixer({
-          overrideBrowserslist: ["last 8 versions"],
-          browsers: [
-            "Android >= 4",
-            "Chrome >= 20",
-            "Firefox >= 24",
-            "Explorer >= 11",
-            "iOS >= 6",
-            "Opera >= 12",
-            "Safari >= 6",
-          ],
-        })
-      )
+      .pipe(autoprefixer())
       .pipe(
         clean({
           level: 2,

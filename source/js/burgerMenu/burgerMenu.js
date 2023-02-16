@@ -28,6 +28,7 @@ burger.addEventListener("click", () => {
 
   WordToRight.classList.add("burgerMenu__animatedWords_wordToRight--animated");
   WordToLeft.classList.add("burgerMenu__animatedWords_wordToLeft--animated");
+  burgerMenu.classList.remove("burgerMenu--visible");
   burgerMenu.classList.add("burgerMenu--visible");
 });
 
@@ -44,6 +45,7 @@ document.addEventListener("keyup", (e) => {
       "burgerMenu__animatedWords_wordToLeft--animated"
     );
     burgerMenu.classList.remove("burgerMenu--visible");
+    burgerMenu.classList.add("burgerMenu--closed");
   }
 });
 
@@ -60,6 +62,7 @@ closeButton.addEventListener("click", (e) => {
       "burgerMenu__animatedWords_wordToLeft--animated"
     );
     burgerMenu.classList.remove("burgerMenu--visible");
+    burgerMenu.classList.add("burgerMenu--closed");
   }
 });
 

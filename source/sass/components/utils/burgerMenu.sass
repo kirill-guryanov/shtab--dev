@@ -51,6 +51,18 @@
         filter: opacity(1)
         z-index: 4
 
+    &--closed
+        animation: 3s ease 0s 1 normal forwards running closed
+        transition: all .3s ease
+
+@keyframes close
+    0%
+        filter: opacity(1)
+        z-index: 4
+    100%
+        filter: opacity(0)
+        z-index: -1
+
 .header__nav-item--black-mode
     color: #fff
 
