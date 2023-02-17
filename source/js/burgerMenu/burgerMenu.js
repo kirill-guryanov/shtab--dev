@@ -28,7 +28,7 @@ burger.addEventListener("click", () => {
 
   WordToRight.classList.add("burgerMenu__animatedWords_wordToRight--animated");
   WordToLeft.classList.add("burgerMenu__animatedWords_wordToLeft--animated");
-  burgerMenu.classList.remove("burgerMenu--visible");
+  burgerMenu.classList.remove("burgerMenu--closed");
   burgerMenu.classList.add("burgerMenu--visible");
 });
 

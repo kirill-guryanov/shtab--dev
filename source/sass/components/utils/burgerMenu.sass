@@ -34,6 +34,8 @@
 
 // menu
 .burgerMenu
+    // padding-top: 90px
+
     width: 100%
     height: 100%
 
@@ -41,19 +43,19 @@
     filter: opacity(0)
     transition: filter .3s ease
 
-    overflow-x: hidden
-    overflow-y: auto
+    overflow: hidden
 
     position: fixed
     z-index: -1
 
     &--visible
-        filter: opacity(1)
         z-index: 4
+        transition: filter .3s ease
+        filter: opacity(1)
 
     &--closed
-        animation: 3s ease 0s 1 normal forwards running closed
         transition: all .3s ease
+        animation: 3s ease 0s 1 normal forwards running closed
 
 @keyframes close
     0%
@@ -110,6 +112,8 @@
     height: 100%
     width: 100%
 
+    overflow-y: auto
+
     @media (max-width: 1130px)
         display: block
 
@@ -140,6 +144,9 @@
         justify-content: center
 
         margin-bottom: 100px
+
+    @media (max-width: 500px)
+        margin-bottom: 60px
 
 .burgerMenu__contentNavigation-leftSide
     display: flex

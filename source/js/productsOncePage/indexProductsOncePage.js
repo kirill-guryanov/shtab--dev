@@ -10,6 +10,8 @@ import "../header/text";
 import "../header/animationWithScroll";
 // intro
 import "./intro";
+// other
+import "./otherItems";
 // sticky
 import "./sticky";
 // footer

@@ -4,7 +4,7 @@
     position: relative
 
     @media ( max-width: 640px )
-        padding-bottom: 0
+        padding-bottom: 30px
 
     @media ( max-width: 580px )
         padding-top: 30px
@@ -19,7 +19,7 @@
     @media (max-width: 1350px)
         display: none
 
-// title
+// text
 .infoTitle
     font-weight: 700
     @include adaptiveFont(30, 18)
@@ -38,6 +38,12 @@
     &--white
         color: #fff
 
+    &--notCenter
+        text-align: left
+
+        @media ( max-width: 490px )
+            text-align: center
+
 .infoText
     font-weight: 400
     @include adaptiveFont(20, 16)
@@ -50,6 +56,9 @@
     &--500
         font-weight: 500
         @include adaptiveFont(18, 16)
+
+    &--white
+        color: #fff
 
 .bullet
     flex-shrink: 0

@@ -1,0 +1,16 @@
+section
+    h1.visibleHidden
+
+    img(
+        src="" alt="" 
+        width= height=
+    )
+
+    .container
+
+img(
+    src="" alt="" 
+    width= height=
+
+)
+a(href="")
