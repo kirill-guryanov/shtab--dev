@@ -23,8 +23,6 @@ import "./services/spanBg";
 import "./services/buttonsImplementation";
 // products
 import "./products/buttonsImplementation";
-import "./products/animation-for-items";
-import "./products/aos";
 // reviews
 import "./reviews/decoration-image";
 import "./reviews/splide";

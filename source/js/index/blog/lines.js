@@ -11,7 +11,7 @@ const blogContainerLeft = blogContainer.getBoundingClientRect().left;
 // lines
 const linesWrapperWidth = linesWrapper.getBoundingClientRect().width;
 const linesWrapperWidthHalf = linesWrapperWidth / 2;
-//
+// needs
 const neededLeftMargin =
   blogContainerWidthHalf + blogContainerLeft - linesWrapperWidthHalf;
 

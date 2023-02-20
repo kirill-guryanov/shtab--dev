@@ -1,4 +1,4 @@
-import {addInteractivityToButton} from  "../../utils/addInteractivityToButton";
+import { addInteractivityToButton } from "../../utils/addInteractivityToButton";
 
 document.addEventListener("DOMContentLoaded", () => {
   addInteractivityToButton(
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     true,
     "blackArrow",
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--blog-telegram",
     ".fillingButton__svg-circle--blog-telegram",
@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     0,
     0,
     true,
-    "assets/images/utils/telegram.svg",
+    "assets/images/header/telegram--transparent.svg",
     false,
     [31, 25]
-  )
-})
+  );
+});
 
 window.addEventListener("resize", () => {
   addInteractivityToButton(
@@ -38,7 +38,7 @@ window.addEventListener("resize", () => {
     0,
     0,
     false
-  )
+  );
   addInteractivityToButton(
     ".fillingButton--blog-telegram",
     ".fillingButton__svg-circle--blog-telegram",
@@ -48,5 +48,5 @@ window.addEventListener("resize", () => {
     0,
     0,
     false
-  )
-})
+  );
+});

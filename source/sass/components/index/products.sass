@@ -112,12 +112,22 @@
   width: 430px
   height: 498px
 
+  opacity: 0
+  transform: perspective(360px) rotateX(70deg) translateY(200px) scale(.7)
+
+  transition: all .6s ease
+
   border: 1px solid #434343
   background-color: #1B1B1B
   cursor: pointer
 
   position: relative
   z-index: 1
+
+  &.animated
+    // animation: .3s ease 0 1 normal forwards running items
+    opacity: 1
+    transform: perspective(360px) rotateX(0deg) translateY(0px) scale(1)
 
   @media (max-width: 1536px)
     width: 341px
@@ -141,6 +151,10 @@
   @media (max-width: 390px)
     width: 270px
     height: 290px
+
+// @keyframes items
+
+//   100%
 
 .products__gallery-items-column-item-bottom-image
   position: relative
@@ -371,15 +385,15 @@
     margin-top: 60px
 
 // AOS
-[data-aos="new-animation"]
-  opacity: 0
-  transition-property: transform, opacity
-  transform: perspective(360px) rotateX(70deg) translateY(200px) scale(.7)
-  //transform: rotateX(80deg)
+// [data-aos="new-animation"]
+//   opacity: 0
+//   transition-property: transform, opacity
+//   transform: perspective(360px) rotateX(70deg) translateY(200px) scale(.7)
+//   //transform: rotateX(80deg)
 
-  &.aos-animate
-    opacity: 1
-    transform: perspective(360px) rotateX(0deg) translateY(0px) scale(1)
+//   &.aos-animate
+//     opacity: 1
+//     transform: perspective(360px) rotateX(0deg) translateY(0px) scale(1)
     //transform: rotateX(0deg)
 
   //@media screen and (min-width: 768px)

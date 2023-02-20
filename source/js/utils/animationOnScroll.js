@@ -18,7 +18,7 @@ function animationOnScroll(itemsSelectorForAnimation) {
       // item distanse to top
       const animationItemTop = offset(animationItem).top;
       //
-      const animationStart = 1;
+      const animationStart = 11;
       // window height
       const windowHeight = window.innerHeight;
       // when start animation
