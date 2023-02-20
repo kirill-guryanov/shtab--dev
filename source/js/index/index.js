@@ -32,6 +32,7 @@ import "./reviews/splide-arrows-align";
 import "./reviews/splide-arrows-embed";
 // blog
 import "./blog/buttonsImplementation";
+import "./blog/lines";
 // footer
 import "../footer/checkbox";
 import "../footer/add-space-between-items";
@@ -41,3 +42,4 @@ import "../footer/rights-top-border";
 import "../utils/allignButtonsSpan";
 import "../utils/addInteractivityToButton";
 import "../utils/butter";
+import "../utils/animationOnScroll";

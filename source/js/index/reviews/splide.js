@@ -1,9 +1,9 @@
-window.addEventListener('load', function() {
-  const splide4 = new Splide( '.reviews__splide', {
+window.addEventListener("load", function () {
+  const splide4 = new Splide(".reviews__splide", {
     arrows: true,
     perMove: 1,
     pagination: false,
-    focus  : 'center',
+    focus: "center",
 
     breakpoints: {
       5000: {
@@ -19,28 +19,28 @@ window.addEventListener('load', function() {
       },
       1200: {
         perPage: 4,
-        gap: 20
+        gap: 20,
       },
       1180: {
         perPage: 3,
-        gap: 60
+        gap: 60,
         // gap: 200
       },
       1060: {
         // perPage: 2,
-        gap: 20
+        gap: 20,
       },
       920: {
         perPage: 2,
-        gap: 160
+        gap: 160,
       },
       840: {
         // perPage: 2,
-        gap: 100
+        gap: 100,
       },
       765: {
         // perPage: 2,
-        gap: 30
+        gap: 30,
       },
       675: {
         perPage: 1,
@@ -48,9 +48,8 @@ window.addEventListener('load', function() {
       },
       450: {
         perPage: 1,
-        gap: 15
+        gap: 15,
       },
-    }
-  }).mount()
-
-})
+    },
+  }).mount();
+});

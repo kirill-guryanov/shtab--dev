@@ -91,6 +91,9 @@ window.addEventListener("load", function () {
   window.addEventListener("scroll", () => {
     const intro = document.querySelector(".intro").offsetTop;
     const info = document.querySelector(".info").offsetTop;
+    const otherAndMayToLikeWrapper = document.querySelector(
+      ".otherAndMayToLikeWrapper"
+    ).offsetTop;
     const offer = document.querySelector(".offer").offsetTop;
     const footer = document.querySelector(".footer").offsetTop;
 
@@ -113,6 +116,14 @@ window.addEventListener("load", function () {
       circle.style.fill = "#1D1D1D";
       circleArrowSalad.classList.add("progress-circle-arrow--active");
       circleArrowBlack.classList.add("progress-circle-arrow--not-active");
+    }
+    // otherAndMayToLikeWrapper
+    if (currentPosition >= otherAndMayToLikeWrapper) {
+      clearArrowsClasses();
+
+      circle.style.fill = "#fff";
+      circleArrowSalad.classList.add("progress-circle-arrow--not-active");
+      circleArrowBlack.classList.add("progress-circle-arrow--active");
     }
     // offer
     if (currentPosition >= offer) {

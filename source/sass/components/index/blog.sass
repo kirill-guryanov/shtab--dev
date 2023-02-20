@@ -10,6 +10,34 @@
     padding-top: 50px
     padding-bottom: 50px
 
+  &.animated .blogLine
+    transform: scaleY(100%)
+
+.blogLines
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+  margin: 0 auto
+
+  max-width: 495px
+  width: 100%
+
+  // transform: rotate(180deg)
+
+  position: absolute
+  top: 0
+  bottom: 0
+
+.blogLine
+  width: 1px
+  height: 100%
+
+  background-color: #EDEDED
+  transform: scaleY(0)
+
+  transition: all 5s ease
+
 .section__titles__blog
   @media (max-width: 970px)
     display: grid!important
@@ -123,6 +151,9 @@
     width: 245px
     height: 270px
 
+  &:hover .blog__items-item-image
+    transform: scale(1.2)
+
   &::after
     content: ""
     display: block
@@ -155,9 +186,17 @@
   &:hover .blog__items-item-visible-block-top-date
     color: #fff
 
+.blog__items-item-imageWrapper
+  width: 100%
+  height: 100%
+
+  overflow: hidden
+
 .blog__items-item-image
   width: 100%
   height: 100%
+
+  transition: transform .3s ease
 
 .blog__items-item-block
   width: 278px
@@ -179,9 +218,6 @@
 
     right: 0
 
-  //@media (max-width: 750px)
-    //right:
-
   @media (max-width: 460px)
     right: 0
 
@@ -192,7 +228,6 @@
 
   padding: 25px 20px 0 25px
 
-  //width: 278px
   height: 100%
 
   background-color: #fff
@@ -314,4 +349,3 @@
   opacity: .7
 
   transition: opacity .3s ease-in-out
-

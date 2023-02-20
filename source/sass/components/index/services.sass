@@ -2,7 +2,7 @@
     padding-top: 120px
     padding-bottom: 85px
 
-    overflow: hidden 
+    overflow: hidden
 
     position: relative
 
@@ -15,7 +15,7 @@
     left: -119px
     top: -86px
 
-    @media (max-width: 900px) 
+    @media (max-width: 900px)
         display: none
 
 .decorative-lines-left
@@ -28,7 +28,7 @@
 
     margin-top: 60px
 
-    @media (max-width: 900px) 
+    @media (max-width: 900px)
         grid-template-columns: 1fr
 
 .servisec-list__item
@@ -42,17 +42,19 @@
     max-width: 700px
     height: auto
 
+    overflow: hidden
+
     position: relative
 
     &:not(:last-child)
-        @media (max-width: 900px) 
+        @media (max-width: 900px)
             margin-bottom: 15px
 
-    @media (max-width: 1280px) 
+    @media (max-width: 1280px)
         padding-left: 40px
         padding-right: 40px
 
-    @media (max-width: 900px) 
+    @media (max-width: 900px)
         justify-items: center
         padding-top: 35px
         padding-bottom: 35px
@@ -60,6 +62,16 @@
     @media (max-width: 420px)
         padding-left: 15px
         padding-right: 15px
+
+    & .fillingButton
+        filter: opacity(0)
+        transition: filter .3s ease
+
+    &:hover .servisec-list__item-img
+        transform: scale(1.2)
+
+    &:hover .fillingButton
+        filter: opacity(1)
 
     &:hover .servisec-list__item-title-span
         color: #404040
@@ -76,7 +88,7 @@
     transform: rotate(359deg)
 
     overflow: hidden
-        
+
 .servisec-list__item-title-span-bg
     transition: color .3s ease
 
@@ -101,6 +113,7 @@
     height: 100%
 
     object-fit: cover
+    transition: transform .3s ease
 
     position: absolute
     left: 0
@@ -124,7 +137,7 @@
     position: relative
     z-index: 2
 
-    @media (max-width: 900px) 
+    @media (max-width: 900px)
         text-align: center
 
 .servisec-list__item-list

@@ -20,9 +20,22 @@
 
 //  decoration
 .about-us__decoration-image--left
-  position: absolute
+  transform: translate(-40%, 100%) rotate(90deg)
+
+  @include adaptiveFont(140, 80)
+  color: #fff
+  opacity: .06
 
   left: 55px
+  position: absolute
+
+  @media (max-width: 1520px)
+    display: none
+
+  @media (max-width: 1170px)
+    display: block
+
+    transform: translate(-40%, 90%) rotate(90deg)
 
   @media (max-width: 700px)
     display: none
@@ -30,6 +43,8 @@
 .about-us__decoration-image--right
   position: absolute
   right: -150px
+
+  opacity: .2
 
   @media (max-width: 970px)
     display: none
