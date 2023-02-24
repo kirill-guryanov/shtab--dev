@@ -1,0 +1,159 @@
+
+// variables
+@import "../components/utils/variables"
+// utils
+@import "../components/utils/container"
+@import "../components/utils/preloader"
+@import "../components/utils/variables"
+@import "../components/utils/mixins"
+@import "../components/utils/fonts"
+@import "../components/utils/reset"
+@import "../components/utils/fillingButton"
+@import "../components/utils/sectionTitles"
+// functional
+@import "../components/services/offer"
+// sections
+@import "../components/serviceDetail/intro"
+@import "../components/serviceDetail/costs"
+@import "../components/serviceDetail/ourWorks"
+@import "../components/serviceDetail/stack"
+// 
+@import "../components/circle/circle"
+@import "../components/header/header"
+@import "../components/utils/burgerMenu"
+@import "../components/footer/footer"
+
+html
+    scroll-behavior: smooth
+
+body
+    display: flex
+    flex-direction: column
+
+    font-family: 'Circe', serif
+
+    position: relative
+
+main
+    flex-grow: 1
+
+input:focus
+    border: 1px solid $saladColor
+    outline: none
+
+#butter
+    position: fixed
+
+// header phone
+.header__contacts-item-number-image
+    display: none
+
+    margin-right: 15px
+
+    &--black
+        @media (max-width: 390px)
+            display: inherit
+
+    &--white
+        @media (max-width: 390px)
+            display: none
+
+// header
+.header--main
+    background-color: transparent
+
+.header--main--min-padding
+    background-color: #1D1D1D
+
+.header--main-black-mode
+    background-color: #1D1D1D
+
+.header__burger-span
+    background-color: #fff
+
+.header__nav-item,
+.header__contacts-item-number,
+.header__contacts-item-back-call
+    color: #fff
+
+.header__logo-block-image--black
+    display: none
+
+.header__logo-block-image--white
+    display: block
+
+.header__contacts-item-image--black
+    display: none
+
+.header__contacts-item-image--white
+    display: block
+
+// header letters
+.header__nav-item-text
+.block:last-child
+    color: #ffffff
+
+// titles
+    // title bg
+.servisec-list__item
+    margin-bottom: 35px
+
+    position: relative
+
+    &--notMargin
+        margin: 0
+
+.servisec-list__item-title-span
+    color: #404040
+    transition: color .3s ease
+
+.servisec-list__item-title-span-wrapper
+    position: absolute
+
+    transform: rotate(359deg)
+
+    overflow: hidden
+
+.servisec-list__item-title-span-bg
+    transition: color .3s ease
+
+    &::before
+        content: ""
+        display: block
+
+        width: 100%
+        height: 100%
+
+        background-color: #D0FF48
+        transition: transform .3s ease
+        transform: translateX(0)
+
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 1
+
+.servisec-list__item-title
+    font-weight: 700
+    @include adaptiveFont(40, 20)
+    line-height: 105%
+    color: #fff
+
+    position: relative
+    z-index: 2
+
+    &--black
+        color: #404040
+
+// offer
+.offer
+    @media( max-width: 490px )
+        padding: 0 0 30px
+
+.offer__decorativeCircle
+    transform: translate(0%, -65%) rotate(341deg)
+
+    position: absolute
+    left: -8%
+    top: 50%
+    z-index: -1

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- splide styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- my styles-->
+    <link rel="stylesheet" href="./assets/css/serviceDetail.css">
+    <title>New Site</title>
+  </head>
+</html>
+<body class="hidden">
+  <div class="loader">
+    <div class="loader-static"></div>
+    <div class="loader-first"></div>
+    <div class="loader-second"></div>
+  </div>
+  <div class="burgerMenu">
+    <header class="header--main header--main-black-mode">
+      <div class="container container--header container--header-black-mode">
+        <div class="header__logo-block"><a href="index.html"><img class="header__logo-block-image header__logo-block-image--white header__logo-block-image--white-mode" src="./assets/images/header/header-logo--white.svg" alt="Логотип веб студии" width="219" height="58"></a></div>
+        <button class="header__closeBurgerMenuBtn"><img src="./assets/images/utils/closeCross.svg" alt="Логотип веб студии" width="40" height="40"></button>
+      </div>
+    </header>
+    <div class="burgerMenu__animatedWords">
+      <p class="burgerMenu__animatedWords_wordToRight">IT’SHTAB</p>
+      <p class="burgerMenu__animatedWords_wordToLeft">DIGITAL CREW</p>
+    </div>
+    <section class="burgerMenu__content">
+      <div class="container">
+        <h1 class="visibleHidden">Навигация по сайту</h1>
+        <div class="burgerMenu__contentSides">
+          <nav class="burgerMenu__contentNavigation">
+            <ul class="burgerMenu__contentNavigation-leftSide">
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Главная</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Услуги</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Портфолио</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">О компании</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Контакты</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+            </ul>
+            <div class="burgerMenu__contentNavigation-line"></div>
+            <div class="burgerMenu__contentNavigation-rightSide">
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="contacts.html">Контакты</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="blog.html">блог</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="blog-once-page.html">блог одна страница</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="brief.html">бриф</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="404.html">404</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="projects.html">проекты</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="services.html">услуги</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="productsOncePage.html">продукт детальная</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="serviceDetail.html">услуга детальнвя</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Интернет реклама</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Поддержка и обслуживание</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Аудиторские услуги</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Разработка сайтов</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Интернет реклама</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Поддержка и обслуживание</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Аудиторские услуги</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Разработка сайтов</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Интернет реклама</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Поддержка и обслуживание</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Аудиторские услуги</a></li>
+              </ul>
+            </div>
+          </nav>
+          <address class="burgerMenu__contentAddresses"><a class="burgerMenu__contentAddresses-phone" href="tel:79050226228">+7 (905) 022-62-28</a><a class="burgerMenu__contentAddresses-mail" href="mailto:info@itshtab.ru">info@itshtab.ru</a><a class="burgerMenu__contentAddresses-place" href="#">Республика Татарстан, г.<br>Казань, ул. Четаева д.5А</a>
+            <div class="burgerMenu__contentAddresses-socials"><a class="burgerMenu__contentAddresses-socialsItem" href="#"><img class="burgerMenu__contentAddresses-socialsItemIcon" src="assets/images/utils/tg.svg" alt="Телеграм" width="31" height="25"></a><a class="burgerMenu__contentAddresses-socialsItem" href="#"><img class="burgerMenu__contentAddresses-socialsItemIcon" src="assets/images/utils/wh.svg" alt="Ватсап" width="29" height="29"></a><a class="burgerMenu__contentAddresses-socialsItem" href="#"><img class="burgerMenu__contentAddresses-socialsItemIcon" src="assets/images/utils/vk.svg" alt="Вконтакте" width="29" height="29"></a></div><a class="fillingButton fillingButton--burgerMenuAddresses" href="">
+              <svg class="fillingButton__svg" viewBox="0 0 204 204">
+                <circle class="fillingButton__svg-circle fillingButton__svg-circle--burgerMenuAddresses" cx="102" cy="102" r="102" fill="transparent"></circle>
+              </svg>
+              <div class="fillingButton__circle fillingButton__circle--burgerMenuAddresses"></div>
+              <div class="fillingButton__content">
+                <p class="fillingButton__p"><span class="fillingButton__span--smallMargin-and-partial">Подро</span>бнее</p>
+              </div></a>
+          </address>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="progress-circle">
+    <div class="progress-circle__block">
+      <svg class="progress-ring" width="86" height="86">
+        <circle class="progress-ring__circle" stroke="#C6FF00" stroke-width="4" cx="43" cy="43" r="25"></circle>
+      </svg>
+      <div class="progress-circle-arrows"><img class="progress-circle-arrow progress-circle-arrow--salad" src="assets/images/circle/circle-arrow.svg" alt="Зеленая стрелка" width="20" height="36"><img class="progress-circle-arrow progress-circle-arrow--black" src="assets/images/circle/circle-arrow--black.svg" alt="Черная стрелка" width="20" height="36"></div>
+    </div>
+  </div>
+  <header class="header--main header--mainPage">
+    <div class="container container--header">
+      <div class="header__logo-block"><a href="index.html"><img class="header__logo-block-image header__logo-block-image--black" src="./assets/images/header/header-logo.svg" alt="Логотип веб студии" width="219" height="58"></a><a href="index.html"><img class="header__logo-block-image header__logo-block-image--white" src="./assets/images/header/header-logo--white.svg" alt="Логотип веб студии" width="219" height="58"></a></div>
+      <div class="header__burger-block">
+        <div class="header__burger"><span class="header__burger-span"></span><span class="header__burger-span"></span><span class="header__burger-span"></span></div>
+      </div>
+      <div class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-item-text" href="services.html">Услуги</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="projects.html">Проекты</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="#">Маркетологам</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="contacts.html">Контакты</a></li>
+        </ul>
+        <!--.header__contacts.header__contacts--narrow-->
+        <!--    ul.header__contacts-items.header__contacts-item--icons-->
+        <!--        .header__contacts-item-->
+        <!--            .header__contacts-item--icon.header__contacts-item--icon--black-->
+        <!--                a( href="#" )-->
+        <!--                    img.header__contacts-item-image.header__contacts-item-image--black(-->
+        <!--                        src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии"-->
+        <!--                        width="31" height="25"-->
+        <!--                    )-->
+        <!--            //.header__contacts-item--icon.header__contacts-item--icon--white-->
+        <!--            //    a( href="#" )-->
+        <!--            //        img.header__contacts-item-image.header__contacts-item-image--white(-->
+        <!--            //            src="./assets/images/header/telegram--transparent--white.svg" alt="Telegram веб студии"-->
+        <!--            //            width="31" height="25"-->
+        <!--            //        )-->
+        <!--        .header__contacts-item-->
+        <!--            .header__contacts-item--icon.header__contacts-item--icon--black-->
+        <!--                a( href="#" )-->
+        <!--                    img.header__contacts-item-image.header__contacts-item-image--black(-->
+        <!--                        src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии"-->
+        <!--                        width="28" height="29"-->
+        <!--                    )-->
+        <!--            //.header__contacts-item--icon.header__contacts-item--icon--white-->
+        <!--            //    a( href="#" )-->
+        <!--            //        img.header__contacts-item-image.header__contacts-item-image--white(-->
+        <!--            //            src="./assets/images/header/whatsapp--transparent--white.svg" alt="Whatsapp веб студии"-->
+        <!--            //            width="28" height="29"-->
+        <!--            //        )-->
+        <!---->
+        <!--        .header__contacts-item.header__contacts-item--numbers-->
+        <!--            a( href="tel: +79050226228" ).header__contacts-item-number +7 (905) 022 - 62 - 28-->
+        <!--            .header__contacts-item-back-call Обратный звонок-->
+      </div>
+      <div class="header__contacts header__contacts--wide">
+        <ul class="header__contacts-items header__contacts-item--icons">
+          <div class="header__contacts-item"><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--black" src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии" width="31" height="25"></a><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--white" src="./assets/images/header/telegram--transparent--white.svg" alt="Telegram веб студии" width="31" height="25"></a></div>
+          <div class="header__contacts-item"><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--black" src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии" width="28" height="29"></a><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--white" src="./assets/images/header/whatsapp--transparent--white.svg" alt="Whatsapp веб студии" width="28" height="29"></a></div>
+          <address class="header__contacts-item header__contacts-item--numbers"><a class="header__contacts-item-number" href="tel: +79050226228">+7 (905) 022 - 62 - 28</a><a class="header__contacts-item-number-image header__contacts-item-number-image--white" href="tel: +79050226228"><img src="./assets/images/header/phone.svg" alt="Телефон" width="23" height="23"></a><a class="header__contacts-item-number-image header__contacts-item-number-image--black" href="tel: +79050226228"><img src="./assets/images/header/phone-black.svg" alt="Телефон" width="23" height="23"></a>
+            <p class="header__contacts-item-back-call">Обратный звонок</p>
+          </address>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div id="butter">
+    <main>
+      <section class="intro">
+        <h1 class="visibleHidden">Разработка веб сервисов любой сложности под ключ </h1><img class="intro__decorativeCircle" src="assets/images/utils/semicircle-to-right--gray.svg" alt="Декоративный круг" width="122" height="258"><img class="intro__decorativeGlowingCircle" src="assets/images/utils/glowingCircle.png" alt="Декоративный круг">
+        <div class="container container--introServiceDetail">
+          <div class="intro__top">
+            <div class="intro__contentLeftSide">
+              <h2 class="intro__contentLeftSideTitle">
+                 Разработка веб сервисов
+                любой сложности под ключ
+              </h2>
+              <p class="intro__contentLeftSideText">
+                От решений с типовым функционалом до высоконагруженных систем. Выстраиваем техническую 
+                архитектуру, сценарии покупок, интегрируем сторонние сервисы.
+              </p>
+              <div class="intro__contentLeftSideButton"><a class="fillingButton fillingButton--introTop" href="">
+                  <svg class="fillingButton__svg" viewBox="0 0 204 204">
+                    <circle class="fillingButton__svg-circle fillingButton__svg-circle--introTop" cx="102" cy="102" r="102" fill="transparent"></circle>
+                  </svg>
+                  <div class="fillingButton__circle fillingButton__circle--introTop"></div>
+                  <div class="fillingButton__content">
+                    <p class="fillingButton__p"><span class="fillingButton__span--smallMargin-and-partial">Рассчит</span>ать стоимость</p>
+                  </div></a></div>
+            </div>
+            <div class="intro__contentRightSide"><img class="intro__contentRightSideImage" src="assets/images/serviceDetail/desktop.svg" alt="Декоративная картинка" width="659" height="433"></div>
+          </div>
+          <div class="intro__bottom">
+            <div class="intro__bottomItemsWrapper">
+              <div class="intro__bottomTitleWrapper">
+                <h2 class="intro__bottomTitle">Решим вашу задачу любой сложности!</h2>
+              </div>
+              <div class="intro__bottomFormWrapper">
+                <form class="intro__bottomForm">
+                  <input class="offer__formInputIntro" type="text" placeholder="Ваше имя" name="name">
+                  <input class="offer__formInputIntro" type="tel" placeholder="Ваш телефон" name="tel">
+                </form>
+                <footer class="intro__bottomFormDescriptionBlock">
+                  <p class="intro__bottomFormDescription">
+                    Нажимая кнопку, вы разрешаете обработку персональных данных и соглашаетесь с 
+                    политикой конфиденциальности.
+                  </p>
+                </footer>
+              </div>
+              <div class="intro__bottomButton">
+                <div class="intro__contentLeftSideButton"><a class="fillingButton fillingButton--introBottom" href="">
+                    <svg class="fillingButton__svg fillingButton__svg--introBottom" viewBox="0 0 160 160">
+                      <circle class="fillingButton__svg-circle fillingButton__svg-circle--introBottom" cx="80" cy="80" r="80" fill="transparent"></circle>
+                    </svg>
+                    <div class="fillingButton__circle fillingButton__circle--introBottom"></div>
+                    <div class="fillingButton__content">
+                      <p class="fillingButton__p"><span class="fillingButton__span--smallMargin-and-partial">Отпра</span>вить</p>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stack">
+        <h1 class="visibleHidden"></h1><img class="stackDecorativeCircletTop" src="assets/images/utils/circleWithLines--transparent.svg" alt="Декоративный круг" width="378" height="378"><img class="stackDecorativeCircletBottom" src="assets/images/utils/circleWithLines--transparent.svg" alt="Декоративный круг" width="378" height="378">
+        <div class="container">
+          <div class="stack__content"> 
+            <div class="stack__contentTop">
+              <h2 class="stack__contentTopTitle">Используемый технологический стек</h2>
+              <div class="stack__contentTopButton"><a class="fillingButton fillingButton--stackTop" href="">
+                  <svg class="fillingButton__svg" viewBox="0 0 204 204">
+                    <circle class="fillingButton__svg-circle fillingButton__svg-circle--stackTop" cx="102" cy="102" r="102" fill="transparent"></circle>
+                  </svg>
+                  <div class="fillingButton__circle fillingButton__circle--black-border fillingButton__circle--stackTop"></div>
+                  <div class="fillingButton__content">
+                    <p class="fillingButton__p fillingButton__p--black"><span class="fillingButton__span--smallMargin">Консультация</span></p>
+                  </div></a></div>
+            </div>
+            <div class="stack__contentMiddle">
+              <div class="stack__contentMiddleItems">
+                <div class="stack__contentMiddleItem">
+                  <div class="stack__contentMiddleItemHeader">
+                    <div class="stack__contentMiddleItemHeaderIconWrapper"><img class="stack__contentMiddleItemHeaderIcon" src="assets/images/serviceDetail/laravel.svg" alt="Декоративная картинка" width="35" height="36"></div>
+                    <div class="stack__contentMiddleItemHeaderTitle">Laravel</div>
+                  </div>
+                  <div class="stack__contentMiddleItemBody">
+                    <p class="stack__contentMiddleItemBodyText">
+                      Гибкий инструмент для коллективной работы и управления проектами. 
+                      Ставим задачи для разработчиков, контролируем процесс исполнения. 
+                      GitLab позволяет сохранить написанный код в онлайн формате и работать 
+                      с командой разработчиков над несколькими проектами
+                    </p>
+                  </div>
+                </div>
+                <div class="stack__contentMiddleItem">
+                  <div class="stack__contentMiddleItemHeader">
+                    <div class="stack__contentMiddleItemHeaderIconWrapper"><img class="stack__contentMiddleItemHeaderIcon" src="assets/images/serviceDetail/node.svg" alt="Декоративная картинка" width="39" height="45"></div>
+                    <div class="stack__contentMiddleItemHeaderTitle">Node JS</div>
+                  </div>
+                  <div class="stack__contentMiddleItemBody">
+                    <p class="stack__contentMiddleItemBodyText">
+                      Гибкий инструмент для коллективной работы и управления проектами. 
+                      Ставим задачи для разработчиков, контролируем процесс исполнения. 
+                      GitLab позволяет сохранить написанный код в онлайн формате и работать 
+                      с командой разработчиков над несколькими проектами
+                    </p>
+                  </div>
+                </div>
+                <div class="stack__contentMiddleItem">
+                  <div class="stack__contentMiddleItemHeader">
+                    <div class="stack__contentMiddleItemHeaderIconWrapper"><img class="stack__contentMiddleItemHeaderIcon" src="assets/images/serviceDetail/laravel.svg" alt="Декоративная картинка" width="39" height="45"></div>
+                    <div class="stack__contentMiddleItemHeaderTitle">Python django</div>
+                  </div>
+                  <div class="stack__contentMiddleItemBody">
+                    <p class="stack__contentMiddleItemBodyText">
+                      Гибкий инструмент для коллективной работы и управления проектами. 
+                      Ставим задачи для разработчиков, контролируем процесс исполнения. 
+                      GitLab позволяет сохранить написанный код в онлайн формате и работать 
+                      с командой разработчиков над несколькими проектами
+                    </p>
+                  </div>
+                </div>
+                <div class="stack__contentMiddleItem">
+                  <div class="stack__contentMiddleItemHeader">
+                    <div class="stack__contentMiddleItemHeaderIconWrapper"><img class="stack__contentMiddleItemHeaderIcon" src="assets/images/serviceDetail/vue.svg" alt="Декоративная картинка" width="40" height="32"></div>
+                    <div class="stack__contentMiddleItemHeaderTitle">Vue.js</div>
+                  </div>
+                  <div class="stack__contentMiddleItemBody">
+                    <p class="stack__contentMiddleItemBodyText">
+                      Гибкий инструмент для коллективной работы и управления проектами. 
+                      Ставим задачи для разработчиков, контролируем процесс исполнения. 
+                      GitLab позволяет сохранить написанный код в онлайн формате и работать 
+                      с командой разработчиков над несколькими проектами
+                    </p>
+                  </div>
+                </div>
+                <div class="stack__contentMiddleItem">
+                  <div class="stack__contentMiddleItemHeader">
+                    <div class="stack__contentMiddleItemHeaderIconWrapper"><img class="stack__contentMiddleItemHeaderIcon" src="assets/images/serviceDetail/react.svg" alt="Декоративная картинка" width="35" height="29"></div>
+                    <div class="stack__contentMiddleItemHeaderTitle">React</div>
+                  </div>
+                  <div class="stack__contentMiddleItemBody">
+                    <p class="stack__contentMiddleItemBodyText">
+                      Гибкий инструмент для коллективной работы и управления проектами. 
+                      Ставим задачи для разработчиков, контролируем процесс исполнения. 
+                      GitLab позволяет сохранить написанный код в онлайн формате и работать 
+                      с командой разработчиков над несколькими проектами
+                    </p>
+                  </div>
+                </div>
+                <div class="stack__contentMiddleItem">
+                  <div class="stack__contentMiddleItemHeader">
+                    <div class="stack__contentMiddleItemHeaderIconWrapper"><img class="stack__contentMiddleItemHeaderIcon" src="assets/images/serviceDetail/sql.svg" alt="Декоративная картинка" width="46" height="32"></div>
+                    <div class="stack__contentMiddleItemHeaderTitle">MySQL</div>
+                  </div>
+                  <div class="stack__contentMiddleItemBody">
+                    <p class="stack__contentMiddleItemBodyText">
+                      Гибкий инструмент для коллективной работы и управления проектами. 
+                      Ставим задачи для разработчиков, контролируем процесс исполнения. 
+                      GitLab позволяет сохранить написанный код в онлайн формате и работать 
+                      с командой разработчиков над несколькими проектами
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stack__contentBottom">
+              <div class="stack__contentBottomItems">
+                <div class="stack__contentBottomItem">
+                  <div class="stack__contentBottomItemIconWrapper"><img class="stack__contentBottomItemIcon" src="assets/images/serviceDetail/deepAnal.svg" alt="Декоративная картинка" width="83" height="79"></div>
+                  <h3 class="stack__contentBottomItemTitle">Глубокая аналитика</h3>
+                  <p class="stack__contentBottomItemText">
+                    Анализ конкурентов, лучших решений, бизнес - интервью, веб-аналитика 
+                    наработанный опыт
+                  </p>
+                </div>
+                <div class="stack__contentBottomItem">
+                  <div class="stack__contentBottomItemIconWrapper"><img class="stack__contentBottomItemIcon" src="assets/images/serviceDetail/lamp.svg" alt="Декоративная картинка" width="60" height="76"></div>
+                  <h3 class="stack__contentBottomItemTitle">Управление вниманием</h3>
+                  <p class="stack__contentBottomItemText">
+                    Сокращение пути пользователя к 
+                    целевому действию и скорость работы
+                  </p>
+                </div>
+                <div class="stack__contentBottomItem">
+                  <div class="stack__contentBottomItemIconWrapper"><img class="stack__contentBottomItemIcon" src="assets/images/serviceDetail/methods.svg" alt="Декоративная картинка" width="93" height="60"></div>
+                  <h3 class="stack__contentBottomItemTitle">Гибкие методологии</h3>
+                  <p class="stack__contentBottomItemText">
+                    Гарантируют Вам полную прозрачность
+                    всего процесса разработки веб сервиса
+                  </p>
+                </div>
+                <div class="stack__contentBottomItem">
+                  <div class="stack__contentBottomItemIconWrapper"><img class="stack__contentBottomItemIcon" src="assets/images/serviceDetail/toMarket.svg" alt="Декоративная картинка" width="93" height="60"></div>
+                  <h3 class="stack__contentBottomItemTitle">Сокращение time to market</h3>
+                  <p class="stack__contentBottomItemText">
+                    Выделение ключевого и побочного функционала помогает нам быстрее
+                    выпустить новый продукт на рынок
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="costs">
+        <h1 class="visibleHidden"></h1>
+        <div class="container">
+          <div class="costs__content">
+            <div class="costs__contentLeft">
+              <div class="servisec-list__item">
+                <div class="servisec-list__item-title-span-wrapper">
+                  <div class="servisec-list__item-title-span-bg"></div>
+                </div>
+                <div class="servisec-list__item-content">
+                  <h1 class="servisec-list__item-title"> <span class="servisec-list__item-title-span">Стоимость </span>разработки</h1>
+                </div>
+              </div>
+              <div class="costs__contentLeftTextWrapper">
+                <p class="costs__contentLeftText">Оценка стоимости проекта производиться индивидуально, на основе технического задания, так как единой стоимости разработки сервиса не существует Оценка стоимости проекта производиться индивидуально, на основе технического задания, так как единой стоимости разработки сервиса не существует Оценка стоимости проекта производиться индивидуально, на основе технического задания, так как единой стоимости разработки сервиса не существует Оценка стоимости проекта производиться индивидуально, на основе технического задания, так как единой стоимости стоимости проекта производиться индивидуально, на основе технического задания, так как единой стоимости </p>
+              </div>
+              <div class="costs__contentLeftButtonWrapper"><a class="fillingButton fillingButton--costs" href="">
+                  <svg class="fillingButton__svg" viewBox="0 0 204 204">
+                    <circle class="fillingButton__svg-circle fillingButton__svg-circle--costs" cx="102" cy="102" r="102" fill="transparent"></circle>
+                  </svg>
+                  <div class="fillingButton__circle fillingButton__circle--costs"></div>
+                  <div class="fillingButton__content">
+                    <p class="fillingButton__p"><span class="fillingButton__span--smallMargin-and-partial">Рассчит</span>ать проект</p>
+                  </div></a></div>
+            </div>
+            <div class="costs__contentRight">
+              <h2 class="costs__contentRightTitle">Доступные варианты оплаты проекта</h2>
+              <div class="costs__contentRightItems">
+                <div class="costs__contentRightItem">
+                  <div class="costs__contentRightItemLeft"><img class="costs__contentRightItemLeftIcon" src="assets/images/serviceDetail/project.svg" alt="Декоративная картинка" width="55" height="55"></div>
+                  <div class="costs__contentRightItemRight">
+                    <h3 class="costs__contentRightItemRightTitle">Проектно</h3>
+                    <p class="costs__contentRightItemRightText">
+                      Оплата проекта делится на 2 равные части
+                      перед началом работ и по окончанию
+                    </p>
+                  </div>
+                </div>
+                <div class="costs__contentRightItem">
+                  <div class="costs__contentRightItemLeft"><img class="costs__contentRightItemLeftIcon" src="assets/images/serviceDetail/hours.svg" alt="Декоративная картинка" width="52" height="52"></div>
+                  <div class="costs__contentRightItemRight">
+                    <h3 class="costs__contentRightItemRightTitle">По часам</h3>
+                    <p class="costs__contentRightItemRightText">
+                      Функционал рассчитывается по часам
+                      клиент предоплачивает количество часов
+                    </p>
+                  </div>
+                </div>
+                <div class="costs__contentRightItem">
+                  <div class="costs__contentRightItemLeft"><img class="costs__contentRightItemLeftIcon" src="assets/images/serviceDetail/sprints.svg" alt="Декоративная картинка" width="55" height="55"></div>
+                  <div class="costs__contentRightItemRight">
+                    <h3 class="costs__contentRightItemRightTitle">Спринтами</h3>
+                    <p class="costs__contentRightItemRightText">
+                      Проекта разбивается на этапы (спринты)
+                      и каждый из этапов оплачивается отдельно
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <svg class="reviews__splide-arrow-for-slides reviews__splide-arrow-prev splide__arrow--next" width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.7071 7.29289C27.0976 7.68342 27.0976 8.31658 26.7071 8.70711L20.3431 15.0711C19.9526 15.4616 19.3195 15.4616 18.9289 15.0711C18.5384 14.6805 18.5384 14.0474 18.9289 13.6569L24.5858 8L18.9289 2.34315C18.5384 1.95262 18.5384 1.31946 18.9289 0.928932C19.3195 0.538407 19.9526 0.538407 20.3431 0.928932L26.7071 7.29289ZM1 9C0.447716 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44771 0.447716 7 1 7L1 9ZM26 9L1 9L1 7L26 7L26 9Z"></path>
+        </svg>
+        <svg class="reviews__splide-arrow-for-slide reviews__splide-arrow-next splide__arrow--prev" width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.7071 7.29289C27.0976 7.68342 27.0976 8.31658 26.7071 8.70711L20.3431 15.0711C19.9526 15.4616 19.3195 15.4616 18.9289 15.0711C18.5384 14.6805 18.5384 14.0474 18.9289 13.6569L24.5858 8L18.9289 2.34315C18.5384 1.95262 18.5384 1.31946 18.9289 0.928932C19.3195 0.538407 19.9526 0.538407 20.3431 0.928932L26.7071 7.29289ZM1 9C0.447716 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44771 0.447716 7 1 7L1 9ZM26 9L1 9L1 7L26 7L26 9Z"></path>
+        </svg>
+        <!-- ===========================-->
+        <div class="container container--rewievs">
+          <div class="section__titles section__titles--white section__titles--reviews">
+            <div class="section__titles-left section__titles-left--reviews">
+              <div class="servisec-list__item servisec-list__item--notMargin">
+                <div class="servisec-list__item-title-span-wrapper">
+                  <div class="servisec-list__item-title-span-bg"></div>
+                </div>
+                <div class="servisec-list__item-content">
+                  <h1 class="servisec-list__item-title servisec-list__item-title--black"><span class="servisec-list__item-title-span">Наши </span>работы:</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__splide splide" aria-label="Splide Basic HTML Example">
+          <div class="reviews__list-block splide__track">
+            <ul class="reviews__list splide__list">
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item1.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item2.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item4.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item5.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item1.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item2.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item4.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+              <li class="reviews__list-item splide__slide"><a class="reviews__list-itemWrapper" href="#">
+                  <div class="reviews__list-itemBlackLayer"></div>
+                  <div class="reviews__list-itemArrowCircle">
+                    <div class="reviews__list-itemArrowWrapper"><img class="reviews__list-itemArrow" src="assets/images/serviceDetail/arrowSalad.svg" alt="Стрелка" width="72" height="35"></div>
+                  </div>
+                  <div class="reviews__list-itemContent">
+                    <h2 class="reviews__list-itemTitle">Название проекта</h2>
+                    <p class="reviews__list-itemSuptitle">Проектирование, дизайн, разработка</p>
+                  </div><img class="reviews__list-item-image" src="assets/images/serviceDetail/item5.jpg" alt="Превью сайта" width="340" height="427"></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <h1 class="visibleHidden">Статистика</h1><img class="offer__decorativeCircle" src="assets/images/utils/circleWithLines.svg" alt="Декоративный круг" width="421" height="421">
+        <div class="container">
+          <div class="titleBlockWithBg">
+            <h2 class="titleWithBg">Давайте поработаем!</h2>
+          </div>
+          <div class="offer__content">
+            <h2 class="offer__contentTitle">Мы уверены, что мы сможем сделать многое для вас, чтобы дать вам хороший результат</h2>
+            <form class="offer__form" action="" method="">
+              <div class="offer__formBody">
+                <div class="offer__formInputs">
+                  <input class="offer__formInput" type="text" placeholder="Ваше имя" name="name">
+                  <input class="offer__formInput" type="tel" placeholder="Ваш телефон" name="tel">
+                </div>
+                <div class="offer__formCheckboxes">
+                  <header class="offer__formCheckboxesHeader">
+                    <h3 class="offer__formCheckboxesTitle">Удобное для вас время звонка (По Московскому времени)</h3>
+                  </header>
+                  <div class="offer__formCheckboxesCols">
+                    <div class="offer__formCheckboxesCol">
+                      <div class="offer__formCheckboxesWithCustom">
+                        <input class="offer__formCheckbox" type="checkbox" id="ten" name="ten">
+                        <div class="offer__formCheckboxCustom">
+                          <div class="offer__formCheckboxCustomFillWrapper">
+                            <div class="offer__formCheckboxCustomFill"></div>
+                          </div>
+                        </div>
+                        <label class="offer__formCheckboxLabel" for="ten">
+                          <time datetitme="10:00">10:00 </time>- 
+                          <time datetitme="13:00">13:00</time>
+                        </label>
+                      </div>
+                      <div class="offer__formCheckboxesWithCustom">
+                        <input class="offer__formCheckbox" type="checkbox" id="sixteen" name="sixteen">
+                        <div class="offer__formCheckboxCustom">
+                          <div class="offer__formCheckboxCustomFillWrapper">
+                            <div class="offer__formCheckboxCustomFill"></div>
+                          </div>
+                        </div>
+                        <label class="offer__formCheckboxLabel" for="sixteen">
+                          <time datetitme="16:00">16:00 </time>- 
+                          <time datetitme="19:00">19:00</time>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="offer__formCheckboxesCol">
+                      <div class="offer__formCheckboxesWithCustom">
+                        <input class="offer__formCheckbox" type="checkbox" id="thirteen" name="thirteen">
+                        <div class="offer__formCheckboxCustom">
+                          <div class="offer__formCheckboxCustomFillWrapper">
+                            <div class="offer__formCheckboxCustomFill"></div>
+                          </div>
+                        </div>
+                        <label class="offer__formCheckboxLabel" for="thirteen">
+                          <time datetitme="13:00">13:00 </time>- 
+                          <time datetitme="16:00">16:00</time>
+                        </label>
+                      </div>
+                      <div class="offer__formCheckboxesWithCustom">
+                        <input class="offer__formCheckbox" type="checkbox" id="notMatter" name="notMatter">
+                        <div class="offer__formCheckboxCustom">
+                          <div class="offer__formCheckboxCustomFillWrapper">
+                            <div class="offer__formCheckboxCustomFill"></div>
+                          </div>
+                        </div>
+                        <label class="offer__formCheckboxLabel" for="notMatter">
+                          <p>Не имеет значения</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer__formButtonBlock"><a class="fillingButton fillingButton--infoOffer" href="blog.html">
+                    <svg class="fillingButton__svg" viewBox="0 0 204 204">
+                      <circle class="fillingButton__svg-circle fillingButton__svg-circle--infoOffer" cx="102" cy="102" r="102" fill="transparent"></circle>
+                    </svg>
+                    <div class="fillingButton__circle fillingButton__circle--black-border fillingButton__circle--infoOffer"></div>
+                    <div class="fillingButton__content">
+                      <p><span class="fillingButton__span--smallMargin">Отправить</span></p>
+                    </div></a></div>
+              </div>
+              <footer class="offer__formFooter">
+                <p class="offer__formFooterText">Нажимая кнопку, вы разрешаете обработку персональных данных и соглашаетесь с политикой конфиденциальности.</p>
+              </footer>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__left-side">
+        <div class="container container--footer">
+          <ul class="footer__blocks">
+            <li class="footer__blocks-item footer__blocks-item--one">
+              <ul class="footer__blocks-item-list footer__blocks-item-list--one">
+                <li class="footer__blocks-item-logo"><a href="#"><img class="footer__blocks-item-logo-image" src="./assets/images/footer/footer-logo.svg" alt="Логотип веб студии" width="196" height="52"></a></li>
+                <li>
+                  <p class="footer__blocks-item-text">Ваша команда комплексного интернет маркетинга</p>
+                </li>
+                <li class="footer__blocks-item-socials"><a href="#"><img class="footer__blocks-item-socials-item" src="./assets/images/footer/footer-telegram-white-border.svg" alt="Telegram веб студии" width="31" height="25"></a><a href="#"><img class="footer__blocks-item-socials-item" src="./assets/images/footer/footer-whatsapp-white-border.svg" alt="Whatsapp веб студии" width="28" height="29"></a><a href="#"><img class="footer__blocks-item-socials-item" src="./assets/images/footer/footer-vk-white-border.svg" alt="VK веб студии" width="36" height="36"></a></li>
+              </ul>
+            </li>
+            <li class="footer__blocks-item">
+              <h6 class="footer__blocks-item-title">Услуги</h6>
+              <ul class="footer__blocks-item-list footer__blocks-item-list--two">
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Разработка сайтов</a></li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Привлечение трафика</a></li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Комплексная аналитика</a></li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Техническая поддержка</a></li>
+              </ul>
+            </li>
+            <li class="footer__blocks-item">
+              <h6 class="footer__blocks-item-title">Контакты</h6>
+              <ul class="footer__blocks-item-list footer__blocks-item-list--three">
+                <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-marker.svg" alt="Картинка маркер на карте" width="27" height="27">
+                  <address class="footer__blocks-list-item--contacts-text-block">
+                    <p class="footer__blocks-list-item--contacts-text">г. Казань ул.</p>
+                    <p class="footer__blocks-list-item--contacts-text">Четаева д. 5А</p>
+                  </address>
+                </li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-phone.svg" alt="Картинка телефонной трубки" width="24" height="24">
+                  <address><a class="footer__blocks-list-item--contacts-text" href="tel:+79050226228">+7 (905) 022-62-28</a></address>
+                </li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-mail.svg" alt="Картинка почты" width="21" height="22">
+                  <address><a class="footer__blocks-list-item--contacts-text" href="mailto:info@itshtab.ru">info@itshtab.ru</a></address>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__left-side-rights">
+          <p class="footer__left-side-rights-text">2013 - 2023 | Все права защищены</p>
+        </div>
+      </div>
+      <div class="footer__right-side-form">
+        <div class="footer__right-side-form-content">
+          <h6 class="footer__right-side-form-title">У вас есть задача для нас?</h6>
+          <form class="footer__right-side-form-form">
+            <input class="footer__right-side-form-form-input" type="name" placeholder="Имя">
+            <input class="footer__right-side-form-form-input" type="tel" placeholder="Телефон">
+            <div class="footer__right-side-form-form-checkbox-block">
+              <input class="footer__right-side-form-form-checkbox" id="footer-checkbox" type="checkbox">
+              <div class="footer__right-side-form-form-checkbox-custom-block">
+                <div class="footer__right-side-form-form-checkbox-custom">
+                  <div class="footer__right-side-form-form-checkbox-custom--active"></div>
+                </div>
+              </div>
+              <label class="footer__right-side-form-form-checkbox-block-label" for="footer-checkbox">
+                Даю согласие на обработку
+                персональных данных
+              </label>
+            </div>
+            <button class="footer__right-side-form-form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<!-- splide script-->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<!-- my js-->
+<script src="./assets/js/serviceDetailIndex.js"></script>

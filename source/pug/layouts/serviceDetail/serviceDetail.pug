@@ -1,0 +1,22 @@
+include head
+
+body.hidden
+    include ../../views/utils/preloader
+    include ../../views/utils/burgerMenu
+
+    include ../../views/circle/circle
+          
+    include ../../views/header/header 
+    #butter
+        main
+            include ../../views/serviceDetail/intro
+            include ../../views/serviceDetail/stack
+            include ../../views/serviceDetail/costs
+            include ../../views/serviceDetail/ourWorks
+            include ../../views/services/offer
+        include ../../views/footer/footer
+        
+// splide script
+script( src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" )
+// my js
+script( src="./assets/js/serviceDetailIndex.js" )

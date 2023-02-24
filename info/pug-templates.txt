@@ -11,6 +11,5 @@ section
 img(
     src="" alt="" 
     width= height=
-
 )
 a(href="")

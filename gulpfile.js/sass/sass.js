@@ -8,7 +8,7 @@ const clean = require("gulp-clean-css");
 
 exports.scss = function () {
   return (
-    src("./source/sass/**/index.sass")
+    src("./source/sass/indexes/**.sass")
       .pipe(sourcemaps.init())
       .pipe(sass().on("error", sass.logError))
       .pipe(autoprefixer())

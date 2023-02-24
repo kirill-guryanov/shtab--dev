@@ -2,14 +2,6 @@ const { watch, series } = require("gulp");
 
 const { pug } = require("./pug");
 const { scss } = require("./sass/sass");
-const { scss404 } = require("./sass/sass--404");
-const { scssBlog } = require("./sass/sass--blog");
-const { scssContacts } = require("./sass/sass--contacts");
-const { scssBlogOncePage } = require("./sass/sass--blog-once-page");
-const { scssBrief } = require("./sass/sass--brief");
-const { scssProjects } = require("./sass/sass--projects");
-const { scssServices } = require("./sass/sass--services");
-const { scssProductsOncePage } = require("./sass/sass--productsOncePage");
 
 const { clear } = require("./del");
 const { server } = require("./browsersync");
@@ -23,6 +15,9 @@ const { scriptsBlogOncePage } = require("./scripts/scripts--blog-once-page");
 const { scriptBrief } = require("./scripts/scripts--brief");
 const { scriptsProjects } = require("./scripts/scripts--projects");
 const { scriptsServices } = require("./scripts/scripts--services");
+const {
+  scriptsServiceDetailIndex,
+} = require("./scripts/scriptsServiceDetailIndex");
 const {
   scriptsProductsOncePage,
 } = require("./scripts/scripts--productsOncePage");
@@ -43,14 +38,6 @@ exports.build = series(
   scriptsProductsOncePage,
   fonts,
   scss,
-  scss404,
-  scssBlog,
-  scssBlogOncePage,
-  scssContacts,
-  scssBrief,
-  scssProjects,
-  scssServices,
-  scssProductsOncePage,
   img,
   server
 );
@@ -66,16 +53,9 @@ exports.serve = series(
   scriptsProjects,
   scriptsServices,
   scriptsProductsOncePage,
+  scriptsServiceDetailIndex,
   fonts,
   scss,
-  scss404,
-  scssBlog,
-  scssBlogOncePage,
-  scssContacts,
-  scssBrief,
-  scssProjects,
-  scssServices,
-  scssProductsOncePage,
   img,
   server
 );

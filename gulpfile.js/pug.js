@@ -12,6 +12,7 @@ exports.pug = () => {
     "./source/pug/layouts/projects/projects.pug",
     "./source/pug/layouts/services/services.pug",
     "./source/pug/layouts/productsOncePage/productsOncePage.pug",
+    "./source/pug/layouts/serviceDetail/serviceDetail.pug",
   ])
     .pipe(
       pug({

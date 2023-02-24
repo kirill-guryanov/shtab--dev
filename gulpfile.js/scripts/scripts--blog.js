@@ -6,7 +6,7 @@ const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
 exports.scriptsBlog = () => {
-  return src("./source/js/blog/index--blog.js", { sourcemaps: true })
+  return src("./source/js/indexes/index--blog.js", { sourcemaps: true })
     .pipe(map.init())
     .pipe(
       babel({
@@ -15,7 +15,7 @@ exports.scriptsBlog = () => {
     )
     .pipe(webpackStream())
     .pipe(uglify())
-    .pipe(concat("index--blog.min.js"))
+    .pipe(concat("index--blog.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));
 };

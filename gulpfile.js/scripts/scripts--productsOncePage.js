@@ -6,7 +6,7 @@ const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
 exports.scriptsProductsOncePage = () => {
-  return src("./source/js/productsOncePage/indexProductsOncePage.js")
+  return src("./source/js/indexes/indexProductsOncePage.js")
     .pipe(map.init())
     .pipe(
       babel({
@@ -15,7 +15,7 @@ exports.scriptsProductsOncePage = () => {
     )
     .pipe(webpackStream())
     .pipe(uglify())
-    .pipe(concat("indexProductsOncePage.min.js"))
+    .pipe(concat("indexProductsOncePage.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));
 };

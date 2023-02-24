@@ -6,7 +6,7 @@ const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
 exports.scriptsServices = () => {
-  return src("./source/js/services/indexServices.js", {
+  return src("./source/js/indexes/indexServices.js", {
     sourcemaps: true,
   })
     .pipe(map.init())
@@ -17,7 +17,7 @@ exports.scriptsServices = () => {
     )
     .pipe(webpackStream())
     .pipe(uglify())
-    .pipe(concat("indexServices.min.js"))
+    .pipe(concat("indexServices.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));
 };
