@@ -35,7 +35,6 @@ window.addEventListener("load", function () {
       titleForCalibrationArrowsHeight +
       titleForCalibrationArrowsTop -
       splideTop +
-      30 +
       "px";
   });
 });
@@ -77,7 +76,6 @@ window.addEventListener("resize", () => {
       titleForCalibrationArrowsHeight +
       titleForCalibrationArrowsTop -
       splideTop +
-      30 +
       "px";
   });
 });

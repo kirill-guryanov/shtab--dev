@@ -89,12 +89,11 @@ input:focus
     display: block
 
 // header letters
-.header__nav-item-text
-.block:last-child
+// .header__nav-item-text
+.block .letter
     color: #ffffff
 
 // titles
-    // title bg
 .servisec-list__item
     margin-bottom: 35px
 
@@ -144,6 +143,19 @@ input:focus
 
     &--black
         color: #404040
+
+.intro__bottomTitle
+    max-width: 235px
+    width: 100%
+
+    font-weight: 700
+    @include adaptiveFont(27, 18)
+    line-height: 1.2
+    color: #FFFFFF
+
+    @media ( max-width: 880px )
+        margin-bottom: 20px
+        text-align: center
 
 // offer
 .offer

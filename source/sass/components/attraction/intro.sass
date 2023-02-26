@@ -1,5 +1,4 @@
 // @import "../utils/variables"
-
 .intro
     display: flex
     align-items: center
@@ -16,11 +15,11 @@
 
     position: relative
 
-    @media ( max-width: 1070px )
+    @media ( max-width: 1400px )
         padding: 130px 0 30px
 
     @media ( max-width: 700px )
-        padding: 70px 0 30px
+        padding: 100px 0 30px
 
 .intro__decorativeCircle
     transform: translateY(-50%)
@@ -51,19 +50,25 @@
 
 // left side
 .intro__contentLeftSide
-    @media ( max-width: 940px )
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
+    @media ( max-width: 1380px )
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 40px
+
+    @media ( max-width: 750px )
+        display: grid
+        grid-template-columns: 1fr
+        justify-items: center
 
         text-align: center
+
+        // text-align: center
 
 .intro__contentLeftSideTitle
     margin-bottom: 50px
     margin-right: 40px
 
-    max-width: 640px
+    max-width: 605px
     width: 100%
 
     font-weight: 800
@@ -71,7 +76,7 @@
     line-height: 1.2
     color: #fff
 
-    @media ( max-width: 940px )
+    @media ( max-width: 1380px )
         margin-right: 0
 
         max-width: 400px
@@ -97,23 +102,23 @@
     height: auto
 
 .intro__contentRightSideImage
-    // width: 100%
-    // max-width: 659px
-    // height: auto
-    // aspect-ratio: 2/1
+    width: 100%
+    height: auto
+    aspect-ratio: 2/.9
 
-    @media ( max-width: 1250px )
+    @media ( max-width: 1690px )
         width: 100%
         max-width: 659px
         min-width: 560px
         height: auto
-        aspect-ratio: 2/1
+        aspect-ratio: 2/.9
 
-    @media ( max-width: 1070px )
+    @media ( max-width: 1380px )
+        margin-bottom: 50px
         min-width: 440px
 
-    @media ( max-width: 940px )
-        margin-bottom: 50px
+    @media ( max-width: 480px )
+        min-width: 300px
 
 // input
 .offer__formInputIntro
@@ -127,7 +132,7 @@
     border-radius: 10px
     background-color: transparent
     border: 1px solid #535353
-    transition: border .3s ease
+    transition: all .3s ease
 
     color: #fff
     font-weight: 400
@@ -148,11 +153,43 @@
     &:focus
         border: 1px solid #fff
 
+.offer__formInputIntro--blackPlaceholder
+    padding: 13px 18px
+
+    max-width: 300px
+    width: 100%
+
+    height: 44px
+
+    border-radius: 10px
+    background-color: transparent
+    border: 1px solid #888888
+    transition: all .3s ease
+
+    color: #000
+    font-weight: 400
+    font-size: 16px
+
+    &:not(:last-child)
+        margin-right: 15px
+
+        @media ( max-width: 1070px )
+            margin-right: 0
+            margin-bottom: 15px
+
+    &::placeholder
+        font-weight: 400
+        font-size: 16px
+        color: #000
+
+    &:focus
+        border: 1px solid #000
+
 // local
 .intro__top
     display: flex
 
-    @media ( max-width: 940px )
+    @media ( max-width: 1380px )
         flex-direction: column-reverse
 
 .intro__contentLeftSideText
@@ -241,3 +278,94 @@
 .fillingButton__svg--introBottom
     width: 80px
     height: 80px
+
+// left list
+.intro__contentLeftSideListTitle
+    margin-bottom: 20px
+
+    font-weight: 400
+    @include adaptiveFont(20, 18)
+    line-height: 1.2
+    color: #FFFFFF
+
+.intro__contentLeftSideList
+    margin-bottom: 50px
+
+    max-width: 460px
+
+// item
+.intro__contentLeftSideListItem
+    display: flex
+    align-items: baseline
+
+.intro__contentLeftSideListItemText
+    font-weight: 400
+    @include adaptiveFont(20, 16)
+    line-height: 1.5
+    color: #FFFFFF
+    text-align: left
+
+    &:not(:last-child)
+        margin-bottom: 14px
+
+// left bottom
+.intro__contentLeftSideBottom
+    display: flex
+    align-items: center
+
+    @media ( max-width: 1380px )
+        grid-column-start: 1
+        grid-column-end: 3
+
+    @media ( max-width: 750px )
+        flex-direction: column
+
+        grid-column-start: unset
+        grid-column-end: unset
+
+.intro__contentLeftSideBottomButtonWrapper
+    margin-right: 30px
+
+    min-width: 280px
+
+    text-align: center
+
+    @media ( max-width: 750px )
+        margin-right: 0
+        margin-bottom: 20px
+
+.intro__contentLeftSideButtonTop
+    display: block
+
+    padding: 20px 30px
+
+    max-width: 276px
+    min-height: 66px
+
+    width: 100%
+
+    background-color: $saladColor
+    border-radius: 10px
+    cursor: pointer
+
+    transition: background-color .3s ease
+
+    font-weight: 700
+    @include adaptiveFont(20, 18)
+    line-height: 1.2
+    color: #000000
+
+    &:hover
+        background-color: #fff
+
+.intro__contentLeftSideBottomText
+    max-width: 360px
+
+    text-align: left
+    font-weight: 700
+    @include adaptiveFont(20, 18)
+    line-height: 1.1
+    color: #FFFFFF
+
+    @media ( max-width: 500px )
+        text-align: center

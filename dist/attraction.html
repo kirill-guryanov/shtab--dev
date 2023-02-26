@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- splide styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- my styles-->
+    <link rel="stylesheet" href="./assets/css/attraction.css">
+    <title>New Site</title>
+  </head>
+</html>
+<body class="hidden">
+  <div class="loader">
+    <div class="loader-static"></div>
+    <div class="loader-first"></div>
+    <div class="loader-second"></div>
+  </div>
+  <div class="burgerMenu">
+    <header class="header--main header--main-black-mode">
+      <div class="container container--header container--header-black-mode">
+        <div class="header__logo-block"><a href="index.html"><img class="header__logo-block-image header__logo-block-image--white header__logo-block-image--white-mode" src="./assets/images/header/header-logo--white.svg" alt="Логотип веб студии" width="219" height="58"></a></div>
+        <button class="header__closeBurgerMenuBtn"><img src="./assets/images/utils/closeCross.svg" alt="Логотип веб студии" width="40" height="40"></button>
+      </div>
+    </header>
+    <div class="burgerMenu__animatedWords">
+      <p class="burgerMenu__animatedWords_wordToRight">IT’SHTAB</p>
+      <p class="burgerMenu__animatedWords_wordToLeft">DIGITAL CREW</p>
+    </div>
+    <section class="burgerMenu__content">
+      <div class="container">
+        <h1 class="visibleHidden">Навигация по сайту</h1>
+        <div class="burgerMenu__contentSides">
+          <nav class="burgerMenu__contentNavigation">
+            <ul class="burgerMenu__contentNavigation-leftSide">
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Главная</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Услуги</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Портфолио</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">О компании</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+              <li class="burgerMenu__contentNavigation-leftSideItem">
+                <h2 class="burgerMenu__contentNavigation-leftSideItemText">Контакты</h2><img class="burgerMenu__contentNavigation-leftSideItemImage" src="assets/images/utils/burgerMenu-arrowWhite.svg" alt="Стрелка" width="68" height="20">
+              </li>
+            </ul>
+            <div class="burgerMenu__contentNavigation-line"></div>
+            <div class="burgerMenu__contentNavigation-rightSide">
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="contacts.html">Контакты</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="blog.html">блог</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="blog-once-page.html">блог одна страница</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="brief.html">бриф</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="404.html">404</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="projects.html">проекты</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="services.html">услуги</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="productsOncePage.html">продукт детальная</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="serviceDetail.html">услуга детальнвя</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="attraction.html">Настройка и ведение рекламы в Яндекс директ</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Поддержка и обслуживание</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Аудиторские услуги</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Разработка сайтов</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Интернет реклама</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Поддержка и обслуживание</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Аудиторские услуги</a></li>
+              </ul>
+              <ul class="burgerMenu__contentNavigation-rightSideList">
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Разработка сайтов</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Интернет реклама</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Поддержка и обслуживание</a></li>
+                <li class="burgerMenu__contentNavigation-rightSideListItem"><a class="burgerMenu__contentNavigation-rightSideListItemText" href="">Аудиторские услуги</a></li>
+              </ul>
+            </div>
+          </nav>
+          <address class="burgerMenu__contentAddresses"><a class="burgerMenu__contentAddresses-phone" href="tel:79050226228">+7 (905) 022-62-28</a><a class="burgerMenu__contentAddresses-mail" href="mailto:info@itshtab.ru">info@itshtab.ru</a><a class="burgerMenu__contentAddresses-place" href="#">Республика Татарстан, г.<br>Казань, ул. Четаева д.5А</a>
+            <div class="burgerMenu__contentAddresses-socials"><a class="burgerMenu__contentAddresses-socialsItem" href="#"><img class="burgerMenu__contentAddresses-socialsItemIcon" src="assets/images/utils/tg.svg" alt="Телеграм" width="31" height="25"></a><a class="burgerMenu__contentAddresses-socialsItem" href="#"><img class="burgerMenu__contentAddresses-socialsItemIcon" src="assets/images/utils/wh.svg" alt="Ватсап" width="29" height="29"></a><a class="burgerMenu__contentAddresses-socialsItem" href="#"><img class="burgerMenu__contentAddresses-socialsItemIcon" src="assets/images/utils/vk.svg" alt="Вконтакте" width="29" height="29"></a></div><a class="fillingButton fillingButton--burgerMenuAddresses" href="">
+              <svg class="fillingButton__svg" viewBox="0 0 204 204">
+                <circle class="fillingButton__svg-circle fillingButton__svg-circle--burgerMenuAddresses" cx="102" cy="102" r="102" fill="transparent"></circle>
+              </svg>
+              <div class="fillingButton__circle fillingButton__circle--burgerMenuAddresses"></div>
+              <div class="fillingButton__content">
+                <p class="fillingButton__p"><span class="fillingButton__span--smallMargin-and-partial">Подро</span>бнее</p>
+              </div></a>
+          </address>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="progress-circle">
+    <div class="progress-circle__block">
+      <svg class="progress-ring" width="86" height="86">
+        <circle class="progress-ring__circle" stroke="#C6FF00" stroke-width="4" cx="43" cy="43" r="25"></circle>
+      </svg>
+      <div class="progress-circle-arrows"><img class="progress-circle-arrow progress-circle-arrow--salad" src="assets/images/circle/circle-arrow.svg" alt="Зеленая стрелка" width="20" height="36"><img class="progress-circle-arrow progress-circle-arrow--black" src="assets/images/circle/circle-arrow--black.svg" alt="Черная стрелка" width="20" height="36"></div>
+    </div>
+  </div>
+  <header class="header--main header--mainPage">
+    <div class="container container--header">
+      <div class="header__logo-block"><a href="index.html"><img class="header__logo-block-image header__logo-block-image--black" src="./assets/images/header/header-logo.svg" alt="Логотип веб студии" width="219" height="58"></a><a href="index.html"><img class="header__logo-block-image header__logo-block-image--white" src="./assets/images/header/header-logo--white.svg" alt="Логотип веб студии" width="219" height="58"></a></div>
+      <div class="header__burger-block">
+        <div class="header__burger"><span class="header__burger-span"></span><span class="header__burger-span"></span><span class="header__burger-span"></span></div>
+      </div>
+      <div class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-item-text" href="services.html">Услуги</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="projects.html">Проекты</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="#">Маркетологам</a></li>
+          <li class="header__nav-item"><a class="header__nav-item-text" href="contacts.html">Контакты</a></li>
+        </ul>
+        <!--.header__contacts.header__contacts--narrow-->
+        <!--    ul.header__contacts-items.header__contacts-item--icons-->
+        <!--        .header__contacts-item-->
+        <!--            .header__contacts-item--icon.header__contacts-item--icon--black-->
+        <!--                a( href="#" )-->
+        <!--                    img.header__contacts-item-image.header__contacts-item-image--black(-->
+        <!--                        src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии"-->
+        <!--                        width="31" height="25"-->
+        <!--                    )-->
+        <!--            //.header__contacts-item--icon.header__contacts-item--icon--white-->
+        <!--            //    a( href="#" )-->
+        <!--            //        img.header__contacts-item-image.header__contacts-item-image--white(-->
+        <!--            //            src="./assets/images/header/telegram--transparent--white.svg" alt="Telegram веб студии"-->
+        <!--            //            width="31" height="25"-->
+        <!--            //        )-->
+        <!--        .header__contacts-item-->
+        <!--            .header__contacts-item--icon.header__contacts-item--icon--black-->
+        <!--                a( href="#" )-->
+        <!--                    img.header__contacts-item-image.header__contacts-item-image--black(-->
+        <!--                        src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии"-->
+        <!--                        width="28" height="29"-->
+        <!--                    )-->
+        <!--            //.header__contacts-item--icon.header__contacts-item--icon--white-->
+        <!--            //    a( href="#" )-->
+        <!--            //        img.header__contacts-item-image.header__contacts-item-image--white(-->
+        <!--            //            src="./assets/images/header/whatsapp--transparent--white.svg" alt="Whatsapp веб студии"-->
+        <!--            //            width="28" height="29"-->
+        <!--            //        )-->
+        <!---->
+        <!--        .header__contacts-item.header__contacts-item--numbers-->
+        <!--            a( href="tel: +79050226228" ).header__contacts-item-number +7 (905) 022 - 62 - 28-->
+        <!--            .header__contacts-item-back-call Обратный звонок-->
+      </div>
+      <div class="header__contacts header__contacts--wide">
+        <ul class="header__contacts-items header__contacts-item--icons">
+          <div class="header__contacts-item"><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--black" src="./assets/images/header/telegram--transparent.svg" alt="Telegram веб студии" width="31" height="25"></a><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--white" src="./assets/images/header/telegram--transparent--white.svg" alt="Telegram веб студии" width="31" height="25"></a></div>
+          <div class="header__contacts-item"><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--black" src="./assets/images/header/whatsapp--transparent.svg" alt="Whatsapp веб студии" width="28" height="29"></a><a class="header__contacts-item--icon" href="#"><img class="header__contacts-item-image header__contacts-item-image--white" src="./assets/images/header/whatsapp--transparent--white.svg" alt="Whatsapp веб студии" width="28" height="29"></a></div>
+          <address class="header__contacts-item header__contacts-item--numbers"><a class="header__contacts-item-number" href="tel: +79050226228">+7 (905) 022 - 62 - 28</a><a class="header__contacts-item-number-image header__contacts-item-number-image--white" href="tel: +79050226228"><img src="./assets/images/header/phone.svg" alt="Телефон" width="23" height="23"></a><a class="header__contacts-item-number-image header__contacts-item-number-image--black" href="tel: +79050226228"><img src="./assets/images/header/phone-black.svg" alt="Телефон" width="23" height="23"></a>
+            <p class="header__contacts-item-back-call">Обратный звонок</p>
+          </address>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div id="butter">
+    <main>
+      <section class="intro">
+        <h1 class="visibleHidden">Разработка веб сервисов любой сложности под ключ </h1><img class="intro__decorativeCircle" src="assets/images/utils/semicircle-to-right--gray.svg" alt="Декоративный круг" width="122" height="258"><img class="intro__decorativeGlowingCircle" src="assets/images/utils/glowingCircle.png" alt="Декоративный круг">
+        <div class="container container--introServiceDetail">
+          <div class="intro__top">
+            <div class="intro__contentLeftSide">
+              <h2 class="intro__contentLeftSideTitle">
+                 Настройка и ведение
+                рекламы в Яндекс директ
+              </h2>
+              <div class="intro__contentLeftSideListWrapper">
+                <h2 class="intro__contentLeftSideListTitle">Обеспечиваем бизнесу:</h2>
+                <ul class="intro__contentLeftSideList">
+                  <li class="intro__contentLeftSideListItem"><img class="bullet--checkMark" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11">
+                    <p class="intro__contentLeftSideListItemText">
+                       Рост числа клиентов на 35% после редизайна сайта</p>
+                  </li>
+                  <li class="intro__contentLeftSideListItem"><img class="bullet--checkMark" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11">
+                    <p class="intro__contentLeftSideListItemText">
+                       Выжимаем максимум из Яндекс Директ по KPI</p>
+                  </li>
+                  <li class="intro__contentLeftSideListItem"><img class="bullet--checkMark" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11">
+                    <p class="intro__contentLeftSideListItemText">
+                       Рост продаж и прибыли клиента на 30% после внедрения виджетов</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="intro__contentLeftSideBottom">
+                <div class="intro__contentLeftSideBottomButtonWrapper"><a class="intro__contentLeftSideButtonTop" href="#">Ответить на 5 вопросов</a></div>
+                <p class="intro__contentLeftSideBottomText">
+                  Получите консультацию специалиста
+                  и коммерческое предложение 
+                  по запуску рекламы
+                </p>
+              </div>
+            </div>
+            <div class="intro__contentRightSide"><img class="intro__contentRightSideImage" src="assets/images/attraction/introRightSide.png" alt="Слоны за компьютером" width="842" height="364"></div>
+          </div>
+          <div class="intro__bottom">
+            <div class="intro__bottomItemsWrapper">
+              <div class="servisec-list__item">
+                <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                  <div class="servisec-list__item-title-span-bg"></div>
+                </div>
+                <div class="servisec-list__item-content">
+                  <h1 class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span">Решим вашу задачу </span>любой сложности!</h1>
+                </div>
+              </div>
+              <div class="intro__bottomFormWrapper">
+                <form class="intro__bottomForm">
+                  <input class="offer__formInputIntro" type="text" placeholder="Ваше имя" name="name">
+                  <input class="offer__formInputIntro" type="tel" placeholder="Ваш телефон" name="tel">
+                </form>
+                <footer class="intro__bottomFormDescriptionBlock">
+                  <p class="intro__bottomFormDescription">
+                    Нажимая кнопку, вы разрешаете обработку персональных данных и соглашаетесь с 
+                    политикой конфиденциальности.
+                  </p>
+                </footer>
+              </div>
+              <div class="intro__bottomButton">
+                <div class="intro__contentLeftSideButton"><a class="fillingButton fillingButton--introBottom" href="">
+                    <svg class="fillingButton__svg fillingButton__svg--introBottom" viewBox="0 0 160 160">
+                      <circle class="fillingButton__svg-circle fillingButton__svg-circle--introBottom" cx="80" cy="80" r="80" fill="transparent"></circle>
+                    </svg>
+                    <div class="fillingButton__circle fillingButton__circle--introBottom"></div>
+                    <div class="fillingButton__content">
+                      <p class="fillingButton__p"><span class="fillingButton__span--smallMargin-and-partial">Отпра</span>вить</p>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="solve"><img class="solve__decorationRightLines" src="assets/images/utils/obliqueLinesWithSalad--transparent.svg" alt="Декоративные линии" width="175" height="305">
+        <div class="container">
+          <div class="solve__content">
+            <div class="solve__contentLeft">
+              <p class="solve__contentLeftText">
+                 Решаем актуальные задачи в любых сферах бизнеса</p>
+            </div>
+            <div class="solve__contentRight">
+              <ol class="solve__contentRightList">
+                <li class="solve__contentRightListItem">
+                  <div class="servisec-list__item">
+                    <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                      <div class="servisec-list__item-title-span-bg"></div>
+                    </div>
+                    <div class="servisec-list__item-content">
+                      <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span">01</span></div>
+                    </div>
+                  </div>
+                  <h2 class="solve__contentRightListItemText">Если вы только выходите на рынок и хотят эффектно заявить о себе</h2>
+                </li>
+                <li class="solve__contentRightListItem">
+                  <div class="servisec-list__item">
+                    <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                      <div class="servisec-list__item-title-span-bg"></div>
+                    </div>
+                    <div class="servisec-list__item-content">
+                      <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span">02</span></div>
+                    </div>
+                  </div>
+                  <h2 class="solve__contentRightListItemText">Ниша вашего бизнеса полна конкурентов</h2>
+                </li>
+                <li class="solve__contentRightListItem">
+                  <div class="servisec-list__item">
+                    <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                      <div class="servisec-list__item-title-span-bg"></div>
+                    </div>
+                    <div class="servisec-list__item-content">
+                      <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span">03</span></div>
+                    </div>
+                  </div>
+                  <h2 class="solve__contentRightListItemText">Ваш прошлый или текущий исполнитель не справляется</h2>
+                </li>
+                <li class="solve__contentRightListItem">
+                  <div class="servisec-list__item">
+                    <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                      <div class="servisec-list__item-title-span-bg"></div>
+                    </div>
+                    <div class="servisec-list__item-content">
+                      <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span">04</span></div>
+                    </div>
+                  </div>
+                  <h2 class="solve__contentRightListItemText">Сложно найти новых клиентов,а старые не обращаются повторно</h2>
+                </li>
+                <li class="solve__contentRightListItem">
+                  <div class="servisec-list__item">
+                    <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                      <div class="servisec-list__item-title-span-bg"></div>
+                    </div>
+                    <div class="servisec-list__item-content">
+                      <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span">05</span></div>
+                    </div>
+                  </div>
+                  <h2 class="solve__contentRightListItemText">Ваш прошлый или текущий исполнитель не справляется</h2>
+                </li>
+                <li class="solve__contentRightListItem"><img class="bullet bullet--image bullet--imageRocket" src="assets/images/attraction/rocket.svg" alt="Ракета" width="60" height="60">
+                  <h2 class="solve__contentRightListItemText solve__contentRightListItemText--bold">И множество других ситуаций, с которыми мы уже неоднократно справлялись и готовы сноваItem</h2>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="services__content">
+            <div class="services__contentTop"> 
+              <div class="services__contentTopLeft">
+                <div class="servisec-list__item">
+                  <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                    <div class="servisec-list__item-title-span-bg"></div>
+                  </div>
+                  <div class="servisec-list__item-content">
+                    <h1 class="servisec-list__item-title servicesTitle"><span class="servisec-list__item-title-span">Наши услуги&nbsp;</span>&nbsp;для продвижения <br>вашего бизнеса</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="services__contentTopRight"><a class="fillingButton fillingButton--servicesTop" href="">
+                  <svg class="fillingButton__svg fillingButton__svg--servicesTop" viewBox="0 0 160 160">
+                    <circle class="fillingButton__svg-circle fillingButton__svg-circle--servicesTop" cx="80" cy="80" r="80" fill="transparent"></circle>
+                  </svg>
+                  <div class="fillingButton__circle fillingButton__circle--servicesTop"></div>
+                  <div class="fillingButton__content">
+                    <p class="fillingButton__p"><span class="fillingButton__span--smallMargin-and-partial">Беспла</span>тная консультация</p>
+                  </div></a></div>
+            </div>
+            <div class="services__contentBottom">
+              <div class="services__contentBottomItems">
+                <article class="services__contentBottomItem">
+                  <div class="services__contentBottomItemTop"><img class="services__contentBottomItemTopImage" src="assets/images/attraction/add.svg" alt="Декоративная картинка" width="77" height="67">
+                    <h3 class="services__contentBottomItemTopTitle">Настройка рекламной кампании</h3>
+                  </div>
+                  <p class="services__contentBottomItemText">Производим анализ ниши, который включает в себя так же анализ конкурентов, настраиваем контекстную рекламу в сети яндекс директ</p>
+                  <ul class="services__contentBottomItemList">
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">В целом, конечно, высококачественный прототип будущего проекта создаёт </div>
+                    </li>
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">Какой то бла бла бла супервыгодный</div>
+                    </li>
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">Какой то бла бла бла супервыгодный</div>
+                    </li>
+                  </ul>
+                  <div class="services__contentBottomItemListItemBottom">
+                    <p class="services__contentBottomItemListItemBottomPrice">от 20 000 руб.</p>
+                    <div class="services__contentBottomItemListItemBottomButton">Оставить заявку</div>
+                  </div>
+                </article>
+                <article class="services__contentBottomItem">
+                  <div class="services__contentBottomItemTop"><img class="services__contentBottomItemTopImage" src="assets/images/attraction/audit.svg" alt="Декоративная картинка" width="59" height="67">
+                    <h3 class="services__contentBottomItemTopTitle">Аудит сайта и текущей рекламной кампании</h3>
+                  </div>
+                  <p class="services__contentBottomItemText">Анализируем ваш текущий сайт и рекламную кампанию, основываясь на своем опыте предлагаем идеи по исправлению ошибок</p>
+                  <ul class="services__contentBottomItemList">
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">В целом, конечно, высококачественный прототип будущего проекта создаёт </div>
+                    </li>
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">Какой то бла бла бла супервыгодный</div>
+                    </li>
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">Какой то бла бла бла супервыгодный</div>
+                    </li>
+                  </ul>
+                  <div class="services__contentBottomItemListItemBottom">
+                    <p class="services__contentBottomItemListItemBottomPrice">от 20 000 руб.</p>
+                    <div class="services__contentBottomItemListItemBottomButton">Оставить заявку</div>
+                  </div>
+                </article>
+                <article class="services__contentBottomItem">
+                  <div class="services__contentBottomItemTop"><img class="services__contentBottomItemTopImage" src="assets/images/attraction/conduction.svg" alt="Декоративная картинка" width="72" height="59">
+                    <h3 class="services__contentBottomItemTopTitle">Ведение рекламной кампании</h3>
+                  </div>
+                  <p class="services__contentBottomItemText">Разработаем сочные и продающие баннеры, а наши копирайтеры напишут продающие текста и все вместе это поможет привести новые лиды</p>
+                  <ul class="services__contentBottomItemList">
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">В целом, конечно, высококачественный прототип будущего проекта создаёт </div>
+                    </li>
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">Какой то бла бла бла супервыгодный</div>
+                    </li>
+                    <li class="services__contentBottomItemListItem">
+                      <div class="services__contentBottomItemListItemBulletWrapper"><img class="bullet bullet--image bullet--imageCheckMarkServices" src="assets/images/attraction/checkMark.svg" alt="Галочка" width="16" height="11"></div>
+                      <div class="services__contentBottomItemListItemText">Какой то бла бла бла супервыгодный</div>
+                    </li>
+                  </ul>
+                  <div class="services__contentBottomItemListItemBottom">
+                    <p class="services__contentBottomItemListItemBottomPrice">от 20 000 руб.</p>
+                    <div class="services__contentBottomItemListItemBottomButton">Оставить заявку</div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <svg class="reviews__splide-arrow-for-slides reviews__splide-arrow-prev splide__arrow--next" width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.7071 7.29289C27.0976 7.68342 27.0976 8.31658 26.7071 8.70711L20.3431 15.0711C19.9526 15.4616 19.3195 15.4616 18.9289 15.0711C18.5384 14.6805 18.5384 14.0474 18.9289 13.6569L24.5858 8L18.9289 2.34315C18.5384 1.95262 18.5384 1.31946 18.9289 0.928932C19.3195 0.538407 19.9526 0.538407 20.3431 0.928932L26.7071 7.29289ZM1 9C0.447716 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44771 0.447716 7 1 7L1 9ZM26 9L1 9L1 7L26 7L26 9Z"></path>
+        </svg>
+        <svg class="reviews__splide-arrow-for-slide reviews__splide-arrow-next splide__arrow--prev" width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.7071 7.29289C27.0976 7.68342 27.0976 8.31658 26.7071 8.70711L20.3431 15.0711C19.9526 15.4616 19.3195 15.4616 18.9289 15.0711C18.5384 14.6805 18.5384 14.0474 18.9289 13.6569L24.5858 8L18.9289 2.34315C18.5384 1.95262 18.5384 1.31946 18.9289 0.928932C19.3195 0.538407 19.9526 0.538407 20.3431 0.928932L26.7071 7.29289ZM1 9C0.447716 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44771 0.447716 7 1 7L1 9ZM26 9L1 9L1 7L26 7L26 9Z"></path>
+        </svg>
+        <!-- ===========================-->
+        <div class="container container--rewievs">
+          <div class="section__titles section__titles--white section__titles--reviews">
+            <div class="section__titles-left section__titles-left--reviews">
+              <div class="servisec-list__item servisec-list__item--notMargin">
+                <div class="servisec-list__item-title-span-wrapper">
+                  <div class="servisec-list__item-title-span-bg"></div>
+                </div>
+                <div class="servisec-list__item-content">
+                  <h1 class="servisec-list__item-title servisec-list__item-title--black"><span class="servisec-list__item-title-span"></span>Результаты наших клиентов <br>на примере живых кейсов </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__splide splide" aria-label="Splide Basic HTML Example">
+          <div class="reviews__list-block splide__track">
+            <ul class="reviews__list splide__list">
+              <li class="reviews__list-item splide__slide">
+                <div class="reviews__list-itemGradient"></div><img class="reviews__list-itemBgImage" src="assets/images/attraction/resultsItemsBg.jpg" alt="Фоновое изображерние">
+                <div class="reviews__list-itemContent">
+                  <h2 class="reviews__list-itemTitle">Услуги автосервиса</h2>
+                  <div class="reviews__list-itemTextWrapper">
+                    <div class="reviews__list-itemTextLeftStick"></div>
+                    <p class="reviews__list-itemText">
+                       Повысили приток входящих заявок и увеличили медийность студии, в том числе за рубежом. Благодаря этому появилась возможность выхода на европейский рынок.</p>
+                  </div>
+                  <ul class="reviews__list-itemStats">
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">3 месяца</h3>
+                      <p class="reviews__list-itemStatText">Срок обслуживания рекламной кампании</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">10 000</h3>
+                      <p class="reviews__list-itemStatText">Новых потенциальных клиентов</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">62%</h3>
+                      <p class="reviews__list-itemStatText">Посетителей оставили заявку</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">25,3 руб.</h3>
+                      <p class="reviews__list-itemStatText">Средняя цена обращения</p>
+                    </li>
+                  </ul><a class="reviews__list-itemBottomLink" href="#">
+                    <p class="reviews__list-itemBottomLinkText">Скриншоты статистики</p><img class="reviews__list-itemBottomLinkImg" src="assets/images/utils/arrowForFillingButton--salad.svg" alt="Стрелка" width="30" height="30"></a>
+                </div>
+              </li>
+              <li class="reviews__list-item splide__slide">
+                <div class="reviews__list-itemGradient"></div><img class="reviews__list-itemBgImage" src="assets/images/attraction/resultsItemsBg.jpg" alt="Фоновое изображерние">
+                <div class="reviews__list-itemContent">
+                  <h2 class="reviews__list-itemTitle">Услуги автосервиса</h2>
+                  <div class="reviews__list-itemTextWrapper">
+                    <div class="reviews__list-itemTextLeftStick"></div>
+                    <p class="reviews__list-itemText">
+                       Повысили приток входящих заявок и увеличили медийность студии, в том числе за рубежом. Благодаря этому появилась возможность выхода на европейский рынок.</p>
+                  </div>
+                  <ul class="reviews__list-itemStats">
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">3 месяца</h3>
+                      <p class="reviews__list-itemStatText">Срок обслуживания рекламной кампании</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">10 000</h3>
+                      <p class="reviews__list-itemStatText">Новых потенциальных клиентов</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">62%</h3>
+                      <p class="reviews__list-itemStatText">Посетителей оставили заявку</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">25,3 руб.</h3>
+                      <p class="reviews__list-itemStatText">Средняя цена обращения</p>
+                    </li>
+                  </ul><a class="reviews__list-itemBottomLink" href="#">
+                    <p class="reviews__list-itemBottomLinkText">Скриншоты статистики</p><img class="reviews__list-itemBottomLinkImg" src="assets/images/utils/arrowForFillingButton--salad.svg" alt="Стрелка" width="30" height="30"></a>
+                </div>
+              </li>
+              <li class="reviews__list-item splide__slide">
+                <div class="reviews__list-itemGradient"></div><img class="reviews__list-itemBgImage" src="assets/images/attraction/resultsItemsBg.jpg" alt="Фоновое изображерние">
+                <div class="reviews__list-itemContent">
+                  <h2 class="reviews__list-itemTitle">Услуги автосервиса</h2>
+                  <div class="reviews__list-itemTextWrapper">
+                    <div class="reviews__list-itemTextLeftStick"></div>
+                    <p class="reviews__list-itemText">
+                       Повысили приток входящих заявок и увеличили медийность студии, в том числе за рубежом. Благодаря этому появилась возможность выхода на европейский рынок.</p>
+                  </div>
+                  <ul class="reviews__list-itemStats">
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">3 месяца</h3>
+                      <p class="reviews__list-itemStatText">Срок обслуживания рекламной кампании</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">10 000</h3>
+                      <p class="reviews__list-itemStatText">Новых потенциальных клиентов</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">62%</h3>
+                      <p class="reviews__list-itemStatText">Посетителей оставили заявку</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">25,3 руб.</h3>
+                      <p class="reviews__list-itemStatText">Средняя цена обращения</p>
+                    </li>
+                  </ul><a class="reviews__list-itemBottomLink" href="#">
+                    <p class="reviews__list-itemBottomLinkText">Скриншоты статистики</p><img class="reviews__list-itemBottomLinkImg" src="assets/images/utils/arrowForFillingButton--salad.svg" alt="Стрелка" width="30" height="30"></a>
+                </div>
+              </li>
+              <li class="reviews__list-item splide__slide">
+                <div class="reviews__list-itemGradient"></div><img class="reviews__list-itemBgImage" src="assets/images/attraction/resultsItemsBg.jpg" alt="Фоновое изображерние">
+                <div class="reviews__list-itemContent">
+                  <h2 class="reviews__list-itemTitle">Услуги автосервиса</h2>
+                  <div class="reviews__list-itemTextWrapper">
+                    <div class="reviews__list-itemTextLeftStick"></div>
+                    <p class="reviews__list-itemText">
+                       Повысили приток входящих заявок и увеличили медийность студии, в том числе за рубежом. Благодаря этому появилась возможность выхода на европейский рынок.</p>
+                  </div>
+                  <ul class="reviews__list-itemStats">
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">3 месяца</h3>
+                      <p class="reviews__list-itemStatText">Срок обслуживания рекламной кампании</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">10 000</h3>
+                      <p class="reviews__list-itemStatText">Новых потенциальных клиентов</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">62%</h3>
+                      <p class="reviews__list-itemStatText">Посетителей оставили заявку</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">25,3 руб.</h3>
+                      <p class="reviews__list-itemStatText">Средняя цена обращения</p>
+                    </li>
+                  </ul><a class="reviews__list-itemBottomLink" href="#">
+                    <p class="reviews__list-itemBottomLinkText">Скриншоты статистики</p><img class="reviews__list-itemBottomLinkImg" src="assets/images/utils/arrowForFillingButton--salad.svg" alt="Стрелка" width="30" height="30"></a>
+                </div>
+              </li>
+              <li class="reviews__list-item splide__slide">
+                <div class="reviews__list-itemGradient"></div><img class="reviews__list-itemBgImage" src="assets/images/attraction/resultsItemsBg.jpg" alt="Фоновое изображерние">
+                <div class="reviews__list-itemContent">
+                  <h2 class="reviews__list-itemTitle">Услуги автосервиса</h2>
+                  <div class="reviews__list-itemTextWrapper">
+                    <div class="reviews__list-itemTextLeftStick"></div>
+                    <p class="reviews__list-itemText">
+                       Повысили приток входящих заявок и увеличили медийность студии, в том числе за рубежом. Благодаря этому появилась возможность выхода на европейский рынок.</p>
+                  </div>
+                  <ul class="reviews__list-itemStats">
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">3 месяца</h3>
+                      <p class="reviews__list-itemStatText">Срок обслуживания рекламной кампании</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">10 000</h3>
+                      <p class="reviews__list-itemStatText">Новых потенциальных клиентов</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">62%</h3>
+                      <p class="reviews__list-itemStatText">Посетителей оставили заявку</p>
+                    </li>
+                    <li class="reviews__list-itemStat">
+                      <h3 class="reviews__list-itemStatTitle">25,3 руб.</h3>
+                      <p class="reviews__list-itemStatText">Средняя цена обращения</p>
+                    </li>
+                  </ul><a class="reviews__list-itemBottomLink" href="#">
+                    <p class="reviews__list-itemBottomLinkText">Скриншоты статистики</p><img class="reviews__list-itemBottomLinkImg" src="assets/images/utils/arrowForFillingButton--salad.svg" alt="Стрелка" width="30" height="30"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="stages">
+        <div class="container">
+          <div class="stages__content">
+            <div class="stages__contentTop">
+              <div class="servisec-list__item">
+                <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                  <div class="servisec-list__item-title-span-bg"></div>
+                </div>
+                <div class="servisec-list__item-content">
+                  <h1 class="servisec-list__item-title servicesTitle"><span class="servisec-list__item-title-span">Этапы работ&nbsp;</span>&nbsp;над рекламой</h1>
+                </div>
+              </div>
+            </div>
+            <div class="stages__contentBottomWrapper"><img class="stages__contentBottom__decorationRightLines" src="assets/images/utils/obliqueLinesWithSalad--full.svg" alt="Декоративные линии" width="175" height="305">
+              <div class="stages__contentBottom">   
+                <ol class="stages__contentBottomItems">
+                  <li class="stages__contentBottomItem">
+                    <div class="stages__contentBottomItemTop">
+                      <div class="servisec-list__item">
+                        <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--higher">
+                          <div class="servisec-list__item-title-span-bg--black"></div>
+                        </div>
+                        <div class="servisec-list__item-content">
+                          <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span servisec-list__item-title-span--white"> 01</span></div>
+                        </div>
+                      </div>
+                      <h2 class="stages__contentBottomItemTopTitle">Подготовка</h2>
+                    </div>
+                    <ul class="stages__contentBottomItemBottomList">
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Брифинг, аудит и анализ</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Проработка гипотез</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Разработка креативов</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Брифинг, аудит и анализ</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="stages__contentBottomItem">
+                    <div class="stages__contentBottomItemTop">
+                      <div class="servisec-list__item">
+                        <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--higher">
+                          <div class="servisec-list__item-title-span-bg--black"></div>
+                        </div>
+                        <div class="servisec-list__item-content">
+                          <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span servisec-list__item-title-span--white"> 02</span></div>
+                        </div>
+                      </div>
+                      <h2 class="stages__contentBottomItemTopTitle">Ведение рекламы</h2>
+                    </div>
+                    <ul class="stages__contentBottomItemBottomList">
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Подготовка и публикация рекламных объявлений</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Настройка рекламы по аудиториям</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Работа со ставками рекламных  объявлений</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Настройка рекламы по аудиториям</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="stages__contentBottomItem">
+                    <div class="stages__contentBottomItemTop">
+                      <div class="servisec-list__item">
+                        <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--higher">
+                          <div class="servisec-list__item-title-span-bg--black"></div>
+                        </div>
+                        <div class="servisec-list__item-content">
+                          <div class="servisec-list__item-title intro__bottomTitle"><span class="servisec-list__item-title-span servisec-list__item-title-span--white"> 03</span></div>
+                        </div>
+                      </div>
+                      <h2 class="stages__contentBottomItemTopTitle">Аналитика и отчеты</h2>
+                    </div>
+                    <ul class="stages__contentBottomItemBottomList">
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Аналитика результатов проведенной рекламной кампании</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Проработка гипотез по улучшению</p>
+                      </li>
+                      <li class="stages__contentBottomItemBottomListItem">
+                        <div class="bullet bullet--blackStages"></div>
+                        <p class="stages__contentBottomItemBottomListItemText">Регулярная отправка отчетов об успехах рекламной кампании</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="answers">
+        <div class="container">
+          <div class="answers__content">
+            <div class="answers__contentTop">
+              <h2 class="answers__contentTopTitle">Ответы на часто задаваемые вопросы</h2>
+            </div>
+            <div class="answers__contentBottom">
+              <div class="answers__contentBottomLeft">
+                <div class="answers__contentBottomLeftAccordions">
+                  <div class="answers__contentBottomLeftAccordion">
+                    <button class="answers__contentBottomLeftAccordionTop" aria-expanded="false">
+                      <h3 class="answers__contentBottomLeftAccordionTopTitle">Вопрос 1</h3>
+                      <div class="answers__contentBottomLeftAccordionTopClose">
+                        <div class="answers__contentBottomLeftAccordionTopCloseCircleSalad"><img class="answers__contentBottomLeftAccordionTopCloseCircleSaladCross" src="assets/images/attraction/cross.svg" alt="Декоративный круг"></div>
+                      </div>
+                    </button>
+                    <div class="answers__contentBottomLeftAccordionBottom" aria-hidden="true">
+                      <p class="answers__contentBottomLeftAccordionBottomText">Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования будут призваны к ответу. Наше дело не так однозначно, как может показаться: семантический разбор внешних противодействий предполагает независимые способы реализации своевременного выполнения</p>
+                    </div>
+                  </div>
+                  <div class="answers__contentBottomLeftAccordion">
+                    <button class="answers__contentBottomLeftAccordionTop" aria-expanded="false">
+                      <h3 class="answers__contentBottomLeftAccordionTopTitle">Вопрос 2</h3>
+                      <div class="answers__contentBottomLeftAccordionTopClose">
+                        <div class="answers__contentBottomLeftAccordionTopCloseCircleSalad"><img class="answers__contentBottomLeftAccordionTopCloseCircleSaladCross" src="assets/images/attraction/cross.svg" alt="Декоративный круг"></div>
+                      </div>
+                    </button>
+                    <div class="answers__contentBottomLeftAccordionBottom" aria-hidden="true">
+                      <p class="answers__contentBottomLeftAccordionBottomText">Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования будут призваны к ответу. Наше дело не так однозначно, как может показаться: семантический разбор внешних противодействий предполагает независимые способы реализации своевременного выполнения</p>
+                    </div>
+                  </div>
+                  <div class="answers__contentBottomLeftAccordion">
+                    <button class="answers__contentBottomLeftAccordionTop" aria-expanded="false">
+                      <h3 class="answers__contentBottomLeftAccordionTopTitle">Вопрос 3</h3>
+                      <div class="answers__contentBottomLeftAccordionTopClose">
+                        <div class="answers__contentBottomLeftAccordionTopCloseCircleSalad"><img class="answers__contentBottomLeftAccordionTopCloseCircleSaladCross" src="assets/images/attraction/cross.svg" alt="Декоративный круг"></div>
+                      </div>
+                    </button>
+                    <div class="answers__contentBottomLeftAccordionBottom" aria-hidden="true">
+                      <p class="answers__contentBottomLeftAccordionBottomText">Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования будут призваны к ответу. Наше дело не так однозначно, как может показаться: семантический разбор внешних противодействий предполагает независимые способы реализации своевременного выполнения</p>
+                    </div>
+                  </div>
+                  <div class="answers__contentBottomLeftAccordion">
+                    <button class="answers__contentBottomLeftAccordionTop" aria-expanded="false">
+                      <h3 class="answers__contentBottomLeftAccordionTopTitle">Вопрос 4</h3>
+                      <div class="answers__contentBottomLeftAccordionTopClose">
+                        <div class="answers__contentBottomLeftAccordionTopCloseCircleSalad"><img class="answers__contentBottomLeftAccordionTopCloseCircleSaladCross" src="assets/images/attraction/cross.svg" alt="Декоративный круг"></div>
+                      </div>
+                    </button>
+                    <div class="answers__contentBottomLeftAccordionBottom" aria-hidden="true">
+                      <p class="answers__contentBottomLeftAccordionBottomText">Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования будут призваны к ответу. Наше дело не так однозначно, как может показаться: семантический разбор внешних противодействий предполагает независимые способы реализации своевременного выполнения</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="answers__contentBottomRight">
+                <div class="answers__contentBottomRightQuestions"><img class="answers__contentBottomRightQuestionsDecorative" src="assets/images/attraction/questionsCircle.svg" alt="Декоративный круг">
+                  <h2 class="answers__contentBottomRightQuestionsTitle">Остались вопросы?</h2>
+                  <p class="answers__contentBottomRightQuestionsText">Подробно ответим на все ваши вопросы</p>
+                  <div class="answers__contentBottomRightQuestionsButton"><a class="fillingButton fillingButton--answersQuestions" href="">
+                      <svg class="fillingButton__svg fillingButton__svg--answersQuestions" viewBox="0 0 160 160">
+                        <circle class="fillingButton__svg-circle fillingButton__svg-circle--answersQuestions" cx="80" cy="80" r="80" fill="transparent"></circle>
+                      </svg>
+                      <div class="fillingButton__circle fillingButton__circle--black-border fillingButton__circle--answersQuestions"></div>
+                      <div class="fillingButton__content">
+                        <p class="fillingButton__p fillingButton__p--black"><span class="fillingButton__span--smallMargin-and-partial">Отпра</span>вить</p>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why">
+        <div class="container">
+          <div class="why__content">
+            <h2 class="why__contentTitle">Почему вы должны уже сегодня настроить контекстную рекламу (SEO текст)</h2>
+            <p class="why__contentText">Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования будут призваны к ответу. Наше дело не так однозначно, как может показаться: семантический разбор внешних противодействий предполагает независимые способы реализации своевременного выполнения сверхзадачи. Как принято считать, стремящиеся вытеснить традиционное производство, нанотехнологии призывают нас к новым свершениям, которые, в свою очередь, должны быть призваны к ответу. В целом, конечно, высококачественный прототип будущего проекта создаёт предпосылки для системы массового участия. Повседневная практика показывает, что убеждённость некоторых оппонентов выявляет срочную потребность поэтапного и последовательного развития общества. В своём стремлении улучшить пользовательский опыт мы упускаем, что реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. В целом, конечно, семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо своевременного выполнения сверхзадачи! Сложно сказать, почему базовые сценарии поведения пользователей являются только методом политического </p>
+          </div>
+        </div>
+      </section>
+      <section class="offer"><img class="offer__decorativeCircle" src="assets/images/utils/circleWithLines.svg" alt="Декоративный круг" width="421" height="421">
+        <div class="container">
+          <div class="offer__content">
+            <div class="offer__contentTop">
+              <div class="servisec-list__item">
+                <div class="servisec-list__item-title-span-wrapper servisec-list__item-title-span-wrapper--wide">
+                  <div class="servisec-list__item-title-span-bg"></div>
+                </div>
+                <div class="servisec-list__item-content">
+                  <h1 class="servisec-list__item-title servicesTitle- servicesTitle--black"><span class="servisec-list__item-title-span">Хотите получить&nbsp;</span>&nbsp;еще более выгодное предложение?</h1>
+                </div>
+              </div>
+              <p class="offer__contentTopText">Актуальные предложения для вас</p>
+            </div>
+            <div class="offer__contentMiddle">
+              <div class="offer__contentMiddleItems">
+                <div class="offer__contentMiddleItem">
+                  <div class="offer__contentMiddleItemIconWrapper"><img class="offer__contentMiddleItemIcon" src="assets/images/attraction/sale.svg" alt="Процент" width="24" height="23"></div>
+                  <h4 class="offer__contentMiddleItemTitle">до 10% за разумный подход</h4>
+                  <p class="offer__contentMiddleItemTitleText">Закажите разработку сайта, и мы предоставим скидку до 10% на SEO продвижения</p>
+                </div>
+                <div class="offer__contentMiddleItem">
+                  <div class="offer__contentMiddleItemIconWrapper"><img class="offer__contentMiddleItemIcon" src="assets/images/attraction/sale.svg" alt="Процент" width="24" height="23"></div>
+                  <h4 class="offer__contentMiddleItemTitle">до 10% за разумный подход</h4>
+                  <p class="offer__contentMiddleItemTitleText">Закажите разработку сайта, и мы предоставим скидку до 10% на SEO продвижения</p>
+                </div>
+                <div class="offer__contentMiddleItem">
+                  <div class="offer__contentMiddleItemIconWrapper"><img class="offer__contentMiddleItemIcon" src="assets/images/attraction/sale.svg" alt="Процент" width="24" height="23"></div>
+                  <h4 class="offer__contentMiddleItemTitle">до 10% за разумный подход</h4>
+                  <p class="offer__contentMiddleItemTitleText">Закажите разработку сайта, и мы предоставим скидку до 10% на SEO продвижения</p>
+                </div>
+              </div>
+            </div>
+            <div class="intro__bottom">
+              <div class="intro__bottomItemsWrapper">
+                <div class="servisec-list__item">
+                  <div class="servisec-list__item-title-span-wrapper">
+                    <div class="servisec-list__item-title-span-bg servisec-list__item-title-span-bg--transparent"></div>
+                  </div>
+                  <div class="servisec-list__item-content">
+                    <h1 class="servisec-list__item-title intro__bottomTitle intro__bottomTitle--black"><span class="servisec-list__item-title-span"></span>Помощь в выборе предложения и бесплатная консультация</h1>
+                  </div>
+                </div>
+                <div class="intro__bottomFormWrapper">
+                  <form class="intro__bottomForm">
+                    <input class="offer__formInputIntro--blackPlaceholder" type="text" placeholder="Ваше имя" name="name">
+                    <input class="offer__formInputIntro--blackPlaceholder" type="tel" placeholder="Ваш телефон" name="tel">
+                  </form>
+                  <footer class="intro__bottomFormDescriptionBlock">
+                    <p class="intro__bottomFormDescription">
+                      Нажимая кнопку, вы разрешаете обработку персональных данных и соглашаетесь с 
+                      политикой конфиденциальности.
+                    </p>
+                  </footer>
+                </div>
+                <div class="intro__bottomButton">
+                  <div class="intro__contentLeftSideButton"><a class="fillingButton fillingButton--introBottomOffer" href="">
+                      <svg class="fillingButton__svg fillingButton__svg--introBottomOffer" viewBox="0 0 134 134">
+                        <circle class="fillingButton__svg-circle fillingButton__svg-circle--introBottomOffer" cx="67" cy="67" r="67" fill="transparent"></circle>
+                      </svg>
+                      <div class="fillingButton__circle fillingButton__circle--black-border fillingButton__circle--introBottomOffer"></div>
+                      <div class="fillingButton__content">
+                        <p class="fillingButton__p fillingButton__p--black"><span class="fillingButton__span--smallMargin-and-partial">Отпра</span>вить</p>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__left-side">
+        <div class="container container--footer">
+          <ul class="footer__blocks">
+            <li class="footer__blocks-item footer__blocks-item--one">
+              <ul class="footer__blocks-item-list footer__blocks-item-list--one">
+                <li class="footer__blocks-item-logo"><a href="#"><img class="footer__blocks-item-logo-image" src="./assets/images/footer/footer-logo.svg" alt="Логотип веб студии" width="196" height="52"></a></li>
+                <li>
+                  <p class="footer__blocks-item-text">Ваша команда комплексного интернет маркетинга</p>
+                </li>
+                <li class="footer__blocks-item-socials"><a href="#"><img class="footer__blocks-item-socials-item" src="./assets/images/footer/footer-telegram-white-border.svg" alt="Telegram веб студии" width="31" height="25"></a><a href="#"><img class="footer__blocks-item-socials-item" src="./assets/images/footer/footer-whatsapp-white-border.svg" alt="Whatsapp веб студии" width="28" height="29"></a><a href="#"><img class="footer__blocks-item-socials-item" src="./assets/images/footer/footer-vk-white-border.svg" alt="VK веб студии" width="36" height="36"></a></li>
+              </ul>
+            </li>
+            <li class="footer__blocks-item">
+              <h6 class="footer__blocks-item-title">Услуги</h6>
+              <ul class="footer__blocks-item-list footer__blocks-item-list--two">
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Разработка сайтов</a></li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Привлечение трафика</a></li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Комплексная аналитика</a></li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--dash"><a href="#">Техническая поддержка</a></li>
+              </ul>
+            </li>
+            <li class="footer__blocks-item">
+              <h6 class="footer__blocks-item-title">Контакты</h6>
+              <ul class="footer__blocks-item-list footer__blocks-item-list--three">
+                <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-marker.svg" alt="Картинка маркер на карте" width="27" height="27">
+                  <address class="footer__blocks-list-item--contacts-text-block">
+                    <p class="footer__blocks-list-item--contacts-text">г. Казань ул.</p>
+                    <p class="footer__blocks-list-item--contacts-text">Четаева д. 5А</p>
+                  </address>
+                </li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-phone.svg" alt="Картинка телефонной трубки" width="24" height="24">
+                  <address><a class="footer__blocks-list-item--contacts-text" href="tel:+79050226228">+7 (905) 022-62-28</a></address>
+                </li>
+                <li class="footer__blocks-list-item footer__blocks-list-item--contacts"><img class="footer__blocks-list-item--contacts-image" src="./assets/images/footer/footer-mail.svg" alt="Картинка почты" width="21" height="22">
+                  <address><a class="footer__blocks-list-item--contacts-text" href="mailto:info@itshtab.ru">info@itshtab.ru</a></address>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__left-side-rights">
+          <p class="footer__left-side-rights-text">2013 - 2023 | Все права защищены</p>
+        </div>
+      </div>
+      <div class="footer__right-side-form">
+        <div class="footer__right-side-form-content">
+          <h6 class="footer__right-side-form-title">У вас есть задача для нас?</h6>
+          <form class="footer__right-side-form-form">
+            <input class="footer__right-side-form-form-input" type="name" placeholder="Имя">
+            <input class="footer__right-side-form-form-input" type="tel" placeholder="Телефон">
+            <div class="footer__right-side-form-form-checkbox-block">
+              <input class="footer__right-side-form-form-checkbox" id="footer-checkbox" type="checkbox">
+              <div class="footer__right-side-form-form-checkbox-custom-block">
+                <div class="footer__right-side-form-form-checkbox-custom">
+                  <div class="footer__right-side-form-form-checkbox-custom--active"></div>
+                </div>
+              </div>
+              <label class="footer__right-side-form-form-checkbox-block-label" for="footer-checkbox">
+                Даю согласие на обработку
+                персональных данных
+              </label>
+            </div>
+            <button class="footer__right-side-form-form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<!-- splide script-->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<!-- my js-->
+<script src="./assets/js/attractionIndex.js"></script>

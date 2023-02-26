@@ -9,19 +9,16 @@ const { img } = require("./images");
 const { fonts } = require("./fonts");
 
 const { scripts404 } = require("./scripts/scripts404");
-const { scriptsBlog } = require("./scripts/scripts--blog");
-const { scriptsContacts } = require("./scripts/scripts--contacts");
-const { scriptsBlogOncePage } = require("./scripts/scripts--blog-once-page");
-const { scriptBrief } = require("./scripts/scripts--brief");
-const { scriptsProjects } = require("./scripts/scripts--projects");
-const { scriptsServices } = require("./scripts/scripts--services");
-const {
-  scriptsServiceDetailIndex,
-} = require("./scripts/scriptsServiceDetailIndex");
-const {
-  scriptsProductsOncePage,
-} = require("./scripts/scripts--productsOncePage");
-const { script } = require("./scripts/scripts");
+const { scriptsBlog } = require("./scripts/blog");
+const { scriptsContacts } = require("./scripts/contacts");
+const { scriptsBlogOncePage } = require("./scripts/blog-once-page");
+const { scriptBrief } = require("./scripts/brief");
+const { scriptsProjects } = require("./scripts/projects");
+const { scriptsServices } = require("./scripts/services");
+const { scriptsServiceDetail } = require("./scripts/scriptsServiceDetail");
+const { scriptsAttraction } = require("./scripts/attraction");
+const { scriptsProductsOncePage } = require("./scripts/productsOncePage");
+const { script } = require("./scripts/index");
 
 exports.clear = clear;
 exports.build = series(
@@ -36,6 +33,8 @@ exports.build = series(
   scriptsProjects,
   scriptsServices,
   scriptsProductsOncePage,
+  scriptsServiceDetail,
+  scriptsAttraction,
   fonts,
   scss,
   img,
@@ -53,7 +52,8 @@ exports.serve = series(
   scriptsProjects,
   scriptsServices,
   scriptsProductsOncePage,
-  scriptsServiceDetailIndex,
+  scriptsServiceDetail,
+  scriptsAttraction,
   fonts,
   scss,
   img,

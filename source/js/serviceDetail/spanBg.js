@@ -16,7 +16,16 @@ window.addEventListener("load", () => {
     spanAnimationBgWrapper.style.top =
       titleWithSpan.offsetTop + titleWithSpan.offsetParent.offsetTop + "px";
     spanAnimationBgWrapper.style.width =
-      span.getBoundingClientRect().width - 4 + "px";
+      span.getBoundingClientRect().width + "px";
+
+    if (
+      spanAnimationBgWrapper.classList.contains(
+        "servisec-list__item-title-span-wrapper--wide"
+      )
+    ) {
+      spanAnimationBgWrapper.style.width =
+        span.getBoundingClientRect().width + 5 + "px";
+    }
     spanAnimationBgWrapper.style.height =
       span.getBoundingClientRect().height / 1.2 + "px";
   });
@@ -40,7 +49,7 @@ window.addEventListener("resize", () => {
     spanAnimationBgWrapper.style.top =
       titleWithSpan.offsetTop + titleWithSpan.offsetParent.offsetTop + "px";
     spanAnimationBgWrapper.style.width =
-      span.getBoundingClientRect().width - 4 + "px";
+      span.getBoundingClientRect().width + "px";
     spanAnimationBgWrapper.style.height =
       span.getBoundingClientRect().height / 1.2 + "px";
   });

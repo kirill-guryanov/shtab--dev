@@ -4,51 +4,22 @@ window.addEventListener("load", function () {
     perMove: 1,
     pagination: false,
     focus: "center",
+    autoWidth: true,
 
     breakpoints: {
       5000: {
-        perPage: 4,
-        gap: 16,
-      },
-      1460: {
-        perPage: 4,
-        gap: 50,
-      },
-      1350: {
-        gap: 20,
-      },
-      1200: {
-        perPage: 4,
-        gap: 20,
-      },
-      1180: {
         perPage: 3,
-        gap: 60,
-        // gap: 200
-      },
-      1060: {
-        // perPage: 2,
-        gap: 20,
+        gap: 55,
       },
       920: {
         perPage: 2,
-        gap: 160,
-      },
-      840: {
-        // perPage: 2,
-        gap: 100,
-      },
-      765: {
-        // perPage: 2,
-        gap: 30,
       },
       675: {
         perPage: 1,
-        gap: 30,
+        gap: 40,
       },
       450: {
         perPage: 1,
-        gap: 15,
       },
     },
   }).mount();

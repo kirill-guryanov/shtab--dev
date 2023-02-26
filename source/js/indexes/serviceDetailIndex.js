@@ -4,7 +4,7 @@ import "../utils/preloader";
 import "../burgerMenu/burgerMenu";
 import "../burgerMenu/buttonsImplementation";
 // circle
-// import "../circle/circle";
+import "../circle/circle--serviceDetail";
 // header
 import "../header/text";
 import "../header/animationWithScroll";
