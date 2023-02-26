@@ -91,12 +91,11 @@ window.addEventListener("load", function () {
   window.addEventListener("scroll", () => {
     const intro = document.querySelector(".intro").offsetTop;
     const solve = document.querySelector(".solve").offsetTop;
-    const services = document.querySelector(".services").offsetTop;
-    const results = document.querySelector(".results").offsetTop;
+    const reviews = document.querySelector(".reviews").offsetTop;
     const stages = document.querySelector(".stages").offsetTop;
     const answers = document.querySelector(".answers").offsetTop;
     const why = document.querySelector(".why").offsetTop;
-    const offer = document.querySelector(".why").offsetTop;
+    const offer = document.querySelector(".offer").offsetTop;
     const footer = document.querySelector(".footer").offsetTop;
 
     const viewPortHeight = window.innerHeight;
@@ -119,21 +118,13 @@ window.addEventListener("load", function () {
       circleArrowSalad.classList.add("progress-circle-arrow--active");
       circleArrowBlack.classList.add("progress-circle-arrow--not-active");
     }
-    // services
-    if (currentPosition >= services) {
+    // reviews
+    if (currentPosition >= reviews) {
       clearArrowsClasses();
 
       circle.style.fill = "#fff";
       circleArrowSalad.classList.add("progress-circle-arrow--not-active");
       circleArrowBlack.classList.add("progress-circle-arrow--active");
-    }
-    // results
-    if (currentPosition >= results) {
-      clearArrowsClasses();
-
-      circle.style.fill = "#1D1D1D";
-      circleArrowSalad.classList.add("progress-circle-arrow--active");
-      circleArrowBlack.classList.add("progress-circle-arrow--not-active");
     }
     // stages
     if (currentPosition >= stages) {

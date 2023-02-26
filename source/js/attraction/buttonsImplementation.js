@@ -87,4 +87,15 @@ window.addEventListener("resize", () => {
     0,
     false
   );
+  // introBottomOffer
+  addInteractivityToButton(
+    ".fillingButton--introBottomOffer",
+    ".fillingButton__svg-circle--introBottomOffer",
+    ".fillingButton__circle--introBottomOffer",
+    3,
+    3,
+    0,
+    0,
+    false
+  );
 });
