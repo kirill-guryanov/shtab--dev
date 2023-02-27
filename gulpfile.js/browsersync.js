@@ -17,6 +17,7 @@ const { scriptsServices } = require("./scripts/services");
 const { scriptsServiceDetail } = require("./scripts/scriptsServiceDetail");
 const { scriptsProductsOncePage } = require("./scripts/productsOncePage");
 const { scriptsAttraction } = require("./scripts/attraction");
+const { sitesDevelopment } = require("./scripts/sitesDevelopment");
 
 exports.server = () => {
   browserSync.init({
@@ -45,7 +46,8 @@ exports.server = () => {
       scriptsServices,
       scriptsProductsOncePage,
       scriptsServiceDetail,
-      scriptsAttraction
+      scriptsAttraction,
+      sitesDevelopment
     )
   ).on("change", browserSync.reload);
 };

@@ -18,6 +18,7 @@ const { scriptsServices } = require("./scripts/services");
 const { scriptsServiceDetail } = require("./scripts/scriptsServiceDetail");
 const { scriptsAttraction } = require("./scripts/attraction");
 const { scriptsProductsOncePage } = require("./scripts/productsOncePage");
+const { sitesDevelopment } = require("./scripts/sitesDevelopment");
 const { script } = require("./scripts/index");
 
 exports.clear = clear;
@@ -35,6 +36,7 @@ exports.build = series(
   scriptsProductsOncePage,
   scriptsServiceDetail,
   scriptsAttraction,
+  sitesDevelopment,
   fonts,
   scss,
   img,
@@ -54,6 +56,7 @@ exports.serve = series(
   scriptsProductsOncePage,
   scriptsServiceDetail,
   scriptsAttraction,
+  sitesDevelopment,
   fonts,
   scss,
   img,
