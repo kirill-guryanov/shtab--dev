@@ -7,7 +7,7 @@ const babel = require("gulp-babel");
 const webpack = require("webpack");
 const webpackStream = require("webpack-stream");
 
-exports.scriptBrief = () => {
+exports.brief = () => {
   return src("./source/js/indexes/index--brief.js", { sourcemaps: true })
     .pipe(map.init())
     .pipe(

@@ -5,7 +5,7 @@ const webpackStream = require("webpack-stream");
 const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
-exports.scriptsAttraction = () => {
+exports.attraction = () => {
   return src("./source/js/indexes/attractionIndex.js", {
     sourcemaps: true,
   })

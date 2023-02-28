@@ -5,10 +5,8 @@ const webpackStream = require("webpack-stream");
 const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
-exports.scriptsBlogOncePage = () => {
-  return src("./source/js/indexes/index--blog-once-page.js", {
-    sourcemaps: true,
-  })
+exports.s404 = () => {
+  return src("./source/js/indexes/index--404.js", { sourcemaps: true })
     .pipe(map.init())
     .pipe(
       babel({
@@ -17,7 +15,7 @@ exports.scriptsBlogOncePage = () => {
     )
     .pipe(webpackStream())
     .pipe(uglify())
-    .pipe(concat("index--blog-once-page.js"))
+    .pipe(concat("index--404.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));
 };

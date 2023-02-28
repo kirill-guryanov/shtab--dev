@@ -1,19 +1,35 @@
 .why
     padding: 60px 0
 
-    background: #262626
+    background: #1E1E1E
 
-.why__content
 .why__contentTitle
     margin-bottom: 35px
 
     font-weight: 700
-    @include adaptiveFont(35, 20)
+    @include adaptiveFont(50, 20)
     line-height: 1.2
     color: #FFFFFF
 
+    &--small
+        margin-top: 10px
+        margin-bottom: 0
+
+        @include adaptiveFont(20, 18)
+
 .why__contentText
     font-weight: 400
-    @include adaptiveFont(20, 16)
+    font-size: 16px
     line-height: 1.4
     color: #FFFFFF
+
+.why__contentBottomListItemText
+    font-weight: 400
+    font-size: 16px
+    line-height: 1.2
+    color: #FFFFFF
+
+// list
+.why__contentBottomListItem
+    display: flex
+    align-items: baseline

@@ -3,21 +3,25 @@ const { watch, series, parallel } = require("gulp");
 const browserSync = require("browser-sync").create();
 
 const { pug } = require("./pug");
+
 const { scss } = require("./sass/sass");
 
 const { img } = require("./images");
+
 const { script } = require("./scripts/index");
-const { scripts404 } = require("./scripts/scripts404");
-const { scriptsBlog } = require("./scripts/blog");
-const { scriptsContacts } = require("./scripts/contacts");
-const { scriptsBlogOncePage } = require("./scripts/blog-once-page");
-const { scriptBrief } = require("./scripts/brief");
-const { scriptsProjects } = require("./scripts/projects");
-const { scriptsServices } = require("./scripts/services");
-const { scriptsServiceDetail } = require("./scripts/scriptsServiceDetail");
-const { scriptsProductsOncePage } = require("./scripts/productsOncePage");
-const { scriptsAttraction } = require("./scripts/attraction");
+const { s404 } = require("./scripts/s404");
+const { blog } = require("./scripts/blog");
+const { contacts } = require("./scripts/contacts");
+const { blogOncePage } = require("./scripts/blogOncePage");
+const { brief } = require("./scripts/brief");
+const { projects } = require("./scripts/projects");
+const { services } = require("./scripts/services");
+const { serviceDetail } = require("./scripts/serviceDetail");
+const { productsOncePage } = require("./scripts/productsOncePage");
+const { attraction } = require("./scripts/attraction");
 const { sitesDevelopment } = require("./scripts/sitesDevelopment");
+const { serm } = require("./scripts/serm");
+const { seo } = require("./scripts/seo");
 
 exports.server = () => {
   browserSync.init({
@@ -37,17 +41,19 @@ exports.server = () => {
     "./source/js/**/*.js",
     parallel(
       script,
-      scripts404,
-      scriptsBlog,
-      scriptsContacts,
-      scriptsBlogOncePage,
-      scriptBrief,
-      scriptsProjects,
-      scriptsServices,
-      scriptsProductsOncePage,
-      scriptsServiceDetail,
-      scriptsAttraction,
-      sitesDevelopment
+      s404,
+      blog,
+      contacts,
+      blogOncePage,
+      brief,
+      projects,
+      services,
+      productsOncePage,
+      serviceDetail,
+      attraction,
+      sitesDevelopment,
+      serm,
+      seo
     )
   ).on("change", browserSync.reload);
 };

@@ -10,7 +10,8 @@ export function addInteractivityToButton(
   typeOfDecorativeImageOrSrc = null,
   withTextInversion,
   [...decorativeImageSizes] = [],
-  mode
+  mode,
+  addedSelectors
 ) {
   // mode present ?
   const isMode = mode;
@@ -27,12 +28,25 @@ export function addInteractivityToButton(
     blackArrow: "blackArrow",
     whiteArrow: "whiteArrow",
   };
-  // get paren block
-  const parent = document.querySelector(parentSelector);
-  // get circle svg for :hover interactions
-  const circleSvg = document.querySelector(circleSvgSelector);
-  // get circle for add coordinates to fill-circle  interactions
-  const circle = document.querySelector(circleSelector);
+
+  let parent, circleSvg, circle;
+
+  if (addedSelectors !== true) {
+    // get paren block
+    parent = document.querySelector(parentSelector);
+    // get circle svg for :hover interactions
+    circleSvg = document.querySelector(circleSvgSelector);
+    // get circle for add coordinates to fill-circle  interactions
+    circle = document.querySelector(circleSelector);
+  } else {
+    // get paren block
+    parent = parentSelector;
+    // get circle svg for :hover interactions
+    circleSvg = circleSvgSelector;
+    // get circle for add coordinates to fill-circle  interactions
+    circle = circleSelector;
+  }
+
   // create coordinates for circle
   let x;
   let y;
@@ -106,7 +120,7 @@ export function addInteractivityToButton(
       ".fillingButton__content span"
     );
   }
-
+  // for images
   let blackImage;
   let whiteImage;
 

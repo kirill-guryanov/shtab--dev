@@ -5,8 +5,10 @@ const webpackStream = require("webpack-stream");
 const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
-exports.scripts404 = () => {
-  return src("./source/js/indexes/index--404.js", { sourcemaps: true })
+exports.serm = () => {
+  return src("./source/js/indexes/sermIndex.js", {
+    sourcemaps: true,
+  })
     .pipe(map.init())
     .pipe(
       babel({
@@ -15,7 +17,7 @@ exports.scripts404 = () => {
     )
     .pipe(webpackStream())
     .pipe(uglify())
-    .pipe(concat("index--404.js"))
+    .pipe(concat("sermIndex.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));
 };

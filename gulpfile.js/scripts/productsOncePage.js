@@ -5,7 +5,7 @@ const webpackStream = require("webpack-stream");
 const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
-exports.scriptsProductsOncePage = () => {
+exports.productsOncePage = () => {
   return src("./source/js/indexes/indexProductsOncePage.js")
     .pipe(map.init())
     .pipe(

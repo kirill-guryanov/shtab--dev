@@ -5,7 +5,7 @@ const webpackStream = require("webpack-stream");
 const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
-exports.scriptsBlog = () => {
+exports.blog = () => {
   return src("./source/js/indexes/index--blog.js", { sourcemaps: true })
     .pipe(map.init())
     .pipe(

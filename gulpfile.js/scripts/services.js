@@ -5,7 +5,7 @@ const webpackStream = require("webpack-stream");
 const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
-exports.scriptsServices = () => {
+exports.services = () => {
   return src("./source/js/indexes/indexServices.js", {
     sourcemaps: true,
   })

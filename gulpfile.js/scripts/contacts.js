@@ -7,7 +7,7 @@ const babel = require("gulp-babel");
 const webpack = require("webpack");
 const webpackStream = require("webpack-stream");
 
-exports.scriptsContacts = () => {
+exports.contacts = () => {
   return src("./source/js/indexes/index--contacts.js", { sourcemaps: true })
     .pipe(map.init())
     .pipe(

@@ -5,8 +5,8 @@ const webpackStream = require("webpack-stream");
 const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
-exports.scriptsServiceDetail = () => {
-  return src("./source/js/indexes/serviceDetailIndex.js", {
+exports.blogOncePage = () => {
+  return src("./source/js/indexes/index--blog-once-page.js", {
     sourcemaps: true,
   })
     .pipe(map.init())
@@ -17,7 +17,7 @@ exports.scriptsServiceDetail = () => {
     )
     .pipe(webpackStream())
     .pipe(uglify())
-    .pipe(concat("serviceDetailIndex.js"))
+    .pipe(concat("index--blog-once-page.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));
 };
