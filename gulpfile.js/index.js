@@ -20,6 +20,7 @@ const { serviceDetail } = require("./scripts/serviceDetail");
 const { productsOncePage } = require("./scripts/productsOncePage");
 const { attraction } = require("./scripts/attraction");
 const { sitesDevelopment } = require("./scripts/sitesDevelopment");
+const { serviceDetailSecond } = require("./scripts/serviceDetailSecond");
 const { serm } = require("./scripts/serm");
 const { seo } = require("./scripts/seo");
 
@@ -41,6 +42,7 @@ exports.build = series(
   sitesDevelopment,
   serm,
   seo,
+  serviceDetailSecond,
   fonts,
   scss,
   img,
@@ -63,6 +65,7 @@ exports.serve = series(
   sitesDevelopment,
   serm,
   seo,
+  serviceDetailSecond,
   fonts,
   scss,
   img,
