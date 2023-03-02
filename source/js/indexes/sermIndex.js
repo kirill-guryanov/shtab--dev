@@ -11,6 +11,7 @@ import "../header/animationWithScroll";
 // local
 import "../serm/buttonsImplementation";
 import "../serm/cyclesItemAutoHeightAddForLeftSideSaladStick";
+import "../serm/reviews";
 // functional
 import "../attraction/spanBg";
 import "../attraction/answersAccordion";

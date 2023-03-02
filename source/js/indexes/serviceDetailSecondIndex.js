@@ -12,6 +12,7 @@ import "../header/animationWithScroll";
 import "../serviceDetailSecond/buttonsImplementation";
 import "../serviceDetailSecond/allignTypesImage";
 import "../serviceDetailSecond/lines";
+import "../serviceDetailSecond/quiz";
 // functional
 import "../attraction/spanBg";
 import "../serm/cyclesItemAutoHeightAddForLeftSideSaladStick";
