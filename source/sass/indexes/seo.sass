@@ -13,7 +13,7 @@
 @import "../components/attraction/why"
 @import "../components/serviceDetail/ourWorks"
 // // sections
-@import "../components/seo/intro"
+@import "../components/serviceDetailSecond//intro"
 @import "../components/seo/costs"
 @import "../components/seo/answers"
 @import "../components/seo/benefits"
@@ -385,3 +385,90 @@ input:focus
 
         background-color: unset
         border-radius: unset
+
+// intro
+.intro
+    @media( max-width: 1400px )
+        padding: 125px 0 40px
+
+    @media ( max-width: 1035px )
+        padding: 225px 0 40px
+
+    @media( max-width: 420px )
+        padding: 190px 0 30px
+
+    @media( max-width: 750px )
+        padding: 200px 0 30px
+
+.intro__top
+    @media ( max-width: 1035px )
+        flex-direction: column-reverse
+
+.intro__contentLeftSideBottomText
+    @media ( max-width: 1035px )
+        text-align: center
+
+.intro__contentRightSideImage
+    aspect-ratio: 2/1.2
+    transform: unset
+
+    @media( max-width: 1380px )
+        max-width: 470px
+
+    @media( max-width: 900px )
+        max-width: 330px
+        min-width: 330px
+
+    @media( max-width: 1035px )
+        margin-bottom: 40px
+
+        min-width: unset
+
+    @media( max-width: 420px )
+
+        max-width: 240px
+
+.intro__contentLeftSideListWrapper
+    @media( max-width: 1380px )
+        grid-row-start: 2
+
+    @media ( max-width: 1035px )
+        grid-row-start: 1
+        grid-column-start: 2
+
+        margin-left: 40px
+
+    @media ( max-width: 700px )
+        grid-row-start: 2
+        grid-column-start: unset
+
+        margin-left: unset
+
+.intro__contentLeftSideList
+    @media ( max-width: 700px )
+        margin-bottom: 20px
+
+.intro__contentLeftSide
+    @media ( max-width: 1035px )
+        display: grid
+        grid-template-columns: 1fr
+        justify-items: center
+
+        margin-right: 0
+
+        text-align: center
+
+.intro__contentLeftSideTitle
+    @media ( max-width: 1035px )
+        min-width: 270px
+
+    @media ( max-width: 700px )
+        min-width: unset
+
+.intro__contentLeftSideBottom
+    @media ( max-width: 1035px )
+        flex-direction: column
+        align-items: center
+
+        grid-column-start: 1
+        grid-column-end: 3

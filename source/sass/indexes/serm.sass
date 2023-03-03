@@ -12,7 +12,7 @@
 // functional
 @import "../components/attraction/why"
 // // sections
-@import "../components/serm/intro"
+@import "../components/serviceDetailSecond/intro"
 @import "../components/serm/formats"
 @import "../components/serm/costs"
 @import "../components/serm/cycles"
@@ -339,3 +339,92 @@ input:focus
 .why
     @media ( max-width: 600px )
         padding-top: 20px
+
+// intro
+.intro
+    @media( max-width: 1400px )
+        padding: 125px 0 40px
+
+    @media ( max-width: 1035px )
+        padding: 170px 0 40px
+
+    @media( max-width: 750px )
+        padding: 155px 0 30px
+
+    @media( max-width: 420px )
+        padding: 190px 0 30px
+
+.intro__top
+    justify-content: space-between
+    @media ( max-width: 1035px )
+        flex-direction: column-reverse
+
+.intro__contentLeftSideBottomText
+    @media ( max-width: 1035px )
+        text-align: center
+
+.intro__contentRightSideImage
+    aspect-ratio: 2/2
+    transform: unset
+
+    @media( max-width: 1380px )
+        max-width: 470px
+
+    @media( max-width: 1035px )
+        margin-bottom: 0
+
+        min-width: unset
+
+    @media( max-width: 900px )
+        max-width: 400px
+
+    @media( max-width: 540px )
+        max-width: 320px
+
+    @media( max-width: 420px )
+        max-width: 240px
+
+.intro__contentLeftSideListWrapper
+    @media( max-width: 1380px )
+        grid-row-start: 2
+
+    @media ( max-width: 1035px )
+        grid-row-start: 1
+        grid-column-start: 2
+
+        margin-left: 40px
+
+    @media ( max-width: 700px )
+        grid-row-start: 2
+        grid-column-start: unset
+
+        margin-left: unset
+
+.intro__contentLeftSideList
+    @media ( max-width: 700px )
+        margin-bottom: 20px
+
+.intro__contentLeftSide
+    @media ( max-width: 1035px )
+        display: grid
+        grid-template-columns: 1fr
+        justify-items: center
+
+        margin-right: 0
+
+        text-align: center
+
+.intro__contentLeftSideTitle
+    @media ( max-width: 1035px )
+        min-width: 270px
+
+    @media ( max-width: 700px )
+        min-width: unset
+
+.intro__contentLeftSideBottom
+    @media ( max-width: 1035px )
+        flex-direction: column
+        align-items: center
+
+        grid-column-start: 1
+        grid-column-end: 3

@@ -23,6 +23,8 @@ const { sitesDevelopment } = require("./scripts/sitesDevelopment");
 const { serm } = require("./scripts/serm");
 const { seo } = require("./scripts/seo");
 const { serviceDetailSecond } = require("./scripts/serviceDetailSecond");
+const { modification } = require("./scripts/modification");
+const { support } = require("./scripts/support");
 
 exports.server = () => {
   browserSync.init({
@@ -55,7 +57,9 @@ exports.server = () => {
       sitesDevelopment,
       serm,
       seo,
-      serviceDetailSecond
+      serviceDetailSecond,
+      modification,
+      support
     )
   ).on("change", browserSync.reload);
 };

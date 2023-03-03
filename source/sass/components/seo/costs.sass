@@ -5,6 +5,9 @@
 
     position: relative
 
+    @media ( max-width: 600px )
+        padding: 40px 0
+
     & .servicesTitle
         @media ( max-width: 420px )
             text-align: center
@@ -60,6 +63,7 @@
     display: grid
     grid-template-columns: repeat(3,1fr)
     column-gap: 85px
+    row-gap: 50px
 
     @media ( max-width: 1320px )
         grid-template-columns: repeat(2,1fr)

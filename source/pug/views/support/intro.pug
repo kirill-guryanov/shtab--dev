@@ -1,0 +1,72 @@
+section.intro
+    img.intro__decorativeCircle(
+        src="assets/images/utils/semicircle-to-right--gray.svg" alt="Декоративный круг" 
+        width=122 height=258
+    )
+
+    img.intro__decorativeGlowingCircle(
+        src="assets/images/utils/glowingCircle.png" alt="Декоративный круг" 
+    )
+
+    .container.container--introServiceDetail
+        .intro__top
+            .intro__contentLeftSide
+                h2.intro__contentLeftSideTitle 
+                    | Техническая поддержка
+                    br
+                    |сайтов и проектов
+                p.intro__contentLeftSideText
+                    | От решений с типовым функционалом до высоконагруженных систем. Выстраиваем техническую 
+                    | архитектуру, сценарии покупок, интегрируем сторонние сервисы.
+                .intro__contentLeftSideButton
+                     a.fillingButton.fillingButton--introTop( href="" )
+                        svg.fillingButton__svg( viewBox="0 0 204 204" )
+                            circle.fillingButton__svg-circle.fillingButton__svg-circle--introTop( cx="102" cy="102" r="102" fill="transparent" )
+
+                        .fillingButton__circle.fillingButton__circle--introTop
+
+                        .fillingButton__content
+                            p.fillingButton__p
+                                span.fillingButton__span--smallMargin-and-partial Рассчит
+                                | ать стоимость
+
+            .intro__contentRightSide
+                img.intro__contentRightSideImage(
+                    src="assets/images/modification/introRightSide.png" alt="Декоративная картинка"
+                    width=500 height=405
+                )
+
+.intro__bottom
+    .container
+        .intro__bottomItemsWrapper
+            .servisec-list__item
+                .servisec-list__item-title-span-wrapper.servisec-list__item-title-span-wrapper--wide
+                    .servisec-list__item-title-span-bg
+
+                .servisec-list__item-content
+                    h1.servisec-list__item-title.intro__bottomTitle
+                        span.servisec-list__item-title-span Решим вашу задачу 
+                        | любой сложности!
+
+            .intro__bottomFormWrapper
+                form.intro__bottomForm
+                    input(type="text" placeholder="Ваше имя" name="name").offer__formInputIntro
+                    input(type="tel" placeholder="Ваш телефон" name="tel").offer__formInputIntro
+
+                footer.intro__bottomFormDescriptionBlock
+                    p.intro__bottomFormDescription
+                        | Нажимая кнопку, вы разрешаете обработку персональных данных и соглашаетесь с 
+                        | политикой конфиденциальности.
+
+            .intro__bottomButton
+                .intro__contentLeftSideButton
+                    a.fillingButton.fillingButton--introBottom( href="" )
+                        svg.fillingButton__svg.fillingButton__svg--introBottom( viewBox="0 0 160 160" )
+                            circle.fillingButton__svg-circle.fillingButton__svg-circle--introBottom( cx="80" cy="80" r="80" fill="transparent" )
+
+                        .fillingButton__circle.fillingButton__circle--introBottom
+
+                        .fillingButton__content
+                            p.fillingButton__p
+                                span.fillingButton__span--smallMargin-and-partial Отпра
+                                | вить

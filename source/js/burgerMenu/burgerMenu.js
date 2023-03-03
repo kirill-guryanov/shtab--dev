@@ -71,22 +71,45 @@ itemsForHover.forEach((itemForHover) => {
     ".burgerMenu__contentNavigation-leftSideItemImage"
   );
 
-  itemForHover.addEventListener("mouseenter", () => {
-    const imageArrows = document.querySelectorAll(
-      ".burgerMenu__contentNavigation-leftSideItemImage"
-    );
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    itemForHover.addEventListener("click", () => {
+      const imageArrows = document.querySelectorAll(
+        ".burgerMenu__contentNavigation-leftSideItemImage"
+      );
 
-    imageArrows.forEach((imageArrowForResetClass) => {
-      deleteAnimationClass(
-        imageArrowForResetClass,
+      imageArrows.forEach((imageArrowForResetClass) => {
+        deleteAnimationClass(
+          imageArrowForResetClass,
+          "burgerMenu__contentNavigation-leftSideItemImage--visible"
+        );
+      });
+
+      imageArrow.classList.add(
         "burgerMenu__contentNavigation-leftSideItemImage--visible"
       );
     });
+  } else {
+    itemForHover.addEventListener("mouseenter", () => {
+      const imageArrows = document.querySelectorAll(
+        ".burgerMenu__contentNavigation-leftSideItemImage"
+      );
 
-    imageArrow.classList.add(
-      "burgerMenu__contentNavigation-leftSideItemImage--visible"
-    );
-  });
+      imageArrows.forEach((imageArrowForResetClass) => {
+        deleteAnimationClass(
+          imageArrowForResetClass,
+          "burgerMenu__contentNavigation-leftSideItemImage--visible"
+        );
+      });
+
+      imageArrow.classList.add(
+        "burgerMenu__contentNavigation-leftSideItemImage--visible"
+      );
+    });
+  }
 });
 
 setDataAttributes();
@@ -96,24 +119,49 @@ itemsForHover.forEach((itemForHover) => {
   itemsForShow.forEach((itemForShow) => {
     const showData = itemForShow.dataset.burgerMenuLink;
 
-    itemForHover.addEventListener("mouseenter", (e) => {
-      const hoverData = e.target.dataset.burgerMenuLink;
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      itemForHover.addEventListener("click", (e) => {
+        const hoverData = e.currentTarget.dataset.burgerMenuLink;
 
-      rightSide.classList.add(
-        "burgerMenu__contentNavigation-rightSide--visible"
-      );
-      // reset animation class on all itemForShow
-      deleteAnimationClass(
-        itemForShow,
-        "burgerMenu__contentNavigation-rightSideList--animated"
-      );
-      // show dependent list
-      if (hoverData === showData) {
-        itemForShow.classList.add(
+        rightSide.classList.add(
+          "burgerMenu__contentNavigation-rightSide--visible"
+        );
+        // reset animation class on all itemForShow
+        deleteAnimationClass(
+          itemForShow,
           "burgerMenu__contentNavigation-rightSideList--animated"
         );
-      }
-    });
+        // show dependent list
+        if (hoverData === showData) {
+          itemForShow.classList.add(
+            "burgerMenu__contentNavigation-rightSideList--animated"
+          );
+        }
+      });
+    } else {
+      itemForHover.addEventListener("mouseenter", (e) => {
+        const hoverData = e.target.dataset.burgerMenuLink;
+
+        rightSide.classList.add(
+          "burgerMenu__contentNavigation-rightSide--visible"
+        );
+        // reset animation class on all itemForShow
+        deleteAnimationClass(
+          itemForShow,
+          "burgerMenu__contentNavigation-rightSideList--animated"
+        );
+        // show dependent list
+        if (hoverData === showData) {
+          itemForShow.classList.add(
+            "burgerMenu__contentNavigation-rightSideList--animated"
+          );
+        }
+      });
+    }
   });
 });
 // utils

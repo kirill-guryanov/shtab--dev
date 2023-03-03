@@ -23,6 +23,8 @@ const { sitesDevelopment } = require("./scripts/sitesDevelopment");
 const { serviceDetailSecond } = require("./scripts/serviceDetailSecond");
 const { serm } = require("./scripts/serm");
 const { seo } = require("./scripts/seo");
+const { modification } = require("./scripts/modification");
+const { support } = require("./scripts/support");
 
 exports.clear = clear;
 exports.build = series(
@@ -42,7 +44,9 @@ exports.build = series(
   sitesDevelopment,
   serm,
   seo,
+  modification,
   serviceDetailSecond,
+  support,
   fonts,
   scss,
   img,
@@ -65,7 +69,9 @@ exports.serve = series(
   sitesDevelopment,
   serm,
   seo,
+  modification,
   serviceDetailSecond,
+  support,
   fonts,
   scss,
   img,

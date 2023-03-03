@@ -13,7 +13,7 @@
 // functional
 @import "../components/services/offer"
 // sections
-@import "../components/serviceDetail/intro"
+@import "../components/serviceDetailSecond//intro"
 @import "../components/serviceDetail/costs"
 @import "../components/serviceDetail/ourWorks"
 @import "../components/serviceDetail/stack"
@@ -169,3 +169,20 @@ input:focus
     left: -8%
     top: 50%
     z-index: -1
+
+.intro__contentRightSideImage
+    aspect-ratio: 2/1.4
+    transform: unset
+
+    @media( max-width: 900px )
+        max-width: 330px
+        min-width: 330px
+
+    @media( max-width: 750px )
+        margin-bottom: 20px
+
+        min-width: unset
+
+    @media( max-width: 420px )
+
+        max-width: 240px

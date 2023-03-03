@@ -18,6 +18,10 @@ exports.pug = () => {
     "./source/pug/layouts/serm/serm.pug",
     "./source/pug/layouts/seo/seo.pug",
     "./source/pug/layouts/serviceDetailSecond/serviceDetailSecond.pug",
+    "./source/pug/layouts/serviceDetailSecond-2/serviceDetailSecond-2.pug",
+    "./source/pug/layouts/serviceDetailSecond-3/serviceDetailSecond-3.pug",
+    "./source/pug/layouts/modification/modification.pug",
+    "./source/pug/layouts/support/support.pug",
   ])
     .pipe(
       pug({

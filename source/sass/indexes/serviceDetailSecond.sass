@@ -446,10 +446,25 @@ input:focus
 
     background-color: #000
 
+.types__contentTop
+    @media (max-width: 600px)
+        flex-direction: column
+        align-items: center
+
+.types__contentTopLeft
+    @media (max-width: 600px)
+        margin-right: 0
+        margin-bottom: 20px
+
+        width: 100%
+
 .types__contentBottomItem
-    max-width: 402px
+    max-width: 100%
 
     padding-bottom: 40px
+
+    @media (max-width: 890px)
+        max-width: 430px
 
     &:nth-child(2)
         @media (max-width: 1300px)
@@ -503,11 +518,11 @@ input:focus
 
     transform: rotate(160deg)
     position: absolute
-    right: 173px
+    right: 50%
     top: -15px
 
     @media (max-width: 1300px)
-        right: 164px
+        left: 29%
 
 .decorationsWrapperBlackImage
     display: block
@@ -532,25 +547,25 @@ input:focus
 
     padding: 0 15px
 
+.types__contentBottom
+    width: 100%
+
 .types__contentBottomItems
     display: grid
     grid-template-columns: repeat(3, 1fr)
-    column-gap: 80px
+    column-gap: 30px
     row-gap: 65px
     align-items: flex-start
 
     @media (max-width: 1380px)
-        column-gap: 35px
         row-gap: 40px
 
     @media (max-width: 1300px)
         grid-template-columns: repeat(2, 1fr)
-        column-gap: 80px
         justify-items: center
 
     @media (max-width: 945px)
         justify-items: unset
-        column-gap: 30px
 
     @media (max-width: 890px)
         grid-template-columns: repeat(1, 1fr)
@@ -625,3 +640,24 @@ input:focus
 .stackDecorativeCircletBottom
     bottom: -185px
     right: -116px
+
+.intro
+    @media( max-width: 1400px )
+        padding: 130px 0 0
+
+    @media( max-width: 1380px )
+        padding: 160px 0 60px
+
+        min-height: 400px
+
+    @media( max-width: 1050px )
+        padding: 140px 0 60px
+
+    @media( max-width: 780px )
+        padding: 125px 0 40px
+
+    @media( max-width: 750px )
+        padding: 200px 0 30px
+
+    @media( max-width: 420px )
+        padding: 185px 0 30px

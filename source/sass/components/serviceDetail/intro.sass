@@ -15,11 +15,20 @@
 
     position: relative
 
-    @media ( max-width: 1070px )
+    @media( max-width: 1400px )
+        padding: 130px 0 0
+
+    @media( max-width: 1380px )
         padding: 130px 0 60px
 
-    @media ( max-width: 700px )
-        padding: 70px 0 30px
+    @media( max-width: 780px )
+        padding: 90px 0 0
+
+    @media( max-width: 750px )
+        padding: 200px 0 30px
+
+    @media( max-width: 420px )
+        padding: 170px 0 30px
 
 .intro__decorativeCircle
     transform: translateY(-50%)
@@ -50,11 +59,21 @@
 
 // left side
 .intro__contentLeftSide
-    @media ( max-width: 940px )
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
+    margin-right: 120px
+
+    @media ( max-width: 1400px )
+        margin-right: 20px
+
+    @media ( max-width: 1380px )
+        display: grid
+        grid-template-columns: 1fr
+
+    @media ( max-width: 750px )
+        display: grid
+        grid-template-columns: 1fr
+        justify-items: center
+
+        margin-right: 0
 
         text-align: center
 
@@ -95,25 +114,6 @@
 
     height: auto
 
-.intro__contentRightSideImage
-    // width: 100%
-    // max-width: 659px
-    // height: auto
-    // aspect-ratio: 2/1
-
-    @media ( max-width: 1250px )
-        width: 100%
-        max-width: 659px
-        min-width: 560px
-        height: auto
-        aspect-ratio: 2/1
-
-    @media ( max-width: 1070px )
-        min-width: 440px
-
-    @media ( max-width: 940px )
-        margin-bottom: 50px
-
 // input
 .offer__formInputIntro
     padding: 13px 18px
@@ -150,8 +150,12 @@
 // local
 .intro__top
     display: flex
+    align-items: center
 
-    @media ( max-width: 940px )
+    @media ( max-width: 1380px )
+        justify-content: center
+
+    @media ( max-width:750px )
         flex-direction: column-reverse
 
 .intro__contentLeftSideText
