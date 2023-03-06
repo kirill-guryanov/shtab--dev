@@ -39,10 +39,12 @@ function animateNumbers(itemForAnimation) {
     const animate = setInterval(() => {
       if (counter <= neededAmount) {
         // continue
-        if (itemForAnimation.dataset.withPlus !== "true") {
+        if (itemForAnimation.dataset.withSign === undefined) {
           itemForAnimation.textContent = counter;
         } else {
-          itemForAnimation.textContent = `${counter}+`;
+          itemForAnimation.textContent = `${
+            counter + itemForAnimation.dataset.withSign
+          }`;
         }
       } else {
         // stop

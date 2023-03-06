@@ -25,6 +25,7 @@ const { seo } = require("./scripts/seo");
 const { serviceDetailSecond } = require("./scripts/serviceDetailSecond");
 const { modification } = require("./scripts/modification");
 const { support } = require("./scripts/support");
+const { studio } = require("./scripts/studio");
 
 exports.server = () => {
   browserSync.init({
@@ -59,7 +60,8 @@ exports.server = () => {
       seo,
       serviceDetailSecond,
       modification,
-      support
+      support,
+      studio
     )
   ).on("change", browserSync.reload);
 };
