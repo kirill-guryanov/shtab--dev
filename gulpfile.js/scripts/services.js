@@ -6,18 +6,20 @@ const { default: uglify } = require("gulp-uglify-es");
 const concat = require("gulp-concat");
 
 exports.services = () => {
-  return src("./source/js/indexes/indexServices.js", {
-    sourcemaps: true,
-  })
-    .pipe(map.init())
-    .pipe(
-      babel({
-        presets: ["@babel/env"],
-      })
-    )
-    .pipe(webpackStream())
-    .pipe(uglify())
-    .pipe(concat("indexServices.js"))
-    .pipe(map.write())
-    .pipe(dest("./dist/assets/js"));
+  return (
+    src("./source/js/indexes/indexServices.js", {
+      sourcemaps: true,
+    })
+      .pipe(map.init())
+      .pipe(
+        babel({
+          presets: ["@babel/env"],
+        })
+      )
+      .pipe(webpackStream())
+      // .pipe(uglify())
+      .pipe(concat("indexServices.js"))
+      .pipe(map.write())
+      .pipe(dest("./dist/assets/js"))
+  );
 };

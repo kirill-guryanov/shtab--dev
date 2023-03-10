@@ -16,7 +16,7 @@ exports.attraction = () => {
       })
     )
     .pipe(webpackStream())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(concat("attractionIndex.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));

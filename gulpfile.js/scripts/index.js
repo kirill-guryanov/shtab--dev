@@ -8,16 +8,18 @@ const webpack = require("webpack");
 const webpackStream = require("webpack-stream");
 
 exports.script = () => {
-  return src("./source/js/indexes/index.js", { sourcemaps: true })
-    .pipe(map.init())
-    .pipe(
-      babel({
-        presets: ["@babel/env"],
-      })
-    )
-    .pipe(webpackStream())
-    .pipe(uglify())
-    .pipe(concat("index.js"))
-    .pipe(map.write())
-    .pipe(dest("./dist/assets/js"));
+  return (
+    src("./source/js/indexes/index.js", { sourcemaps: true })
+      .pipe(map.init())
+      .pipe(
+        babel({
+          presets: ["@babel/env"],
+        })
+      )
+      .pipe(webpackStream())
+      // .pipe(uglify())
+      .pipe(concat("index.js"))
+      .pipe(map.write())
+      .pipe(dest("./dist/assets/js"))
+  );
 };

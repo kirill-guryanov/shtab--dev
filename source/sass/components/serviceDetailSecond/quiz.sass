@@ -188,9 +188,15 @@
         right: -44%
         top: 50%
 
+        @media(max-width: 1320px)
+            right: -63%
+
 // question
 .quizComponentQuestionForms
     display: flex
+
+    position: relative
+    z-index: 2
 
     @media(max-width: 640px)
         flex-direction: column

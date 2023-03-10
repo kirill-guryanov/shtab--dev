@@ -16,7 +16,7 @@ exports.support = () => {
       })
     )
     .pipe(webpackStream())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(concat("supportIndex.js"))
     .pipe(map.write())
     .pipe(dest("./dist/assets/js"));

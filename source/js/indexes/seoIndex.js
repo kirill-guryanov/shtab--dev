@@ -18,6 +18,9 @@ import "../footer/checkbox";
 import "../footer/add-space-between-items";
 import "../footer/changeFooterColumnsOrder";
 import "../footer/rights-top-border";
+// modal
+import "../modals/modals";
+import "../modals/modalButtons";
 // utils
 import "../utils/allignButtonsSpan";
 import "../utils/butter";

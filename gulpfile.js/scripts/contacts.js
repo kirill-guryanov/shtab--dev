@@ -8,16 +8,18 @@ const webpack = require("webpack");
 const webpackStream = require("webpack-stream");
 
 exports.contacts = () => {
-  return src("./source/js/indexes/index--contacts.js", { sourcemaps: true })
-    .pipe(map.init())
-    .pipe(
-      babel({
-        presets: ["@babel/env"],
-      })
-    )
-    .pipe(webpackStream())
-    .pipe(uglify())
-    .pipe(concat("index--contacts.js"))
-    .pipe(map.write())
-    .pipe(dest("./dist/assets/js"));
+  return (
+    src("./source/js/indexes/index--contacts.js", { sourcemaps: true })
+      .pipe(map.init())
+      .pipe(
+        babel({
+          presets: ["@babel/env"],
+        })
+      )
+      .pipe(webpackStream())
+      // .pipe(uglify())
+      .pipe(concat("index--contacts.js"))
+      .pipe(map.write())
+      .pipe(dest("./dist/assets/js"))
+  );
 };

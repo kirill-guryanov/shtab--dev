@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     2,
     0,
     0,
-    false,
+    true,
     "whiteArrow",
     true
   );

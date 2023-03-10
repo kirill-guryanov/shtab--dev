@@ -40,6 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
     "blackArrow",
     false
   );
+  // costsTop
+  addInteractivityToButton(
+    ".fillingButton--costsTop",
+    ".fillingButton__svg-circle--costsTop",
+    ".fillingButton__circle--costsTop",
+    2,
+    2,
+    0,
+    0,
+    true,
+    "whiteArrow",
+    false
+  );
   // costsItem
   const costsItems = document.querySelectorAll(".costs__contentBottomItem");
   costsItems.forEach((item) => {
@@ -99,13 +112,24 @@ window.addEventListener("resize", () => {
     0,
     false
   );
+  // costsTop
+  addInteractivityToButton(
+    ".fillingButton--costsTop",
+    ".fillingButton__svg-circle--costsTop",
+    ".fillingButton__circle--costsTop",
+    2,
+    2,
+    0,
+    0,
+    false
+  );
   // // costsItem
-  // const costsItems = document.querySelectorAll(".costs__contentBottomItem");
-  // costsItems.forEach((item) => {
-  //   const one = item.querySelector(".fillingButton--costsItem");
-  //   const two = item.querySelector(".fillingButton__svg-circle--costsItem");
-  //   const three = item.querySelector(".fillingButton__circle--costsItem");
+  const costsItems = document.querySelectorAll(".costs__contentBottomItem");
+  costsItems.forEach((item) => {
+    const one = item.querySelector(".fillingButton--costsItem");
+    const two = item.querySelector(".fillingButton__svg-circle--costsItem");
+    const three = item.querySelector(".fillingButton__circle--costsItem");
 
-  //   addInteractivityToButton(one, two, three, 2, 2, 0, 0, false);
-  // });
+    addInteractivityToButton(one, two, three, 3, 3, 0, 0, false);
+  });
 });

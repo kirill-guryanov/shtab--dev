@@ -23,6 +23,7 @@
 @import "../components/header/header"
 @import "../components/utils/burgerMenu"
 @import "../components/footer/footer"
+@import "../components/modals/modals"
 
 html
     scroll-behavior: smooth
@@ -388,7 +389,7 @@ input:focus
 
 // intro
 .intro__contentRightSideImage
-    aspect-ratio: 2/1.7
+    aspect-ratio: 1/1
     transform: unset
 
     @media( max-width: 900px )
@@ -450,3 +451,8 @@ input:focus
 
 .costs__contentBottomItemMiddleText
     margin-bottom: 0
+
+.costs__contentTop
+    display: flex
+    align-items: center
+    justify-content: space-between
