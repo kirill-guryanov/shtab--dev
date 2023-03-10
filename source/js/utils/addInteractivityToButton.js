@@ -54,6 +54,9 @@ export function addInteractivityToButton(
   // depend on position of whole button block (parent)
   // by given number
   switch (left) {
+    case 0:
+      x = (event, addedLeft) => event.pageX + addedLeft;
+      break;
     case 1:
       x = (event, addedLeft) => event.pageX - parent.offsetLeft + addedLeft;
       break;
@@ -77,6 +80,9 @@ export function addInteractivityToButton(
   // depend on position of whole button block (parent)
   // by given number
   switch (top) {
+    case 0:
+      y = (event, addedTop) => event.pageY + addedTop;
+      break;
     case 1:
       y = (event, addedTop) => event.pageY - parent.offsetTop + addedTop;
       break;
@@ -100,6 +106,15 @@ export function addInteractivityToButton(
         parent.offsetTop -
         parent.offsetParent.offsetTop -
         parent.offsetParent.offsetParent.offsetTop +
+        addedTop;
+      break;
+    case 33:
+      y = (event, addedTop) =>
+        event.pageY -
+        parent.offsetTop -
+        parent.offsetParent.offsetTop -
+        parent.offsetParent.offsetParent.offsetTop -
+        window.scrollY +
         addedTop;
       break;
     case 4:
