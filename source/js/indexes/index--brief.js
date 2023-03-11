@@ -10,6 +10,7 @@ import "../burgerMenu/burgerMenu";
 import "../burgerMenu/buttonsImplementation";
 // button
 import "../brief/buttonsImplementation";
+import "../brief/sendForms";
 // to next section
 import "../brief/to-next-section";
 // checkboxes

@@ -116,29 +116,21 @@ window.addEventListener("load", function () {
       circleArrowSalad.classList.add("progress-circle-arrow--active");
       circleArrowBlack.classList.add("progress-circle-arrow--not-active");
     }
-    // reviews
-    if (currentPosition >= reviews) {
-      clearArrowsClasses();
-
-      circle.style.fill = "#1D1D1D";
-      circleArrowSalad.classList.add("progress-circle-arrow--not-active");
-      circleArrowBlack.classList.add("progress-circle-arrow--active");
-    }
     // answers
     if (currentPosition >= clouds) {
       clearArrowsClasses();
 
       circle.style.fill = "#fff";
-      circleArrowSalad.classList.add("progress-circle-arrow--active");
-      circleArrowBlack.classList.add("progress-circle-arrow--not-active");
+      circleArrowSalad.classList.add("progress-circle-arrow--not-active");
+      circleArrowBlack.classList.add("progress-circle-arrow--active");
     }
     // offer
     if (currentPosition >= offer) {
       clearArrowsClasses();
 
       circle.style.fill = "#1D1D1D";
-      circleArrowSalad.classList.add("progress-circle-arrow--not-active");
-      circleArrowBlack.classList.add("progress-circle-arrow--active");
+      circleArrowSalad.classList.add("progress-circle-arrow--active");
+      circleArrowBlack.classList.add("progress-circle-arrow--not-active");
     }
     // footer
     if (innerWidth <= 1460 && currentPosition >= footer) {

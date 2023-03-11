@@ -138,8 +138,8 @@ window.addEventListener("load", function () {
       clearArrowsClasses();
 
       circle.style.fill = "#fff";
-      circleArrowSalad.classList.add("progress-circle-arrow--active");
-      circleArrowBlack.classList.add("progress-circle-arrow--not-active");
+      circleArrowSalad.classList.add("progress-circle-arrow--not-active");
+      circleArrowBlack.classList.add("progress-circle-arrow--active");
     }
     // whatMore
     if (currentPosition >= whatMore) {

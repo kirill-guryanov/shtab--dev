@@ -131,8 +131,8 @@ window.addEventListener("load", function () {
       clearArrowsClasses();
 
       circle.style.fill = "#1D1D1D";
-      circleArrowSalad.classList.add("progress-circle-arrow--not-active");
-      circleArrowBlack.classList.add("progress-circle-arrow--active");
+      circleArrowSalad.classList.add("progress-circle-arrow--active");
+      circleArrowBlack.classList.add("progress-circle-arrow--not-active");
     }
     // answers
     if (currentPosition >= answers) {

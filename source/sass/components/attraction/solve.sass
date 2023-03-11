@@ -24,12 +24,24 @@
         flex-direction: column
 
 // left
-.solve__contentLeft
-    margin-right: 40px
+.solve__contentLeftWrapper
+    flex-shrink: 0
+    margin-right: 120px
+
+    min-height: 100%
+
+    width: 100%
+
+    position: relative
+
+    @media ( max-width: 1435px )
+        margin-right: 40px
 
     @media ( max-width: 1260px )
         margin-right: 0
         margin-bottom: 50px
+
+// .solve__contentLeft
 
 .solve__contentLeftText
     font-weight: 700

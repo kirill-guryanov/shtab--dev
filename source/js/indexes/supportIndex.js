@@ -10,6 +10,7 @@ import "../header/text";
 import "../header/animationWithScroll";
 // local
 import "../support/buttonsImplementation";
+import "../support/sticky";
 // adds
 import "../serviceDetail/spanBg";
 import "../attraction/answersAccordion";

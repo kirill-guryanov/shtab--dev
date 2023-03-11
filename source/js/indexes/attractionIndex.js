@@ -11,6 +11,7 @@ import "../header/animationWithScroll";
 // local
 import "../attraction/spanBg";
 import "../attraction/stagesSectionHeight";
+import "../attraction/sticky";
 import "../attraction/answersAccordion";
 import "../attraction/buttonsImplementation";
 // footer
