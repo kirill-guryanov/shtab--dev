@@ -72,25 +72,23 @@
 
 // gallery
 .products__gallery
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  justify-items: center
   gap: 50px
 
   width: 100%
 
-  @media (max-width: 1450px)
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    justify-items: center
+  // @media (max-width: 1450px)
 
   @media (max-width: 1300px)
     grid-template-columns: 1fr 1fr 1fr
-    justify-items: center
 
   @media (max-width: 1070px)
+    grid-template-columns: 1fr 1fr 1fr
+
+  @media (max-width: 940px)
     grid-template-columns: 1fr 1fr
-    justify-items: center
 
   @media (max-width: 640px)
     grid-template-columns: 1fr
@@ -134,8 +132,8 @@
     height: 377px
 
   @media (max-width: 1300px)
-    width: 270px
-    height: 290px
+    width: 230px
+    height: 255px
 
   @media (max-width: 955px)
     margin-top: unset
@@ -162,7 +160,7 @@
 
 .products__gallery-items-column-item-top-image--ribera
   @media (max-width: 1300px)
-    width: 220px
+    width: 200px
 
   @media (max-width: 800px)
     width: 190px
@@ -180,7 +178,7 @@
     right: -15px
 
   @media (max-width: 1300px)
-    width: 270px
+    width: 250px
 
   @media (max-width: 800px)
     width: 221px
@@ -216,8 +214,8 @@
     height: 242px
 
   @media (max-width: 1300px)
-    width: 333px
-    height: 187px
+    width: 265px
+    height: 160px
 
     right: -7px
     bottom: -22px
@@ -241,7 +239,7 @@
     width: 300px
 
   @media (max-width: 1300px)
-    width: 230px
+    width: 200px
 
   @media (max-width: 800px)
     width: 176px
@@ -259,7 +257,7 @@
     bottom: 25px
 
   @media (max-width: 1300px)
-    width: 179px
+    width: 155px
     bottom: 25px
 
 .products__gallery-items-column-item-top-image--hookah
@@ -269,7 +267,7 @@
   z-index: 3
 
   @media (max-width: 1536px)
-    width: 245px
+    width: 190px
 
   @media (max-width: 800px)
     width: 180px
@@ -308,6 +306,11 @@
 
     width: 245px
 
+  @media (max-width: 1300px)
+    margin-top: -140px
+
+    width: 170px
+
   @media (max-width: 800px)
     width: 160px
 
@@ -325,7 +328,7 @@
     top: 35%
 
   @media (max-width: 1300px)
-    height: 191px
+    height: 160px
 
   @media (max-width: 800px)
     height: 165px
@@ -347,8 +350,8 @@
     height: 233px
 
   @media (max-width: 1300px)
-    width: 245px
-    height: 317px
+    width: 205px
+    height: 270px
     right: -5px
 
   @media (max-width: 800px)
@@ -366,7 +369,7 @@
 
 .products__gallery-items-column-item-top-image--logistic
   @media (max-width: 1536px)
-    width: 245px
+    width: 225px
     height: 200px
     margin-right: -40px
 

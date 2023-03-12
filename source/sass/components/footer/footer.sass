@@ -1,14 +1,13 @@
 .footer
   display: flex
 
-  width: 92%
-
   background-color: #1E1E1E
   border-radius: 0 50px 0 0
 
   position: relative
 
-  //@media (max-width: 1130px)
+  width: 100%
+
   @media (max-width: 1460px)
     width: 100%
 
@@ -23,6 +22,15 @@
 
   width: 100%
   height: auto
+
+  @media (max-width: 1090px)
+    padding: 0 40px
+
+.footer__left-sideItems
+  display: flex
+  justify-content: space-between
+
+  width: 100%
 
 // rights
 .footer__left-side-rights
@@ -46,9 +54,10 @@
 // block
 .footer__blocks
   display: flex
-  justify-content: space-evenly
+  justify-content: space-between
 
   padding-top: 35px
+  padding-right: 50px
   padding-bottom: 0
 
   width: 100%
@@ -59,7 +68,10 @@
   @media (max-width: 1225px)
     justify-content: space-between
 
-  @media (max-width: 690px)
+  @media (max-width: 1090px)
+    padding-right: 0
+
+  @media (max-width: 740px)
     display: grid
     grid-template-columns: repeat(2, 1fr)
     justify-items: center
@@ -100,8 +112,8 @@
   color: #FFFFFF
 
 .footer__blocks-list-item
-  font-weight: 400
-  @include adaptiveFont(18, 15)
+  font-weight: 200
+  @include adaptiveFont(16, 14)
   line-height: 1
   color: #FFFFFF
 
@@ -146,6 +158,7 @@
 // contacts
 .footer__blocks-list-item--contacts
   display: flex
+  align-items: center
   flex-direction: row
   gap: 15px
 
@@ -154,8 +167,8 @@
   flex-direction: column
 
 .footer__blocks-list-item--contacts-text
-  font-weight: 350
-  @include adaptiveFont(18, 15)
+  font-weight: 200
+  @include adaptiveFont(15, 14)
   line-height: 1
   color: #FFFFFF
 
@@ -165,9 +178,10 @@
   flex-direction: column
   align-items: center
 
-  padding: 35px 15px
-
   text-align: center
+
+  @media (max-width: 1090px)
+    padding: 35px
 
   @media (max-width: 600px)
     padding: 0
@@ -175,8 +189,8 @@
 .footer__right-side-form-title
   margin-bottom: 29px
 
-  font-weight: 700
-  @include adaptiveFont(26, 20)
+  font-weight: 500
+  @include adaptiveFont(21, 17)
   line-height: 1
   color: #FFFFFF
 
@@ -185,20 +199,28 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  flex-shrink: 0
 
-  max-width: 495px
+  padding: 32px 75px
 
-  width: 50%
   height: 100%
 
-  background-color: #1D1D1D
+  background-color: #212121
   border-radius: 0 50px 0 0
 
-  @media (max-width: 1540px)
-    width: 35%
+  // @media (max-width: 1540px)
+  //   width: 35%
+
+  @media (max-width: 1330px)
+    padding: 30px 35px
+
+  @media (max-width: 1090px)
+    padding: 0
+
+    height: auto
 
   @media (max-width: 930px)
-    max-width: unset
+    // max-width: unset
 
     width: 100%
 
@@ -217,8 +239,12 @@
   height: 51px
 
 .footer__right-side-form-form-input
-  margin-bottom: 10px
   padding: 0 33px
+
+  height: 40px
+
+  max-width: 270px
+  width: 100%
 
   background-color: transparent
   border: 1px solid #737373
@@ -226,16 +252,21 @@
 
   font-weight: 350
   @include adaptiveFont(18, 15)
-  line-height: 112.9%
+  line-height: 1
   color: #CECECE
 
   transition: all .3s ease-in-out
 
+  &:not(:last-child)
+    margin-bottom: 10px
+
 .footer__right-side-form-form-checkbox
   flex-shrink: 0
 
-  width: 34px
-  height: 34px
+  margin-left: 10px
+
+  width: 23px
+  height: 23px
 
   border-radius: 50%
   cursor: pointer
@@ -248,15 +279,17 @@
   display: flex
   //flex-direction: row-reverse
   align-items: center
-  gap: 20px
+  gap: 15px
 
-  margin-top: 17px
-  margin-bottom: 23px
+  margin-top: 8px
+  margin-bottom: 18px
 
   position: relative
 
 .footer__right-side-form-form-checkbox-custom-block
   flex-shrink: 0
+
+  margin-left: 10px
 
   border-radius: 50%
 
@@ -264,8 +297,8 @@
   left: 0
 
 .footer__right-side-form-form-checkbox-custom
-  width: 34px
-  height: 34px
+  width: 23px
+  height: 23px
 
   background-color: #494949
   border-radius: 50%
@@ -273,25 +306,27 @@
   position: relative
 
 .footer__right-side-form-form-checkbox-custom--active
-  width: 22px
-  height: 22px
+  width: 15px
+  height: 15px
 
   background-color: #C9F31D
   border-radius: 50%
   opacity: 0
 
-  box-shadow: rgb(201 243 29) 0 0 10px
+  // box-shadow: rgb(201 243 29) 0 0 10px
 
   transition: opacity .3s ease-in-out
 
   position: absolute
-  top: 6px
-  left: 6px
+  top: 4px
+  left: 4px
 
 .footer__right-side-form-form-button
-  padding: 15px 0
+  padding: 10px 15px
 
-  background-color: #1D1D1D
+  height: auto
+
+  background-color: transparent
   border: 1px solid #C9F31D
   border-radius: 40px
 
@@ -307,15 +342,19 @@
     background-color: #C9F31D
 
 .footer__right-side-form-form-checkbox-block-label
+  max-width: 160px
+
   cursor: pointer
 
   font-weight: 350
-  @include adaptiveFont(15, 14)
+  font-size: 13px
   line-height: 1
   color: #CECECE
   text-align: left
 
 .footer__blocks-item-logo-image
+  max-width: 155px
+
   width: 100%
   height: 100%
 

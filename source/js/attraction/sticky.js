@@ -27,7 +27,7 @@ if (window.innerWidth >= 1260) {
       itemForStickyWrapper.offsetTop +
       itemForStickyWrapper.offsetParent.offsetTop -
       headerHeight -
-      20;
+      60;
 
     let counter = 0;
     // item's for sticky bottom side current postition from top
@@ -41,7 +41,7 @@ if (window.innerWidth >= 1260) {
       // set sticky
       if (counter === 0) {
         itemForSticky.style.position = "fixed";
-        itemForSticky.style.top = `${windowY + headerHeight + 20}px`;
+        itemForSticky.style.top = `${windowY + headerHeight + 60}px`;
       }
       // item's for sticky bottom side current postition from top
       itemForStickyBottomSide =
@@ -63,7 +63,7 @@ if (window.innerWidth >= 1260) {
       counter--;
 
       itemForSticky.style.position = "fixed";
-      itemForSticky.style.top = `${windowY + headerHeight + 20}px`;
+      itemForSticky.style.top = `${windowY + headerHeight + 60}px`;
     }
   });
 }

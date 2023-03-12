@@ -54,7 +54,7 @@ input:focus
     display: none
 
 .blog__in-page-decoration-circle
-  left: 0
+  left: -150px
   top: 10%
 
 .blog__in-page-decoration-circle-with-line
@@ -205,6 +205,7 @@ input:focus
 
   &:hover  .blog__in-page-gallery-item-image
     opacity: .7
+    transform: scale(1.2)
 
   &:last-child
     margin-bottom: 36px
@@ -215,13 +216,16 @@ input:focus
   @media (max-width: 540px)
     max-width: 350px
 
+.blog__in-page-gallery-item-imageWrapper
+  overflow: hidden
+
 .blog__in-page-gallery-item-image
   max-width: 100%
 
   width: 100%
   height: auto
 
-  transition: opacity .3s ease-in-out
+  transition: opacity, transform .3s ease-in-out
 
 .blog__in-page-gallery-item-footer
   margin: 32px 15px 30px 40px

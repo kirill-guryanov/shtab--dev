@@ -16,8 +16,10 @@ import "../brief/to-next-section";
 // checkboxes
 import "../brief/checkboxes";
 // footer
-import "../footer/rights-top-border";
 import "../footer/checkbox";
+import "../footer/add-space-between-items";
+import "../footer/changeFooterColumnsOrder";
+import "../footer/rights-top-border";
 // utils
 import "../utils/allignButtonsSpan";
 import "../utils/butter";

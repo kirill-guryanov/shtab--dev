@@ -30,6 +30,8 @@
 
     min-height: 100%
 
+    max-width: 360px
+
     width: 100%
 
     position: relative
@@ -41,7 +43,14 @@
         margin-right: 0
         margin-bottom: 50px
 
-// .solve__contentLeft
+.solve__contentLeft
+    max-width: 530px
+
+    @media ( max-width: 1435px )
+        max-width: 410px
+
+    @media ( max-width: 1260px )
+        max-width: unset
 
 .solve__contentLeftText
     font-weight: 700

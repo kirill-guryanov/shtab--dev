@@ -15,6 +15,24 @@
     & .intro__bottomItemsWrapper
         justify-content: space-between
 
+        & .servisec-list__item
+            margin-right: 30px
+            margin-left: 50px
+
+            flex-shrink: 0
+            max-width: 327px
+
+            @include adaptiveFont(45, 20)
+
+            @media ( max-width: 1230px )
+                max-width: 290px
+
+            @media ( max-width: 1030px )
+                max-width: 170px
+
+        & .intro__bottomButton
+            margin-left: 60px
+
 // decor
 .offer__decorativeCircle
     transform: translateY(-50%)
@@ -43,6 +61,12 @@
     color: #1E1E1E
 
 // middle
+.offer__contentMiddle
+    margin-bottom: 75px
+
+    @media ( max-width: 1350px )
+        margin-bottom: 35px
+
 .offer__contentMiddleItems
     display: grid
     grid-template-columns: repeat(3, 1fr)

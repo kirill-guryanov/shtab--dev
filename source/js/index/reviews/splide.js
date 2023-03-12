@@ -4,12 +4,12 @@ window.addEventListener("load", function () {
     perMove: 1,
     pagination: false,
     focus: "center",
-    autoWidth: true,
+    // autoWidth: true,
 
     breakpoints: {
       5000: {
         perPage: 4,
-        // gap: 16,
+        gap: 16,
       },
       1460: {
         perPage: 4,
@@ -26,30 +26,30 @@ window.addEventListener("load", function () {
         perPage: 3,
         // gap: 60,
       },
-      // 1060: {
-      // perPage: 2,
-      // gap: 20,
-      // },
-      // 920: {
-      //   perPage: 2,
-      //   gap: 160,
-      // },
-      // 840: {
-      //   // perPage: 2,
-      //   gap: 100,
-      // },
-      // 765: {
-      //   // perPage: 2,
-      //   gap: 30,
-      // },
-      // 675: {
-      //   perPage: 1,
-      //   gap: 30,
-      // },
-      // 450: {
-      //   perPage: 1,
-      //   gap: 15,
-      // },
+      1060: {
+        perPage: 2,
+        gap: 30,
+      },
+      920: {
+        perPage: 2,
+        // gap: 160,
+      },
+      840: {
+        // perPage: 2,
+        // gap: 100,
+      },
+      765: {
+        // perPage: 2,
+        // gap: 30,
+      },
+      675: {
+        perPage: 1,
+        // gap: 30,
+      },
+      450: {
+        perPage: 1,
+        // gap: 15,
+      },
     },
   }).mount();
 });

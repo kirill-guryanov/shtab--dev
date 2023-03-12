@@ -13,9 +13,9 @@ import "../contacts/yandex-map";
 // button
 import "../contacts/buttonsImplementation";
 // footer
-import "../footer/rights-top-border";
 import "../footer/checkbox";
-// utils
+import "../footer/add-space-between-items";
+import "../footer/changeFooterColumnsOrder";
 import "../footer/rights-top-border";
 // utils
 import "../utils/allignButtonsSpan";

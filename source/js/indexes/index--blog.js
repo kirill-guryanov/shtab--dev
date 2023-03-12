@@ -9,7 +9,9 @@ import "../header/animationWithScroll";
 import "../burgerMenu/burgerMenu";
 import "../burgerMenu/buttonsImplementation";
 // footer
-import "../footer/rights-top-border";
 import "../footer/checkbox";
+import "../footer/add-space-between-items";
+import "../footer/changeFooterColumnsOrder";
+import "../footer/rights-top-border";
 // utils
 import "../utils/butter";

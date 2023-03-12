@@ -26,6 +26,14 @@ window.addEventListener("load", () => {
       spanAnimationBgWrapper.style.width =
         span.getBoundingClientRect().width + 6 + "px";
     }
+    if (
+      spanAnimationBgWrapper.classList.contains(
+        "servisec-list__item-title-span-wrapper--stages"
+      )
+    ) {
+      spanAnimationBgWrapper.style.width =
+        span.getBoundingClientRect().width + 8 + "px";
+    }
     spanAnimationBgWrapper.style.height =
       span.getBoundingClientRect().height + "px";
 
@@ -67,6 +75,14 @@ window.addEventListener("resize", () => {
     ) {
       spanAnimationBgWrapper.style.width =
         span.getBoundingClientRect().width + 6 + "px";
+    }
+    if (
+      spanAnimationBgWrapper.classList.contains(
+        "servisec-list__item-title-span-wrapper--stages"
+      )
+    ) {
+      spanAnimationBgWrapper.style.width =
+        span.getBoundingClientRect().width + 8 + "px";
     }
     spanAnimationBgWrapper.style.height =
       span.getBoundingClientRect().height + "px";

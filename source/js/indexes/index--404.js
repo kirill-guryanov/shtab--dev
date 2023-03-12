@@ -13,8 +13,10 @@ import "../404/decoration-lines";
 // intro
 import "../404/buttonsImplementation";
 // footer
-import "../footer/rights-top-border";
 import "../footer/checkbox";
+import "../footer/add-space-between-items";
+import "../footer/changeFooterColumnsOrder";
+import "../footer/rights-top-border";
 // utils
 import "../utils/allignButtonsSpan";
 import "../utils/butter";
