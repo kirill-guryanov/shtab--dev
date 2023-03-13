@@ -6,6 +6,7 @@ const bulletsWrapper = document.querySelector(
 const reviewsImages = document.querySelectorAll(
   ".formats__contentBottomRightItem"
 );
+const reviewsImage = document.querySelector(".formats__contentBottomRightItem");
 const reviewsImagesWrapper = document.querySelector(
   ".formats__contentBottomRightItems"
 );
@@ -16,6 +17,11 @@ const itemsForHover = document.querySelectorAll(
 // const bullet = document.querySelector(
 //   ".formats__contentBottomRightItemsBullet"
 // );
+
+document.addEventListener("DOMContentLoaded", () => {
+  reviewsImagesWrapper.style.height =
+    reviewsImage.getBoundingClientRect().height + "px";
+});
 
 // set data attributes and create and append bullets for items
 itemsForHover.forEach((item, index) => {
@@ -41,6 +47,7 @@ reviewsImages.forEach((reviewsImage, index) => {
     const bullet = document.createElement("div");
     bullet.dataset.itemNumber = currentIndex;
     bullet.classList.add("formats__contentBottomRightItemsBullet");
+
     bulletsWrapper.appendChild(bullet);
   }
 });
@@ -49,20 +56,33 @@ const bullets = document.querySelectorAll(
   ".formats__contentBottomRightItemsBullet"
 );
 
+bullets.forEach((bullet, index) => {
+  if (index < 1) {
+    bullet.classList.add("formats__contentBottomRightItemsBullet--active");
+  }
+});
+
 itemsForHover.forEach((item) => {
   reviewsImages.forEach((reviewsImage) => {
     item.addEventListener("mouseleave", (e) => {
+      // reset active class from all images
+      // itemsForHover.forEach((itemForResetActiveClass) => {
+      //   itemForResetActiveClass.classList.remove(
+      //     "formats__contentBottomLeftItem--active"
+      //   );
+      // });
+    });
+    item.addEventListener("mouseenter", (e) => {
+      const itemDataset = e.currentTarget.dataset.itemNumber;
+      const imageDataset = reviewsImage.dataset.itemNumber;
+      // add active class
       // reset active class from all images
       itemsForHover.forEach((itemForResetActiveClass) => {
         itemForResetActiveClass.classList.remove(
           "formats__contentBottomLeftItem--active"
         );
       });
-    });
-    item.addEventListener("mouseenter", (e) => {
-      const itemDataset = e.currentTarget.dataset.itemNumber;
-      const imageDataset = reviewsImage.dataset.itemNumber;
-      // add active class
+
       e.currentTarget.classList.add("formats__contentBottomLeftItem--active");
       // bullets
       bullets.forEach((bullet) => {

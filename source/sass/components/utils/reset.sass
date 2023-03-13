@@ -85,8 +85,35 @@ address
   width: 100%
   min-height: 100%
 
+  // z-index: 100
+
   // position: absolute
 
 main
   flex: 1 1 auto
   // overflow: hidden
+
+.smooth-scroll-wrapper
+  position: fixed
+  z-index: 2
+  top: 0
+  left: 0
+  right: 0
+  overflow: hidden
+
+#my-scrollbar
+  width: 100%
+  height: 100%
+  overflow: auto
+
+.lenis.lenis-smooth
+  scroll-behavior: auto
+
+html.lenis
+  height: auto
+
+.lenis.lenis-smooth [data-lenis-prevent]
+  overscroll-behavior: contain
+
+.lenis.lenis-stopped
+  overflow: hidden

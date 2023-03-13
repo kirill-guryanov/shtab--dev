@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   const splideMain = new Splide(".intro__splider--container", {
     perPage: 1,
 

@@ -2,7 +2,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalTriggers = document.querySelectorAll(".modalTrigger");
   const wrappers = document.querySelectorAll(".wrapper");
   //   const modals = document.querySelectorAll(".modal");
+  // add form submisson with validation
+  wrappers.forEach((wrapper) => {
+    const button = wrapper.querySelector(".fillingButton");
+    const form = wrapper.querySelector("form");
 
+    const inputs = form.querySelectorAll("input");
+
+    button.addEventListener("click", () => {
+      inputs.forEach((input) => {
+        if (input.value !== "" || input.value.length > 3) {
+          form.submit();
+        }
+      });
+    });
+  });
+  //
   modalTriggers.forEach((modalTrigger) => {
     modalTrigger.addEventListener("click", () => {
       //   modals.forEach((modal) => {

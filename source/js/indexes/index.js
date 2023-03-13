@@ -31,6 +31,8 @@ import "../index/reviews/splide-arrows-embed";
 // blog
 import "../index/blog/buttonsImplementation";
 import "../index/blog/lines";
+// gallery
+import "../index/reviews/gallery";
 // footer
 import "../footer/checkbox";
 import "../footer/add-space-between-items";

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".fillingButton__svg-circle--products",
     ".fillingButton__circle--products",
     2,
-    2,
+    4,
     0,
     0,
     true,

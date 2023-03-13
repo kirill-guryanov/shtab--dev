@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   const splideItem1 = new Splide(".intro__splide-string1", {
     type: "loop",
     drag: "free",

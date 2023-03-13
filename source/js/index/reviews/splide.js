@@ -5,13 +5,12 @@ window.addEventListener("load", function () {
     pagination: false,
     focus: "center",
     // autoWidth: true,
+    perPage: 4,
+    gap: 16,
 
     breakpoints: {
-      5000: {
-        perPage: 4,
-        gap: 16,
-      },
       1460: {
+        gap: 16,
         perPage: 4,
         // gap: 50,
       },

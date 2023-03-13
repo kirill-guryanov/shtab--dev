@@ -12,6 +12,9 @@ import "../header/animationWithScroll";
 import "../productsOncePage/intro";
 // sticky
 import "../productsOncePage/sticky";
+// gallery
+import "../productsOncePage/gallery";
+import "../modals/modals";
 // footer
 import "../footer/checkbox";
 import "../footer/add-space-between-items";

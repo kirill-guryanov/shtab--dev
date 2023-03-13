@@ -56,29 +56,92 @@ window.addEventListener("load", () => {
     const lastSlideNow = currentSlide === atAllSlides;
 
     if (isActive && notLastSlideNow && atAllSlides - currentSlide !== 1) {
-      currentTransformPosition -= parentWidth;
-      slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
-      // set current slide
-      currentSlide++;
-      currentStage.innerText = currentSlide;
-    } else if (isActive && atAllSlides - currentSlide === 1) {
-      let counter = 0;
+      switch (currentSlide) {
+        case 2:
+          slides.forEach((slide, index) => {
+            if (currentSlide === 2 && index + 1 === 2) {
+              const inputs = slide.querySelectorAll("input");
+              inputs.forEach((input) => {
+                if (input.value !== "" || input.value.length > 3) {
+                  currentTransformPosition -= parentWidth;
+                  slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
+                  // set current slide
+                  currentSlide++;
+                  console.log(currentSlide);
+                  console.log(input.value);
+                  currentStage.innerText = currentSlide;
+                }
+              });
+            }
+          });
 
-      rightSideButton.textContent = "Завершить";
-
-      currentTransformPosition -= parentWidth;
-      slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
-      // set current slide
-      if (counter < 1) {
-        currentSlide++;
-        counter++;
+        case 3:
+          slides.forEach((slide, index) => {
+            if (currentSlide === 3 && index + 1 === 3) {
+              const inputs = slide.querySelectorAll("input");
+              inputs.forEach((input) => {
+                if (input.checked) {
+                  currentTransformPosition -= parentWidth;
+                  slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
+                  // set current slide
+                  currentSlide++;
+                  console.log(currentSlide);
+                  console.log(input.value);
+                  currentStage.innerText = currentSlide;
+                }
+              });
+            }
+          });
       }
-      currentStage.innerText = atAllSlides;
+
+      // currentTransformPosition -= parentWidth;
+      // slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
+      // // set current slide
+      // currentSlide++;
+      // currentStage.innerText = currentSlide;
+    } else if (isActive && atAllSlides - currentSlide === 1) {
+      if (currentSlide === 4) {
+        slides.forEach((slide, index) => {
+          if (currentSlide === 4 && index + 1 === 4) {
+            console.log(currentSlide);
+            const inputs = slide.querySelectorAll("input");
+            inputs.forEach((input) => {
+              console.log(input);
+              if (input.value !== "" || input.value.length > 3) {
+                // set current slide
+                let counter = 0;
+
+                rightSideButton.textContent = "Завершить";
+
+                currentTransformPosition -= parentWidth;
+                slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
+                // set current slide
+                if (counter < 1) {
+                  currentSlide++;
+                  counter++;
+                }
+                currentStage.innerText = atAllSlides;
+              }
+            });
+          }
+        });
+      }
     }
     if (lastSlideNow) {
-      parent.submit();
+      if (currentSlide === 5) {
+        slides.forEach((slide, index) => {
+          if (currentSlide === 5 && index + 1 === 5) {
+            console.log(currentSlide);
+            const inputs = slide.querySelectorAll("input");
+            inputs.forEach((input) => {
+              if (input.value !== "" || input.value.length > 3) {
+                parent.submit();
+              }
+            });
+          }
+        });
+      }
     }
-    console.log(currentSlide);
   });
   // left side buttom
   leftSideButton.addEventListener("click", () => {
@@ -89,11 +152,27 @@ window.addEventListener("load", () => {
     const notLessThanOne = currentSlide !== 1;
 
     if (isNext && notLastSlideNow) {
-      currentTransformPosition -= parentWidth;
-      slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
-      // set current slide
-      currentSlide++;
-      currentStage.innerText = currentSlide;
+      if (currentSlide === 1) {
+        slides.forEach((slide, index) => {
+          if (currentSlide === 1 && index + 1 === 1) {
+            const inputs = slide.querySelectorAll("input");
+            inputs.forEach((input) => {
+              if (input.checked) {
+                currentTransformPosition -= parentWidth;
+                slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
+                // set current slide
+                currentSlide++;
+                currentStage.innerText = currentSlide;
+              }
+            });
+          }
+        });
+      }
+      // currentTransformPosition -= parentWidth;
+      // slidesWrapper.style.transform = `translateX(${currentTransformPosition}px)`;
+      // // set current slide
+      // currentSlide++;
+      // currentStage.innerText = currentSlide;
     }
 
     if (isPrev && notLessThanOne) {
